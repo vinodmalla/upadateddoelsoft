@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ArrowUpRight, Upload } from "lucide-react";
 
 function Carrers() {
