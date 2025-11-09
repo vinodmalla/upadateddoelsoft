@@ -59,13 +59,13 @@ function Header() {
 
         {/* Social Icons (Tablet & Desktop) */}
         <div className="hidden md:flex items-center space-x-4 lg:space-x-5 xl:ml-36 ">
-          <a href="#" className="p-2">
+          <a href="/" className="p-2">
             <FaInstagram className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
           </a>
-          <a href="#" className="p-2">
+          <a href="/" className="p-2">
             <FaDiscord className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
           </a>
-          <a href="#" className="p-2">
+          <a href="/" className="p-2">
             <FaGithub className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
           </a>
         </div>
@@ -114,13 +114,13 @@ function Header() {
 
           {/* Social Icons (Mobile) */}
           <div className="flex space-x-6 pt-4">
-            <a href="#" className="p-2">
+            <a href="/" className="p-2">
               <FaInstagram className="text-xl text-gray-700 hover:text-red-600" />
             </a>
-            <a href="#" className="p-2">
+            <a href="/" className="p-2">
               <FaDiscord className="text-xl text-gray-700 hover:text-red-600" />
             </a>
-            <a href="#" className="p-2">
+            <a href="/" className="p-2">
               <FaGithub className="text-xl text-gray-700 hover:text-red-600" />
             </a>
           </div>

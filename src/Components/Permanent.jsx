@@ -82,7 +82,7 @@ function Permanent() {
 
             <div className="mt-8">
               <a
-                href="#"
+                href="/"
                 className="inline-block bg-[#E10000] text-white font-medium text-sm sm:text-base md:text-lg px-5 sm:px-6 py-3 hover:bg-red-600 transition"
               >
                 Hire once, hire right with Doelsoft permanent staffing. ↗

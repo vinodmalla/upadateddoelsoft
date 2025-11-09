@@ -21,16 +21,16 @@ export default function Footer() {
             Hyderabad, India · <br /> Florida, USA
           </p>
           <div className="flex gap-4 text-gray-600 text-xl">
-            <a href="#">
+            <a href="/">
               <FaLinkedin />
             </a>
-            <a href="#">
+            <a href="/">
               <FaFacebookMessenger />
             </a>
-            <a href="#">
+            <a href="/">
               <FaTwitter />
             </a>
-            <a href="#">
+            <a href="/">
               <FaInfinity />
             </a>
           </div>
@@ -40,10 +40,10 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
           <ul className="space-y-2 text-gray-600">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Pricing</a></li>
           </ul>
         </div>
 
@@ -51,10 +51,10 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Product</h3>
           <ul className="space-y-2 text-gray-600">
-            <li><a href="#">Invoicing</a></li>
-            <li><a href="#">Contract</a></li>
-            <li><a href="#">Accounting</a></li>
-            <li><a href="#">Proposal</a></li>
+            <li><a href="/">Invoicing</a></li>
+            <li><a href="/">Contract</a></li>
+            <li><a href="/">Accounting</a></li>
+            <li><a href="/">Proposal</a></li>
           </ul>
         </div>
 
@@ -62,10 +62,10 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Resources</h3>
           <ul className="space-y-2 text-gray-600">
-            <li><a href="#">Proposal Template</a></li>
-            <li><a href="#">Invoice Template</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="#">How to write a contract</a></li>
+            <li><a href="/">Proposal Template</a></li>
+            <li><a href="/">Invoice Template</a></li>
+            <li><a href="/">Tutorial</a></li>
+            <li><a href="/">How to write a contract</a></li>
           </ul>
         </div>
 

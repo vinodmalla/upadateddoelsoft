@@ -82,7 +82,7 @@ function Rpo() {
             {/* CTA Button */}
             <div className="mt-8 w-72 md:w-auto">
               <a
-                href="#"
+                href="/"
                 className="inline-block bg-[#E10000] text-white font-medium text-base sm:text-lg px-4 sm:px-6 py-3 "
               >
                 Outsource the process. Keep the control. With Doelsoft RPO.

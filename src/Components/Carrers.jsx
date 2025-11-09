@@ -58,16 +58,7 @@ function Carrers() {
   ];
 
   const [selectedJob, setSelectedJob] = useState(jobs[0]);
-  const [bannerMargin, setBannerMargin] = useState("0px");
-
-  useEffect(() => {
-    const handleResize = () => {
-      setBannerMargin(window.innerWidth >= 768 ? "-44px" : "0px");
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+ 
 
   return (
     <div className="w-full min-h-screen overflow-hidden font-kumbh mt-16 flex flex-col space-y-6">
