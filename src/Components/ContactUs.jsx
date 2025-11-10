@@ -47,7 +47,7 @@ function ContactUs() {
         {/* Right Image */}
         <div className="mt-10 md:mt-14 flex justify-center md:justify-end relative z-0">
           <img
-            src="/contact.svg"
+            src="/Contact.svg"
             alt="contact"
             className="w-64 sm:w-80 md:w-[420px] lg:w-[500px] h-auto"
           />
