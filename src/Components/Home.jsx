@@ -731,7 +731,7 @@ useEffect(()=>{
       <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
   {/* Header */}
   <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-12 px-2">
-    <h2 className="text-2xl md:text-[44px] font-kumbh font-medium text-gray-900">
+    <h2 className="text-2xl md:text-[44px] font-kumbh font-semibold text-gray-900">
       Outcomes We Deliver
     </h2>
     <p className="mt-4 text-gray-600 text-base font-inter sm:text-lg max-w-3xl mx-auto leading-relaxed">
