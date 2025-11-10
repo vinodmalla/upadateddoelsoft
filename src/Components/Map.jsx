@@ -1,5 +1,5 @@
 // ...existing code...
-export default function MapTest() {
+export default function Map() {
   return (
     <div className="relative w-full max-w-5xl mx-auto bg-slate-100 overflow-visible">
       {/* Map as absolute background (z-0) so overlayed flags are always on top */}

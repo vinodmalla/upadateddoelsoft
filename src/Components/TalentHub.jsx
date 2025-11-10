@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router";
-import ClientReviews from "./ClentReviews";
+
 
 function TalentHub() {
   const services = [
@@ -360,7 +360,7 @@ function TalentHub() {
     </button>
   </div>
 </section>
-  <div><ClientReviews /></div>
+
 
     </div>
   );

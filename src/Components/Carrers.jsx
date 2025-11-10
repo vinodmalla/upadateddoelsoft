@@ -231,54 +231,57 @@ function Carrers() {
   </div>
 
   {/* ===== Resume Upload Section ===== */}
-  <div className="w-full flex flex-col md:flex-row flex-wrap items-center justify-between bg-red-600 text-white px-6 md:px-10 lg:px-16 py-12 md:py-20 gap-10">
-    {/* Left Text Section */}
-    <div className="flex-1 text-center md:text-left space-y-4">
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
-        Didn’t find your fit job? <br /> No worries, upload your resume.
-        <br /> We will get back with your <br />
-        <span className="text-3xl sm:text-4xl md:text-5xl">FIT JOB.</span>
-      </h3>
+   <div className="w-auto mx-4 sm:mx-8 md:ml-28 h-auto md:h-96 flex flex-col md:flex-row flex-wrap items-center justify-between bg-red-600 text-white px-4 sm:px-8 md:px-10 lg:px-16 py-10 md:py-14 gap-10">
+      
+      {/* Left Text Section */}
+      <div className="flex-1 text-center md:text-left space-y-4">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+          Didn’t find your fit job? <br /> No worries, upload your resume.
+          <br /> We will get back with your <br />
+          <span className="text-3xl sm:text-4xl md:text-5xl">FIT JOB.</span>
+        </h3>
 
-      <div className="flex justify-center md:justify-start mt-6">
-        <img
-          src="/career_people.svg"
-          alt="Careers Illustration"
-          className="w-44 sm:w-56 md:w-64 lg:w-[420px]"
-        />
-      </div>
-    </div>
-
-    {/* Right Upload Section */}
-    <div className="flex flex-col items-center justify-center gap-6 bg-red-500 outline outline-1 outline-red-800 px-6 sm:px-10 py-10 w-full sm:w-[400px] md:w-[380px] rounded-md mx-auto">
-      <label
-        htmlFor="resume-upload"
-        className="flex flex-col items-center justify-center gap-4 cursor-pointer text-center"
-      >
-        <div className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full">
-          <Upload className="w-6 h-6 text-zinc-700" />
+        <div className="flex justify-center md:justify-start">
+          <img
+            src="/career_people.svg"
+            alt="Careers Illustration"
+            className="w-40 sm:w-52 md:w-64 lg:w-[420px] h-auto md:ml-48 md:mt-[-6px]"
+          />
         </div>
-        <p className="text-zinc-200 text-base">
-          Click or drag your resume to upload
-        </p>
-        <input
-          type="file"
-          id="resume-upload"
-          className="hidden"
-          accept=".pdf,.doc,.docx"
-        />
-      </label>
+      </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 mt-4">
-        <button className="flex items-center justify-center gap-2 bg-white text-black px-6 py-2 rounded-sm font-medium hover:bg-gray-200 transition">
-          Browse <ArrowUpRight className="w-4 h-4" />
-        </button>
-        <button className="flex items-center justify-center gap-2 bg-black text-white px-6 py-2 rounded-sm font-medium hover:bg-gray-800 transition">
-          Upload <ArrowUpRight className="w-4 h-4" />
-        </button>
+      {/* Right Upload Section */}
+      <div className="flex flex-col w-full sm:w-auto items-center md:items-start">
+        <div className="flex flex-col items-center justify-center gap-6 bg-red-500 outline outline-1 outline-red-800 px-6 sm:px-10 py-10 w-full sm:w-[400px] md:w-[380px] rounded-md mx-auto">
+          <label
+            htmlFor="resume-upload"
+            className="flex flex-col items-center justify-center gap-4 cursor-pointer text-center"
+          >
+            <div className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full">
+              <Upload className="w-6 h-6 text-zinc-700" />
+            </div>
+            <p className="text-zinc-200 text-base">
+              Click or drag your resume to upload
+            </p>
+            <input
+              type="file"
+              id="resume-upload"
+              className="hidden"
+              accept=".pdf,.doc,.docx"
+            />
+          </label>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 mt-4 justify-center md:justify-start">
+          <button className="flex items-center justify-center gap-2 bg-white text-black px-6 py-2 rounded-sm font-medium hover:bg-gray-200 transition">
+            Browse <ArrowUpRight className="w-4 h-4" />
+          </button>
+          <button className="flex items-center justify-center gap-2 bg-black text-white px-6 py-2 rounded-sm font-medium hover:bg-gray-800 transition">
+            Upload <ArrowUpRight className="w-4 h-4" />
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 </div>
 
 

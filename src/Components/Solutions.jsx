@@ -98,9 +98,7 @@ function Solutions() {
       <section className="py-20 bg-white overflow-hidden">
        
 
-        <div className="relative w-full max-w-[655px] mx-auto mt-10 flex flex-col items-center gap-8">
-          <ClientReviews />
-        </div>
+         <div><ClientReviews /></div>
       </section>
 
       {/* ================= FINAL CTA ================= */}

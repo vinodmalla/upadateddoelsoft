@@ -383,7 +383,8 @@ useEffect(()=>{
 
 
       {/* Industries Section - Responsive grid */}
-  <section className="relative w-full  h-[725px] bg-[#080808] overflow-hidden">
+
+  <section className="relative w-full h-auto lg:h-[725px] py-10 bg-[#080808] overflow-hidden">
   {/* Background Image + Overlay */}
   <div className="absolute inset-0 bg-cover bg-center bg-[#080808]" style={{ backgroundImage: "url('/11122436.svg')" }}></div>
   <div className="absolute inset-0 bg-[#080808]/10"></div>
@@ -744,9 +745,12 @@ useEffect(()=>{
     {cards.slice(0, 4).map((card, i) => (
       <div
         key={i}
-        className={`relative overflow-hidden shadow-lg  h-auto ${i===0 || i===3 ? "h-[200px] " : " h-[300px"} ${
-          card.type === "solid" ? `${card.bg} flex items-center justify-center p-6 sm:p-8` : ""
-        }`}
+       className={`relative overflow-hidden shadow-lg h-auto 
+  ${i === 2 ? "lg:mt-[-198px]" : ""} 
+  ${i === 0 || i === 3 ? "lg:h-[200px]" : "lg:h-[400px]"} 
+  ${card.type === "solid" ? `${card.bg} flex items-center justify-center p-6 sm:p-8` : ""}`
+}
+
       >
         {/* Image Card */}
         {card.type === "image" && (
@@ -1011,6 +1015,8 @@ useEffect(()=>{
                       </button>
                     </div>
                   </section>
+         
+
     </div>
   )
 }
