@@ -46,10 +46,10 @@ function TalentHub() {
         {/* Floating Images */}
         <div className="relative w-full max-w-5xl mt-12 px-4">
           {/* Floating avatars (unchanged) */}
-          <img src="/img1.svg" alt="profile1" className="absolute -top-[36rem] left-2 sm:-top-72 sm:left-8 md:-top-[28rem] lg:-top-[24rem] md:left-20 lg:-left-24 w-20 h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full object-cover" />
-          <img src="/img3.svg" alt="profile2" className="absolute top-0 left-2 sm:-top-8 sm:-left-4 md:-top-12 md:left-4 lg:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover" />
-          <img src="/img2.svg" alt="profile3" className="absolute -top-[36rem] right-2 sm:-top-72 md:-top-[30rem] sm:right-8 lg:-top-[26rem] lg:-right-36 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:36 lg:w-40 lg:h-40 rounded-full object-cover" />
-          <img src="/img4.svg" alt="profile4" className="absolute -bottom-20 right-4 sm:-top-4 md:-top-24 lg:-top-20 lg:-right-36 w-20 h-20 sm:w-24 sm:h-36 md:w-36 md:h-40 rounded-full object-cover" />
+          <img src="/img1.svg" alt="profile1" className="absolute -top-[20rem] left-2 sm:-top-72 sm:left-8 md:-top-[28rem] lg:-top-[24rem] md:left-20 lg:-left-24 w-20 h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full object-cover" />
+          <img src="/img3.svg" alt="profile2" className="absolute top-0 left-2 sm:-top-12 sm:-left-0 md:-top-12 md:left-4 lg:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover" />
+          <img src="/img2.svg" alt="profile3" className="absolute -top-[20rem] right-2 sm:-top-[20rem] md:-top-[30rem] sm:right-8 lg:-top-[26rem] lg:-right-36 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:36 lg:w-40 lg:h-40 rounded-full object-cover" />
+          <img src="/img4.svg" alt="profile4" className="absolute -bottom-20 right-4 sm:-top-20 md:-top-24 lg:-top-20 lg:-right-36 w-20 h-20 sm:w-20 sm:h-24 md:w-36 md:h-40 rounded-full object-cover" />
           <img src="/img5.svg" alt="profile5" className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover" />
         </div>
       </section>
@@ -142,9 +142,9 @@ function TalentHub() {
       xs:grid-cols-2
       sm:grid-cols-2
       
-      md:grid-cols-2
-      lg:grid-cols-4
-      gap-6 sm:gap-8 md:gap-10
+      lg:grid-cols-2
+      xl:grid-cols-4
+      gap-4 md:gap-6 lg:gap-8
       ml-4 sm:ml-10 lg:ml-20
       max-w-full lg:max-w-7xl
       overflow-x-visible

@@ -11,11 +11,11 @@ function ContactUs() {
     message: "",
   });
 
-  const location = {
+/* const location = {
     name: "DoelSoft",
     url: "https://www.google.com/maps/place/Manjeera+Trinity+Corporate/@17.4893763,78.3900814,17z",
     style: "left-[70%] md:left-[60%] top-[42%] md:top-[42%]",
-  };
+  }; */
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -173,17 +173,16 @@ function ContactUs() {
       </section>
 
       {/* Location Section */}
-      <section className="relative w-full h-[350px]  sm:h-[450px]  md:h-[550px]  bg-[#F4F6FB]"  >
+      <section className="relative w-full xl:w-screen  h-[350px]  md:h-[450px]  xl:h-[550px]  bg-[#F4F6FB]"  >
         <div className="relative w-[90%] md:w-[85%] lg:w-[80%] h-full">
           {/* Background Map */}
           <img
             src="/location4.svg"
             alt="World Map"
-            className="absolute inset-0 ml-6 w-full h-full object-contain "
-            style={{ objectPosition: "center right" }}
-          />
+            className="absolute inset-0 xl:ml-28 w-full h-full xl:w-[1202px] xl:h-[523px] object-contain "
+            />
 
-          {/* Location Pin */}
+          {/* Location Pin 
           <button
             onClick={() => window.open(location.url, "_blank")}
             className={`absolute ${location.style} w-6 h-6 sm:w-8 sm:h-8 ml-14 bg-red-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition`}
@@ -197,7 +196,7 @@ function ContactUs() {
             >
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
             </svg>
-          </button>
+          </button> */}
 
           
           

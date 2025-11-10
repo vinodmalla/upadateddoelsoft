@@ -100,10 +100,10 @@ return (
     />
   </div>
 </section>
-        <section className="w-screen h-auto lg:h-[657px] bg-[#F3F3F3] ">
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto">
+        <section className="w-screen h-auto xl:h-[657px] bg-[#F3F3F3] ">
+            <div className="flex flex-col xl:flex-row gap-8 items-center xl:items-end xl:gap-12 max-w-7xl mx-auto">
                 <div className="flex-1 space-y-8 mt-8">
-                    <h2 className="text-2xl md:text-[44px] md:whitespace-nowrap font-semibold font-kumbh text-black mt-8 ml-10 lg:-ml-5">
+                    <h2 className="text-2xl md:text-[44px] xl:whitespace-nowrap font-semibold font-kumbh text-black mt-8 ml-10 lg:-ml-5">
                       Doelsoft – Innovating Technology,
 
                     </h2>
@@ -114,12 +114,12 @@ return (
                        <p className="text-start md:w-[501px] md:h-40 text-base leading-6 font-normal text-black mt-12 ml-10 lg:-ml-5"> At Doelsoft, we turn challenges into opportunities. Our team works closely with clients to resolve complex  issues, scale operations efficiently, and implement innovative strategies that accelerate business growth. We  aim to transform every business vision into reality, leveraging technologically advanced solutions, expert professionals, and a commitment to excellence.
                     </p>
                 </div>
-                <div className="flex-1 flex items-end  lg::mt-0 lg:-mb-28" >
+                <div className="flex-1 flex items-end  xl::mt-0 xl:-mb-28" >
   <div className="w-[800px] h-[30rem] flex items-center justify-center bg-transparent" >
     <img
       src="/choosee1.svg"
       alt="ITStaffing"
-      className="object-contain h-full lg:mr-[440px] " 
+      className="xl:object-contain h-full xl:mr-[440px] " 
      
     />
   </div>
@@ -205,11 +205,13 @@ return (
             engagement models.
           </p>
         </div>
+        <div className='hidden xl:flex'>
         <img
           src="/Choose3.svg"
           alt="Expert Team"
           className="absolute md:-right-20 right-0 top-36 -translate-y-1/2 w-40  md:w-96 h-96 object-contain hidden md:block"
         />
+        </div>
       </div>
 
       {/* Card 5 */}

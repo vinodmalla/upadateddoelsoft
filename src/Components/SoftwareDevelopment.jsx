@@ -215,7 +215,7 @@ const SoftwareDevelopment = () => {
             </h2>
   
             <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
-              Tells Us your goals. We'll design the runway then deliver it with AI, Cloud, and Data.
+             Tell us your goals. We’ll design the runway then deliver it with AI, Cloud & Data.
             </p>
   
             <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out">

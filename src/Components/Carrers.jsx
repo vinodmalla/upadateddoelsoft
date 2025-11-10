@@ -104,7 +104,7 @@ function Carrers() {
   <img
     src="/carrerss.svg"
     alt="Career"
-    className="w-32 sm:w-auto md:w-auto lg:w-auto h-[120px] sm:h-[140px] md:h-[180px] lg:h-[220px] object-contain mx-auto md:-ml-6 md:mx-0"
+    className="w-92 sm:w-auto md:w-auto lg:w-auto h-[120px] sm:h-[140px] md:h-[180px] lg:h-[220px] object-contain mx-auto md:-ml-6 md:mx-0"
   />
 
   {/* Search + Filters */}
@@ -143,14 +143,14 @@ function Carrers() {
 
 
   {/* ===== Jobs Section ===== */}
-  <div className="flex flex-col lg:flex-row gap-8 px-4 md:px-12 py-8 md:ml-10 lg:ml-10 lg:flex-nowrap">
+  <div className="flex flex-col lg:flex-row gap-8 px-4 md:px-12 py-8 md:ml-10 xl:ml-12 lg:flex-nowrap">
     {/* Left: Job List */}
     <div className="w-full lg:w-1/2 p-4 overflow-hidden flex flex-col items-center lg:items-start">
       {jobs.map((job) => (
         <div
           key={job.id}
           onClick={() => setSelectedJob(job)}
-          className={`p-4 mb-4 border cursor-pointer w-full sm:w-[500px] lg:w-[540px] bg-white transition ${
+          className={`p-4 mb-4 border cursor-pointer w-full  xl:w-[540px] bg-white transition ${
             selectedJob.id === job.id
               ? "border-red-500 bg-red-50"
               : "border-gray-200 hover:bg-gray-100"
@@ -165,7 +165,7 @@ function Carrers() {
               </span>
             ))}
           </div>
-          <p className="text-gray-600 text-sm mt-3">{job.responsibility}</p>
+          <p className="text-gray-600  text-sm mt-3">{job.responsibility}</p>
         </div>
       ))}
     </div>
@@ -231,11 +231,11 @@ function Carrers() {
   </div>
 
   {/* ===== Resume Upload Section ===== */}
-   <div className="w-auto mx-4 sm:mx-8 md:ml-28 h-auto md:h-96 flex flex-col md:flex-row flex-wrap items-center justify-between bg-red-600 text-white px-4 sm:px-8 md:px-10 lg:px-16 py-10 md:py-14 gap-10">
+   <div className="w-auto h-auto mx-4 sm:mx-8 md:ml-28  md:h-96 flex flex-col md:flex-row flex-wrap items-center justify-between bg-red-600 text-white px-4 sm:px-8 md:px-10 lg:px-16 py-10 md:py-14 gap-10">
       
       {/* Left Text Section */}
       <div className="flex-1 text-center md:text-left space-y-4">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+        <h3 className="text-lg sm:text-xl md:text-2xl lg:3xl font-semibold">
           Didn’t find your fit job? <br /> No worries, upload your resume.
           <br /> We will get back with your <br />
           <span className="text-3xl sm:text-4xl md:text-5xl">FIT JOB.</span>
@@ -245,7 +245,7 @@ function Carrers() {
           <img
             src="/career_people.svg"
             alt="Careers Illustration"
-            className="w-40 sm:w-52 md:w-64 lg:w-[420px] h-auto md:ml-48 md:mt-[-6px]"
+            className="w-40 sm:w-52 md:w-64 lg:w-[420px] h-auto  xl:ml-48 lg:mt-[-6px]"
           />
         </div>
       </div>
@@ -286,7 +286,7 @@ function Carrers() {
 
 
       {/* ===== CTA Section ===== */}
-      <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */} <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" /> <img src="/left.svg" alt="left" className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30" /> <img src="/right.svg" alt="right" className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30" /> {/* Dark overlay */} <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div> {/* Main Content */} <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> <h2 className="text-xl md:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2"> 🌍 Build a <span className="font-semibold">Connected Future</span>{" "} with Doelsoft </h2> <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India. </p> <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out"> Talk to an Expert{" "} <ArrowUpRight className="border border-white rounded-full p-1" size={24} /> </button> </div> </section>
+      <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */} <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" /> <img src="/left.svg" alt="left" className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30" /> <img src="/right.svg" alt="right" className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30" /> {/* Dark overlay */} <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div> {/* Main Content */} <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2"> 🌍 Build a <span className="font-semibold">Connected Future</span>{" "} with Doelsoft </h2> <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India. </p> <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out"> Talk to an Expert{" "} <ArrowUpRight className="border border-white rounded-full p-1" size={24} /> </button> </div> </section>
     </div>
   );
 }

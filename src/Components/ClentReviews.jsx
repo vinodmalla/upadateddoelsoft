@@ -54,7 +54,7 @@ function ClientReviews() {
         <div className="relative bg-white shadow-[0px_10px_30px_rgba(0,0,0,0.05)] rounded-lg p-6 sm:p-8 w-full max-w-2xl z-50">
           {/* Name + Role + Stars */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
-            <div className="bg-white shadow-md p-6 sm:p-12 w-full text-center sm:text-left">
+            <div className="bg-white shadow-md p-6 sm:p-8 md:px-8 w-1/2 text-center sm:text-left">
               <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 font-inter">
                 {current.name}
               </h3>

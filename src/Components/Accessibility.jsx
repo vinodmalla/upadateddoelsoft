@@ -193,7 +193,7 @@ export default function Accessibility() {
       <section className="w-full bg-[#F4F6FB] flex items-center py-20 px-6 md:px-16 lg:px-28 mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
-            <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:-ml-1 font-semibold font-kumbh leading-[57.20px] text-black">
+            <h2 className="text-xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:-ml-1 font-semibold font-kumbh leading-[57.20px] text-black">
               Inclusive Digital Accessibility Solutions <br/> Powered by Human Expertise & AI
 
             </h2>
@@ -355,7 +355,7 @@ We go beyond fixing issues. We help you future-proof your digital platforms,<br/
       </section>
 
       {/* Why Choose Doelsoft Section */}
-      <section className="w-full bg-[#F4F6FA] py-10 md:mb-[-46px]">
+      <section className="w-full bg-[#F4F6FA] py-10 xl:mb-[-2px]">
         <div className="flex flex-col md:flex-row justify-center items-center max-w-7xl mx-auto px-4 gap-10">
           <div className="flex-1 md:ml-8 lg:-ml-7">
             <h1 className="font-kumbh text-2xl md:text-4xl font-semibold justify-start text-black leading-[57.20px">🎯 Why Choose Doelsoft?</h1>
@@ -380,51 +380,18 @@ We go beyond fixing issues. We help you future-proof your digital platforms,<br/
           </div>
         </div>
       </section>
-      
-                    <section
-                                className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-                                style={{
-                                  backgroundImage: "url('/Background2.svg')",
-                                  marginTop: "45px",
-                                }}
-                              >
-                                {/* Decorative Vectors */}
-                                <img
-                                  src="/Vectors.svg"
-                                  alt="vector"
-                                  className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
-                                />
-                                <img
-                                  src="/left.svg"
-                                  alt="left"
-                                  className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30"
-                                />
-                                <img
-                                  src="/right.svg"
-                                  alt="right"
-                                  className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
-                                />
-                        
-                                {/* Dark Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
-                        
-                                {/* Content */}
-                                <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-                                  <h2 className="text-xl md:text-4xl font-manrope font-bold whitespace-nowrap leading-snug px-2">
-                                     🚀 Accessibility + AI + Mobile + Inclusion = The Future of Digital
-                                  </h2>
-                        
-                                  <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
-                                   Start Your Inclusion Journey Today: <br/> 
-Request a free consultation or AI-driven accessibility scan validated by real users.
-                                  </p>
-                        
-                                  <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out">
-                                    Talk to an Expert{" "}
-                                    <ArrowUpRight className="border border-white rounded-full p-1" size={24} />
-                                  </button>
-                                </div>
-                              </section>
+            <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */}
+                          <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" /> 
+                          <img src="/left.svg" alt="left" className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30" /> 
+                          <img src="/right.svg" alt="right" className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30" /> {/* Dark overlay */}
+                           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div> {/* Main Content */} 
+                           <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> 
+                             <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">🚀 Accessibility + AI + Mobile + Inclusion = </h2>
+                             <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">The Future of Digital</h2>
+                              <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> Start Your Inclusion Journey Today: Request a free consultation or AI-driven accessibility scan validated by real users. </p>
+                               <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out"> Talk to an Expert{" "} <ArrowUpRight className="border border-white rounded-full p-1" size={24} /> </button>
+                                </div> 
+                                </section>
 
                     
     </div>
