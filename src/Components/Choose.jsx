@@ -119,7 +119,7 @@ return (
     <img
       src="/choosee1.svg"
       alt="ITStaffing"
-      className="xl:object-contain h-full xl:mr-[440px] " 
+      className="xl:object-contain w-[30rem] md:w-auto h-full xl:mr-[440px] " 
      
     />
   </div>

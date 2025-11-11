@@ -63,19 +63,19 @@ return (
     />
   </div>
 </section>
-        <section className="mx-auto px-16 md:px-24 mt-4 py-20 bg-[#F4F6FB] grid md:grid-cols-2 gap-10 items-center">
+        <section className="mx-auto px-16 md:px-24 mt-4 py-20 bg-[#F4F6FB] flex flex-col md:flex-row gap-10 items-center">
             <div className="space-y-6">
   <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-kumbh leading-[57.20px] text-black text-start md:ml-3 whitespace-normal lg:whitespace-nowrap">
     Doelsoft Mobile App Development <br /> Apps That Inspire Growth
   </h2>
 
-  <p className="text-black text-lg sm:text-xl font-inter font-normal leading-8 text-balance md:text-start md:ml-4">
+  <p className="text-black text-base sm:text-xl font-inter font-normal leading-8 text-balance md:text-start xl:ml-4">
     In today’s digital-first world, your customers are on mobile and your business should be too. At Doelsoft,
     a leading mobile app development company in the USA & India, we create mobile applications that are innovative,
     scalable, and customer-centric.
   </p>
 
-  <p className="text-black text-lg sm:text-xl font-inter font-normal leading-8 text-balance md:text-start md:ml-4">
+  <p className="text-black text-base sm:text-xl font-inter font-normal leading-8 text-balance md:text-start md:ml-4">
     From iOS and Android app development to cross-platform and enterprise mobility solutions, we bring together technology,
     creativity, and strategy to deliver apps that help businesses grow and users stay engaged.
   </p>

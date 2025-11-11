@@ -252,7 +252,7 @@ function WebDevelopment() {
           {/* Right Image */}
           <div className="flex-1 flex justify-center bg-[#F4F6FB]">
             <img
-              src="/womenWeb2.svg"
+              src="/womenweb2.svg"
               alt="Web Developer"
               className="w-full max-w-sm sm:max-w-md md:max-w-lg xl:w-[617px] xl:h-[769px]   xl:-mb-48"
             />

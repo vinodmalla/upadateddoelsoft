@@ -50,7 +50,7 @@ function Header() {
               key={item.name}
               className="relative"
               onMouseEnter={() => item.name === "solutions" && setIsSolutionsOpen(true)}
-              
+              onMouseLeave={()=>item.name !== "solutions" && setIsSolutionsOpen(false)}
             >
               <Link
                 to={item.path}
@@ -81,95 +81,95 @@ function Header() {
                       Solutions
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                      <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                    <Link onClick={()=>setIsSolutionsOpen(false)} to="/softwareDevelopment" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/c.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter ml-4 text-base font-normal">
                           Custom <br /> Software Development
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div> </Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/mobileDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/m.svg' alt="icon" className="w-5 h-5" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
                           Mobile App <br /> Development
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/s.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-semibold">
                           Salesforce <br /> Solutions
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesweb" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/w.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
                           Web Design & <br /> Development
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesuiux" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/u.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
                           UI/UX <br /> Design Services
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/digitalaccessibilit" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/d.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
                           Digital <br /> Accessibility
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesmicrosoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/ms.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter text-zinc-800 ml-4 text-base font-normal">
                            MicroSoft <br /> Solutions
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesmulesoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/mu.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
                           MuleSoft <br /> Solutions
                         </div>
-                      </div>
-                     <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                      <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesiot" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                       <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/i.svg' alt="icon" className="w-6 h-6 " />
                         </div>
                         <div className="font-inter ml-4 text-zinc-800 text-base font-normal">
                           IoT <br /> Solutions
                         </div>
-                      </div>
-                      <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesembedded" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/e.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
                       Embedded   <br /> Technologies
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesqa" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/q.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
                          Flawless  <br /> QA Services
                         </div>
-                      </div>
-                       <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      </div></Link>
+                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/a.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -177,7 +177,7 @@ function Header() {
                          Services <br />AI
 
                         </div>
-                      </div>
+                      </div></Link>
                     </div>
 
                     <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
