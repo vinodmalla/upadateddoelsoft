@@ -51,7 +51,7 @@ function ClientReviews() {
       {/* ====== Review + Image Section ====== */}
       <div className="mt-14 flex flex-col  lg:flex-row items-center justify-center gap-10 px-4 sm:px-8 lg:px-28 w-full">
         {/* ===== Left: Review Card ===== */}
-        <div className="relative bg-white shadow-[0px_10px_30px_rgba(0,0,0,0.05)] rounded-lg p-6 sm:p-8 w-full max-w-2xl z-50">
+        <div className="relative bg-white shadow-[0px_10px_30px_rgba(0,0,0,0.05)] p-6 sm:p-8 w-full max-w-2xl z-50">
           {/* Name + Role + Stars */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
             <div className="bg-white shadow-md p-6 sm:p-8 md:px-8 w-1/2 text-center sm:text-left">
@@ -79,7 +79,7 @@ function ClientReviews() {
           <img
             src="/Solution2.svg"
             alt="Client"
-            className="relative z-10 w-[240px] sm:w-[280px] md:w-[320px] lg:w-[555px] h-auto md:ml-0 lg:ml-[-150px]"
+            className="relative z-10 w-[240px] sm:w-[280px] md:w-[320px] lg:w-[555px] h-auto md:ml-0 lg:ml-[-170px]"
           />
 
           {/* Quote Icon */}

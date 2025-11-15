@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaInstagram, FaDiscord, FaGithub, FaBars, FaTimes } from "react-icons/fa";
+import { Users, Briefcase, UserCheck, UserSearch, FileSearch } from "lucide-react";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 
@@ -7,19 +8,30 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
 
-  // ✅ Dropdown state
+  // Dropdown States
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const [isTalentHubOpen, setIsTalentHubOpen] = useState(false);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
     setIsOpen(false);
-    if (link === "solutions") setIsSolutionsOpen(!isSolutionsOpen);
-    else setIsSolutionsOpen(false);
+
+    if (link === "solutions") {
+      setIsSolutionsOpen(!isSolutionsOpen);
+      setIsTalentHubOpen(false);
+    } else if (link === "talenthub") {
+      setIsTalentHubOpen(!isTalentHubOpen);
+      setIsSolutionsOpen(false);
+    } else {
+      setIsSolutionsOpen(false);
+      setIsTalentHubOpen(false);
+    }
   };
 
   return (
     <header className="fixed top-0 left-0 w-full z-[9999] bg-white p-[5px] shadow-none overflow-x-hidden">
       <div className="max-w-7xl mx-auto md:ml-3.5 flex items-center justify-between h-16 px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
+
         {/* Logo */}
         <div className="flex-shrink-0 flex items-center sm:ml-2 md:ml-4 lg:ml-14">
           <Link to="/" className="flex items-center">
@@ -31,7 +43,7 @@ function Header() {
           </Link>
         </div>
 
-        {/* Desktop & Tablet Nav */}
+        {/* Desktop Navigation */}
         <nav
           className="hidden md:flex items-center justify-center 
           md:space-x-4 lg:space-x-8 xl:ml-80 whitespace-nowrap"
@@ -49,8 +61,14 @@ function Header() {
             <div
               key={item.name}
               className="relative"
-              onMouseEnter={() => item.name === "solutions" && setIsSolutionsOpen(true)}
-              onMouseLeave={()=>item.name !== "solutions" && setIsSolutionsOpen(false)}
+              onMouseEnter={() => {
+                if (item.name === "solutions" && item.name !== "talenthub") setIsSolutionsOpen(true);
+                if (item.name === "talenthub" && item.name !== "solutions" ) setIsTalentHubOpen(true);
+              }}
+              onMouseLeave={() => {
+                if(item.name !=="solutions") setIsSolutionsOpen(false);
+                if (item.name !=="talenthub") setIsTalentHubOpen(false);
+              }}
             >
               <Link
                 to={item.path}
@@ -65,8 +83,8 @@ function Header() {
                   item.name.slice(1).replace("us", " us")}
               </Link>
 
-              {/* ✅ Solutions Dropdown (Desktop Hover) */}
-              {item.name === "solutions" && isSolutionsOpen && (
+              {/* SOLUTIONS DROPDOWN */}
+                  {item.name === "solutions" && isSolutionsOpen && (
                 <div
                   className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999] 
                              bg-white outline outline-1 outline-slate-200 
@@ -197,12 +215,107 @@ function Header() {
                   </div>
                 </div>
               )}
+
+              {/* TALENTHUB DROPDOWN */}
+              {item.name === "talenthub" && isTalentHubOpen && (
+                <div
+                  className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999]
+                             bg-white outline outline-1 outline-slate-200 
+                             w-[95vw] lg:w-[900px] p-6 lg:p-8 rounded-md 
+                             shadow-2xl overflow-auto max-h-[80vh]"
+                >
+                  <div className="absolute inset-0 bg-white/90 -z-10 backdrop-blur-sm"></div>
+
+                  <div className="text-neutral-400 text-sm font-normal mb-4">
+                    Talent Hub Solutions
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    {/* 1 IT Staffing */}
+                    <Link onClick={() => setIsTalentHubOpen(false)} to="/itstaffing">
+                      <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
+                        <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
+                          <Users className="w-6 h-6 text-zinc-800" />
+                        </div>
+                        <div className="ml-4 text-base font-normal">
+                          IT Staffing <br /> Solutions
+                        </div>
+                      </div>
+                    </Link>
+
+                    {/* 2 Contract Hiring */}
+                    <Link onClick={() => setIsTalentHubOpen(false)} to="/contract">
+                      <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
+                        <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
+                          <Briefcase className="w-6 h-6 text-zinc-800" />
+                        </div>
+                        <div className="ml-4 text-base font-normal">
+                          Contract & <br /> Temporary Hiring
+                        </div>
+                      </div>
+                    </Link>
+
+                    {/* 3 Permanent Hiring */}
+                    <Link onClick={() => setIsTalentHubOpen(false)} to="/permanent">
+                      <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
+                        <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
+                          <UserCheck className="w-6 h-6 text-zinc-800" />
+                        </div>
+                        <div className="ml-4 text-base font-normal">
+                          Permanent <br /> Hiring
+                        </div>
+                      </div>
+                    </Link>
+
+                    {/* 4 Executive Search */}
+                    <Link onClick={() => setIsTalentHubOpen(false)} to="/excutive">
+                      <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
+                        <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
+                          <UserSearch className="w-6 h-6 text-zinc-800" />
+                        </div>
+                        <div className="ml-4 text-base font-normal">
+                          Executive <br /> Search
+                        </div>
+                      </div>
+                    </Link>
+
+                    {/* 5 RPO */}
+                    <Link onClick={() => setIsTalentHubOpen(false)} to="/rpo">
+                      <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
+                        <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
+                          <FileSearch className="w-6 h-6 text-zinc-800" />
+                        </div>
+                        <div className="ml-4 text-base font-normal">
+                          RPO <br /> Services
+                        </div>
+                      </div>
+                    </Link>
+
+                  </div>
+
+                  <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 bg-indigo-600 rounded-2xl flex justify-center items-center">
+                        <img src="/key.svg" alt="key" className="w-4 h-4" />
+                      </div>
+                      <p className="text-zinc-800 text-sm font-normal">
+                        Find top talent today. <span className="text-zinc-500">Let’s connect.</span>
+                      </p>
+                    </div>
+                    <button className="h-8 px-4 bg-red-600 text-white text-sm font-medium rounded">
+                      Get Started
+                    </button>
+                  </div>
+
+                </div>
+              )}
+
             </div>
           ))}
         </nav>
 
-        {/* ✅ Close nav container */}
-        {/* Social Icons (Tablet & Desktop) */}
+        {/* Social Icons */}
         <div className="hidden md:flex items-center space-x-4 lg:space-x-5 xl:ml-36 ">
           <a href="/" className="p-2">
             <FaInstagram className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
@@ -219,8 +332,6 @@ function Header() {
         <button
           className="md:hidden text-2xl text-gray-700"
           onClick={() => setIsOpen(!isOpen)}
-          aria-expanded={isOpen}
-          aria-label="Toggle navigation menu"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -255,13 +366,9 @@ function Header() {
                 {item.name.charAt(0).toUpperCase() +
                   item.name.slice(1).replace("us", " us")}
               </Link>
-
-              {/* ✅ Solutions Dropdown (Mobile Tap) */}
-             
             </div>
           ))}
 
-          {/* Social Icons (Mobile) */}
           <div className="flex space-x-6 pt-4">
             <a href="/" className="p-2">
               <FaInstagram className="text-xl text-gray-700 hover:text-red-600" />
