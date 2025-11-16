@@ -5,6 +5,7 @@ import {
   FaTwitter,
   FaInfinity,
 } from "react-icons/fa";
+import logo from "../assets/logo.svg";
 
 export default function Footer() {
   return (
@@ -12,12 +13,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-5 gap-10">
 
         {/* Logo & Info */}
-        <div className="space-y-4">
+        <div className="space-y-2">
+  
           <div className="flex items-center gap-2">
-            <img src="/logo4.svg" alt="Doelsoft" className="h-10 w-auto" />
+            <img src={logo} alt="Doelsoft" className="h-8 w-36" />
           </div>
-          <h2 className="font-semibold text-gray-900">Doelsoft</h2>
-          <p className="text-gray-600">Targeting Tomorrow</p>
           <p className="text-gray-600">
             Hyderabad, India · <br /> Florida, USA
           </p>

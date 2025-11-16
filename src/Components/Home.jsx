@@ -106,7 +106,7 @@ function Home() {
     icon: "/Group_C.svg",
     title: "Customer 360 & Personalization",
     desc: "Unify customer data into one view for tailored experiences.",
-    type: "border",
+    type: "bg",
   },
 ];
     const Testimonial=[
@@ -234,7 +234,7 @@ useEffect(()=>{
 <section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-[50px] lg:mx-[70px] xl:mx-[80px] relative flex flex-col md:flex-col xl:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
-  <div className="w-full lg:w-1/2 space-y-6  lg:flex-col gap-6 md:gap-8 text-center lg:text-left md:mt-36">
+  <div className="w-full lg:w-1/2   lg:flex-col gap-6 md:gap-8 text-center lg:text-left md:mt-36">
     {CursolDetails.map((details, index) => (
       <div
         key={index}
@@ -242,12 +242,12 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full `}
       >
-        {index===0 && <p className={`font-inter  `}>Target Tomorrow with AI</p> }
+        {index===0 && <p className={`font-inter  ml-2 `}>Target Tomorrow with AI</p> }
         <h1 className="text-xl font-kumbh  lg:text-[30px] xl:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
           {details.h11}
           </h1>
       
-          <h2 className="text-red-600 font-kumbh block mt-2 text-2xl lg:text-3xl xl:text-4xl md:whitespace-nowrap md:text-[60px]  lg:text-[70px] leading-tight font-semibold">
+          <h2 className="text-red-600 font-kumbh block mt-4 text-2xl lg:text-3xl xl:text-[71.5px] md:whitespace-nowrap md:text-[60px]  lg:text-[70px] leading-tight font-semibold">
             {details.h22}
        
         </h2>
@@ -565,13 +565,13 @@ useEffect(()=>{
           <h3 className="text-lg text-white mb-2">Doelsoft</h3>
           <h2 className="text-3xl sm:text-[44px] font-kumbh font-medium text-white mb-8 sm:mb-12">How we work</h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-28">
             {steps.map((step, idx) => (
               <div
                 key={idx}
-                className="bg-red-600 text-white  p-8  flex flex-col justify-between shadow-lg hover:scale-105 transition-transform"
+                className="bg-red-600 text-white xl:h-[146px] xl:w-[290.28px] p-8  flex flex-col justify-between shadow-lg "
               >
-                <div className="flex flex-col items-start gap-3 mb-4">
+                <div className="flex flex-col items-start gap-3 ">
                   {step.icon}
                  
                   
@@ -594,13 +594,13 @@ useEffect(()=>{
 
       {/* Why Doelsoft Section - Responsive flex */}
       <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-12 md:py-20 overflow-hidden">
-  <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto">
+  <div className="flex flex-col lg:flex-row gap-8 xl:ml-1 xl:gap-16 max-w-7xl mx-auto">
     
     {/* LEFT SIDE */}
     <div className="flex-1 relative flex flex-col items-center justify-center lg:justify-start">
       
       {/* Floating logo */}
-      <div className="hidden xl:flex absolute right-4 sm:right-8 top-6 sm:top-10 z-50">
+      <div className="hidden xl:flex absolute right-4 xl:right-8 top-6 xl:top-10 z-50">
         <img src="/logo4.svg" alt="logo" className="w-20 sm:w-24 h-auto" />
       </div>
 
@@ -649,7 +649,7 @@ useEffect(()=>{
       <h1 className="font-semibold leading-6 text-2xl sm:text-[36px] md:text-[40px] lg:text-[44px] font-kumbh">
         Why Doelsoft
       </h1>
-      <p className="py-4 text-base sm:text-lg font-inter leading-relaxed max-w-[95%] mx-auto sm:mx-0">
+      <p className="py-4 text-base sm:text-lg xl:text-xl font-inter leading-relaxed max-w-[95%] mx-auto sm:mx-0">
         We turn AI, Cloud & Data into measurable outcomes shipping production systems with governance,
         security, and accessibility built in.
       </p>
@@ -657,7 +657,7 @@ useEffect(()=>{
       <h2 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl font-inter">
         Proof points
       </h2>
-      <ul className="list-disc list-inside font-inter text-black mt-4 space-y-2 text-sm sm:text-base leading-relaxed max-w-[95%] mx-auto sm:mx-0">
+      <ul className="list-disc list-inside font-inter text-black mt-4 space-y-2 text-sm sm:text-base xl:text-lg leading-relaxed max-w-[95%] mx-auto sm:mx-0">
         <li>Agile transformation</li>
         <li>Cost Reduction</li>
         <li>Focusing on customers centric goals</li>
@@ -678,7 +678,7 @@ useEffect(()=>{
   {/* Desktop / Tablet view */}
 
    
-  <div className="hidden md:flex flex-wrap gap-6 justify-center">
+  <div className="hidden md:flex flex-wrap gap-6 xl:-ml-[3rem] justify-center">
     {frames.map((frame, i) => (
       <div
         key={i}
@@ -699,7 +699,7 @@ useEffect(()=>{
     <div className='hidden xl:flex py-6 '>
     <img
       src="/Highlight1.svg"
-      className=" absolute w-20 z-30 mt-9 xl:left-[480px] top-[-100px]"
+      className=" absolute w-20 z-30 mt-9 xl:left-[400px] top-[-104px]"
       alt="highlight"
     />
 
@@ -741,7 +741,7 @@ useEffect(()=>{
   </div>
 
   {/* Card Grid */}
-  <div className="grid gird-col-1 md:grid-cols-2 justify-between gap-6 sm:gap-8 max-w-6xl mx-auto">
+  <div className="grid gird-col-1 md:grid-cols-2 justify-between ml-0 xl:ml-28 gap-6 sm:gap-8 max-w-6xl mx-auto">
     {cards.slice(0, 4).map((card, i) => (
       <div
         key={i}
@@ -802,7 +802,7 @@ useEffect(()=>{
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-red-900/60"></div>
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 max-w-6xl mx-auto">
-          <h1 className="text-2xl md:text-[44px] font-kumbh font-medium text-white leading-tight">
+          <h1 className="text-2xl md:text-[44px] xl:-ml-12 font-kumbh font-medium text-white leading-tight">
             Where Talent, Trust & <br className="hidden lg:block" /> Code Add Up
           </h1>
 
@@ -942,20 +942,20 @@ useEffect(()=>{
     </div>
 
     {/* IMAGE COLUMN */}
-    <div className="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
+    <div className="w-full lg:w-1/2 flex justify-center items-center mt-8 mr-48 lg:mt-0">
       <img
         src="/Solution.svg"
         alt="Solution Graphic"
         className="
           w-[90%] 
           sm:w-[80%] 
-          md:w-[70%] 
+          md:w-[90%] 
           lg:w-full 
           h-auto 
           max-h-[320px] 
           sm:max-h-[380px] 
           md:max-h-[420px] 
-          lg:max-h-[487px] 
+          lg:max-h-[587px] 
           object-contain 
           mx-auto 
           transition-all 
@@ -966,13 +966,14 @@ useEffect(()=>{
   </div>
 
   {/* CARDS GRID */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-6 sm:gap-8 md:gap-10 mt-14 sm:mt-16 xl:mt-1 px-2 sm:px-4 xl:px-8 mx-auto xl:ml-6  place-items-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 
+   lg:gap-6 xl:gap-8 mt-14 sm:mt-16 xl:mt-1 px-2 sm:px-4 xl:px-8 mx-auto xl:ml-6  place-items-center">
     {solutions.slice(1).map((item, i) => (
       <div
         key={i}
         className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] h-[250px] sm:h-[260px] md:h-[280px] mx-auto shadow-sm transition hover:shadow-md  ${
           item.type === "bg"
-            ? "bg-gray-100"
+            ? "bg-[#E2E7F1] border border-black"
             : "border border-red-500 bg-white"
         }`}
       >

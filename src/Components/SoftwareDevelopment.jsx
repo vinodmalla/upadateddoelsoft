@@ -7,7 +7,7 @@ const SoftwareDevelopment = () => {
   return (
     <div className="w-full font-kumbh bg-white mt-8 overflow-hidden">
           <section
-  className="relative w-full min-h-[550px] flex flex-col md:mt-20 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+  className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
   style={{
     backgroundImage: "url('/worldmap.svg')",
     backgroundSize: "cover",
@@ -29,7 +29,7 @@ const SoftwareDevelopment = () => {
   </div>
 
   {/* Right Image */}
-  <div className="mt-10 md:mt-16 flex justify-center md:justify-end flex-1">
+  <div className="mt-10 md:mt-14 flex justify-center md:justify-end flex-1">
     <img
       src="/SoftwareDevelopment.svg"
       alt="Team"
@@ -172,7 +172,7 @@ const SoftwareDevelopment = () => {
   </div>
 
   {/* Red Rectangle CTA */}
-  <div className="bg-red-600 text-white text-center max-w-9xl mx-auto md:-ml-8  mt-10 p-8 sm:p-10 md:p-12 text-2xl sm:text-3xl md:text-lg font-medium leading-9 font-kumbh">
+  <div className="bg-red-600 text-white text-center max-w-9xl mx-auto md:-ml-8  mt-10 p-8 sm:p-10 md:p-12 text-2xl sm:text-3xl md:text-lg font-medium whitespace-nowrap leading-9 font-kumbh">
     Choose Doelsoft for custom software crafted with your business at its
     heart, delivering solutions that empower growth and operational
     excellence.

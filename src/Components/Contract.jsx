@@ -223,7 +223,7 @@ return (
   </div>
 
   <div className="mt-6 p-6 sm:p-14 bg-red-600 text-white text-center">
-    <p className="text-sm sm:text-xl md:text-3xl font-kumbh font-medium leading-9">
+    <p className="text-sm sm:text-xl md:text-2xl font-kumbh font-medium leading-9">
       At Doelsoft, our values are not just words — they are the foundation of
       every decision, every interaction, and every success story we help create.
       Partner with us, and let's build not just your team, but your future.
