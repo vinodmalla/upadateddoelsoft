@@ -320,7 +320,7 @@ useEffect(()=>{
     {/* Highlight */}
     <img
       src="/Highlight.svg"
-      className="hidden lg:flex absolute z-30 bottom-10 lg:right-[340px]"
+      className="hidden xl:flex absolute z-30 bottom-14 xl:right-[360px]"
       alt="highlight"
     />
 
