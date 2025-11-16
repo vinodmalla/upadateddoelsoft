@@ -46,10 +46,10 @@ function TalentHub() {
         {/* Floating Images */}
         <div className="relative w-full max-w-5xl mt-12 px-4">
           {/* Floating avatars (unchanged) */}
-          <img src="/img1.svg" alt="profile1" className="absolute -top-[20rem] left-2 sm:-top-72 sm:left-8 md:-top-[28rem] lg:-top-[24rem] md:left-20 lg:-left-24 w-20 h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full object-cover" />
-          <img src="/img3.svg" alt="profile2" className="absolute top-0 left-2 sm:-top-12 sm:-left-0 md:-top-12 md:left-4 lg:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover" />
-          <img src="/img2.svg" alt="profile3" className="absolute -top-[20rem] right-2 sm:-top-[20rem] md:-top-[30rem] sm:right-8 lg:-top-[26rem] lg:-right-36 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:36 lg:w-40 lg:h-40 rounded-full object-cover" />
-          <img src="/img4.svg" alt="profile4" className="absolute -bottom-20 right-4 sm:-top-20 md:-top-24 lg:-top-20 lg:-right-36 w-20 h-20 sm:w-20 sm:h-24 md:w-36 md:h-40 rounded-full object-cover" />
+          <img src="/img1.svg" alt="profile1" className="absolute -top-[35rem] sm:-top-[30rem] left-2 md:-top-72 md:left-8 lg:-top-[28rem] xl:-top-[24rem] lg:left-20 xl:-left-24 w-20 h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full object-cover" />
+          <img src="/img3.svg" alt="profile2" className="absolute top-0 left-2 sm:-top-9 md:-top-12 md:-left-0 xl:-top-12 lg:left-4 xl:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover" />
+          <img src="/img2.svg" alt="profile3" className="absolute -top-[35rem] sm:-top-[30rem] right-2 md:-top-[20rem] lg:-top-[30rem] md:right-8 xl:-top-[26rem] xl:-right-36 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:36 lg:w-40 lg:h-40 rounded-full object-cover" />
+          <img src="/img4.svg" alt="profile4" className="absolute -bottom-20 sm:-top-9 right-4 md:-top-20 lg:-top-24 xl:-top-20 xl:-right-36 w-20 h-20 sm:w-20 sm:h-24 md:w-36 md:h-40 rounded-full object-cover" />
           <img src="/img5.svg" alt="profile5" className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover" />
         </div>
       </section>
@@ -79,7 +79,7 @@ function TalentHub() {
               <img src={service.image} alt={service.title} className="w-[28rem] h-96 object-cover" />
               <div className="p-4 text-center">
                 <Link to={service.link}>
-                  <h3 className="text-lg font-semibold font-kumbh md:text-2xl whitespace-nowrap">
+                  <h3 className="text-lg font-semibold font-kumbh md:text-2xl lg:whitespace-normal xl:whitespace-nowrap">
                     {service.title}
                   </h3>
                 </Link>
@@ -97,7 +97,7 @@ function TalentHub() {
               </Link>
               <div className="p-4 text-center">
                 <Link to={service.link}>
-                  <h3 className="text-lg font-semibold font-kumbh md:text-2xl whitespace-nowrap">
+                  <h3 className="text-sm lg:text-base xl:text-lg font-semibold font-kumbh md:text-2xl lg:whitespace-normal xl:whitespace-nowrap">
                     {service.title}
                   </h3>
                 </Link>
@@ -115,7 +115,7 @@ function TalentHub() {
               </Link>
               <div className="p-4 text-center">
                 <Link to={service.link}>
-                  <h3 className="text-lg font-semibold font-kumbh md:text-2xl whitespace-nowrap">
+                  <h3 className="text-sm lg:text-base xl:text-lg font-semibold font-kumbh md:text-2xl lg:whitespace-normal xl:whitespace-nowrapp">
                     {service.title}
                   </h3>
                 </Link>
@@ -179,7 +179,7 @@ function TalentHub() {
         className="border border-black p-1 px-2 sm:p-4 md:p-6 md:py-10 mx-2 sm:mx-4 md:mx-6 w-[90%] lg:ml-16 sm:w-[280px] md:w-72 h-auto md:h-64 text-left "
       >
         <img src={item.icon} className="w-14 h-14 mb-4" alt={item.title} />
-        <h3 className="text-lg md:text-xl mt-2 whitespace-nowrap font-extralight font-kumbh mb-2">
+        <h3 className="text-lg md:text-xl mt-2 xl:whitespace-nowrap font-extralight font-kumbh mb-2">
           {item.title}
         </h3>
         <p className="text-zinc-800 mt-6 text-base font-normal font-inter leading-6">
@@ -346,11 +346,11 @@ function TalentHub() {
 
   {/* Main Content */}
   <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-    <h2 className="text-xl md:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">
+    <h2  className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">
       Let's Build the Future Together
     </h2>
 
-    <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
+    <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
       Tells Us your goals. We'll design the runway then deliver it with AI, Cloud and Data.
     </p>
 

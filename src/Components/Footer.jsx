@@ -65,11 +65,12 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
           <ul className="space-y-2 text-gray-600">
+            <li><a href="/">Home</a></li>
             <li><a href="/chooseus">Why Choose Us</a></li>
             <li><a href="/carrers">Careers</a></li>
             <li><a href="/insights">Insights</a></li>
             <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/about">About Us</a></li>
+            
           </ul>
         </div>
 

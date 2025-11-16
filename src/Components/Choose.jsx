@@ -346,11 +346,11 @@ return (
                      
                        {/* Main Content */}
                        <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-                         <h2 className="text-xl md:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">
+                         <h2  className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">
                            Let's Build the Future Together
                          </h2>
                      
-                         <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
+                         <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
                            Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
                          </p>
                      

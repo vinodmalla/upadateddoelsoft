@@ -33,7 +33,7 @@ function Header() {
       <div className="max-w-7xl mx-auto md:ml-3.5 flex items-center justify-between h-16 px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
 
         {/* Logo */}
-        <div className="flex-shrink-0 flex items-center sm:ml-2 md:ml-4 lg:ml-14">
+        <div className="flex-shrink-0 flex items-center  xl:ml-14">
           <Link to="/" className="flex items-center">
             <img
               src={logo}
