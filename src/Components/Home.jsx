@@ -961,9 +961,9 @@ useEffect(()=>{
 
   {/* CARDS GRID */}
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 
-   lg:gap-6 xl:gap-8 mt-14 sm:mt-16 xl:mt-1 px-2 sm:px-4 xl:px-8 mx-auto xl:ml-3   place-items-center">
+   lg:gap-6 xl:gap-8 mt-14 sm:mt-16 xl:mt-1 px-2 sm:px-4 xl:px-8 mx-auto xl:ml-2   place-items-center">
     {solutions.slice(1).map((item, i) => (
-      <div
+      <di
         key={i}
         className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px]  sm:max-w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto shadow-sm transition hover:shadow-md  ${
           item.type === "bg"
@@ -982,7 +982,7 @@ useEffect(()=>{
         <p className="text-gray-600 font-normal text-sm leading-relaxed break-words">
           {item.desc}
         </p>
-      </div>
+      </di>
     ))}
 
     {/* CTA CARD */}
