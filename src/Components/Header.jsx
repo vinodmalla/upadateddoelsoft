@@ -16,16 +16,7 @@ function Header() {
     setActiveLink(link);
     setIsOpen(false);
 
-    if (link === "solutions") {
-      setIsSolutionsOpen(!isSolutionsOpen);
-      setIsTalentHubOpen(false);
-    } else if (link === "talenthub") {
-      setIsTalentHubOpen(!isTalentHubOpen);
-      setIsSolutionsOpen(false);
-    } else {
-      setIsSolutionsOpen(false);
-      setIsTalentHubOpen(false);
-    }
+   
   };
 
   return (
@@ -62,17 +53,17 @@ function Header() {
               key={item.name}
               className="relative"
               onMouseEnter={() => {
-                if (item.name === "solutions" && item.name !== "talenthub") setIsSolutionsOpen(true);
-                if (item.name === "talenthub" && item.name !== "solutions" ) setIsTalentHubOpen(true);
+                if (item.name === "solutions") setIsSolutionsOpen(true);
+               if (item.name === "talenthub") setIsTalentHubOpen(true);
               }}
               onMouseLeave={() => {
-                if(item.name !=="solutions") setIsSolutionsOpen(false);
-                if (item.name !=="talenthub") setIsTalentHubOpen(false);
+                if(item.name ==="solutions") setIsSolutionsOpen(false);
+                if (item.name ==="talenthub") setIsTalentHubOpen(false);
               }}
             >
               <Link
                 to={item.path}
-                onClick={() => handleLinkClick(item.name)}
+                onClick={()=>setActiveLink(item.name)}
                 className={`font-medium transition-colors ${
                   activeLink === item.name
                     ? "text-[#EF0E0E]"
@@ -85,6 +76,8 @@ function Header() {
 
               {/* SOLUTIONS DROPDOWN */}
                   {item.name === "solutions" && isSolutionsOpen && (
+                    <>
+                    <div className="absolute left-0 top-full w-full h-6"></div>
                 <div
                   className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999] 
                              bg-white outline outline-1 outline-slate-200 
@@ -214,10 +207,13 @@ function Header() {
                     </div>
                   </div>
                 </div>
+                </>
               )}
 
               {/* TALENTHUB DROPDOWN */}
               {item.name === "talenthub" && isTalentHubOpen && (
+                <>
+                <div className="absolute left-0 top-full w-full h-6"></div>
                 <div
                   className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999]
                              bg-white outline outline-1 outline-slate-200 
@@ -309,6 +305,7 @@ function Header() {
                   </div>
 
                 </div>
+                </>
               )}
 
             </div>

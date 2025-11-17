@@ -2,9 +2,9 @@ import React from 'react'
 import { ArrowUpRight } from "lucide-react"; // 
 function Contract() {
 return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end" >
+    <div className="w-full min-h-screen font-kumbh space-y-6 mt-10 flex flex-col justify-end" >
             <section
-  className="relative w-full min-h-[550px] lg:mt-2 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+  className="relative w-full min-h-[550px] xl:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
   style={{
     backgroundImage: "url('/worldmap.svg')",
     backgroundSize: "cover",
@@ -24,7 +24,8 @@ return (
   </div>
 
   {/* Right Image */}
-  <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
+
+  <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
     <img
      src="/Contract.svg"
       alt="Team"
@@ -93,13 +94,21 @@ return (
       </div>
 
       {/* Right Image */}
-      <div className="w-full md:w-1/2 flex justify-center md:mt-4 md:mr-10 md:justify-end">
+  
+      <div className="w-full md:w-1/2 flex justify-center md:mt-4 md:mr-52  md:justify-end">
         <img
           src="/Contract1.svg"
           alt="Contract"
           className="w-full sm:w-auto md:w-auto lg:w-3/4 h-auto object-contain md:object-cover md:h-80 ml-0 "
         />
       </div>
+             <div className="absolute right-6 xl:right-64 xl:mt-[-43px]  ">
+    <img
+      src="/logo4.svg"
+      alt="logo"
+      className="w-12 sm:w-16 md:w-20 h-auto "
+    />
+  </div>
     </div>
   </div>
 </section>

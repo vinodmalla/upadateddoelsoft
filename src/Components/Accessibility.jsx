@@ -160,10 +160,10 @@ export default function Accessibility() {
 ];
 
   return (
-    <div className="relative w-full mx-auto font-kumbh bg-white mt-8 overflow-hidden">
+    <div className="relative w-full mx-auto font-kumbh bg-white mt-10 overflow-hidden">
       {/* Hero Section */}
       <section
-        className="relative w-full min-h-[550px] flex flex-col md:mt-20 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+        className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
           backgroundSize: "cover",
@@ -180,7 +180,7 @@ export default function Accessibility() {
       Consult With Us <span className="ml-2">↗</span>
     </button>
         </div>
-        <div className="mt-10 md:mt-16 md:flex-1 flex justify-center md:justify-end relative z-0">
+        <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
             src="/Digitalaccessibility.svg"
             alt="Team"

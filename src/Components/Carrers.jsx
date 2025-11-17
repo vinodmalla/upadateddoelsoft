@@ -61,10 +61,10 @@ function Carrers() {
  
 
   return (
-    <div className="w-full min-h-screen overflow-hidden font-kumbh mt-16 flex flex-col space-y-6">
+    <div className="w-full min-h-screen overflow-hidden font-kumbh mt-8 flex flex-col space-y-6">
       {/* ===== Hero Section ===== */}
       <section
-        className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+        className="relative w-full min-h-[550px] flex flex-col xl:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
           backgroundSize: "cover",
@@ -72,7 +72,7 @@ function Carrers() {
         }}
       >
         {/* Left Content */}
-        <div className="relative z-10 flex-1 space-y-10 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+        <div className="relative z-10 flex-1 space-y-10 flex flex-col items-center xl:mt-4  md:items-start justify-center text-center md:text-left">
           <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[71.5px] font-semibold font-kumbh text-[#EF0E0E] leading-snug mb-8 md:-mt-20">
             DoelSoft Careers & <br /> <span>Opportunity</span>
           </h2>

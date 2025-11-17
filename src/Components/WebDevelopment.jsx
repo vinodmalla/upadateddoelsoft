@@ -31,10 +31,10 @@ function WebDevelopment() {
   ];
 
   return (
-    <div className="w-full font-kumbh bg-white mt-4 overflow-x-hidden">
+    <div className="w-full font-kumbh bg-white mt-10 overflow-x-hidden">
       {/* Hero Section */}
       <section
-        className="relative w-full min-h-[550px] flex flex-col md:mt-12 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+        className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
           backgroundSize: 'cover',
@@ -55,7 +55,7 @@ function WebDevelopment() {
         </div>
 
         {/* Right Image */}
-        <div className="mt-10 md:mt-16 md:flex-1 flex justify-center md:justify-end relative z-0">
+        <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
             src="/WebDevelopment.svg"
             alt="Web Development"

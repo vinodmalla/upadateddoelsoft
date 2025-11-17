@@ -67,11 +67,11 @@ const coreValues = [
   },
 ];
 return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col overflow-hidden justify-end">
+    <div className="w-full min-h-screen font-kumbh space-y-6 mt-8 flex flex-col overflow-hidden justify-end">
         
         
            <section
-   className="relative w-screen min-h-[100vh] sm:min-h-[550px] flex flex-col md:flex-row items-center justify-between bg-cover bg-center bg-no-repeat overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+   className="relative w-screen min-h-[100vh] sm:min-h-[550px] xl:mt-8 flex flex-col md:flex-row items-center justify-between bg-cover bg-center bg-no-repeat overflow-hidden py-10 px-6 md:px-16 lg:px-28"
   style={{
     backgroundImage: "url('/worldmap.svg')",
     backgroundSize: "cover",
@@ -81,7 +81,7 @@ return (
 >
   {/* Left Content */}
   <div className="relative z-10 flex-1 flex flex-col items-start justify-center text-center md:text-left">
-    <h2 className="text-3xl ml-[55px] sm:text-5xl md:text-6xl lg:text-[71.5PX] md:-mt-20 md:-ml-2 font-semibold font-kumbh text-[#EF0E0E] leading-snug mb-8">
+    <h2 className="text-3xl ml-[55px] sm:text-5xl md:text-6xl lg:text-[71.5PX] xl:-mt-20 md:-ml-2 font-semibold font-kumbh text-[#EF0E0E] leading-snug mb-8">
       Why Choose <br className="hidden sm:block" />
       <span className="block mt-2">Doelsoft</span>
     </h2>
@@ -92,7 +92,7 @@ return (
   </div>
 
   {/* Right Image */}
-  <div className="mt-10 md:mt-24 md:flex-1 flex justify-center md:justify-end relative z-0">
+  <div className="mt-10 xl:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
     <img
       src="/Choose1.svg"
       alt="Team"
@@ -266,7 +266,7 @@ return (
          <section className="w-full  py-12">
       <div className="max-w-7xl mx-auto6 lg:ml-20 px-6" style={{marginTop:"0px"}}>
         {/* Heading */}
-        <h2 className="text-3xl md:text-[44px] font-medium mb-12">Our Core Values</h2>
+        <h2 className="text-3xl md:text-[44px] font-semibold mb-12">Our Core Values</h2>
 
         {/* Cards + Image */}
         <div className="grid grid-cols-1 gap-10">

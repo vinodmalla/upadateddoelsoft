@@ -920,7 +920,7 @@ useEffect(()=>{
       {solutions.slice(0, 1).map((item, i) => (
         <div
           key={i}
-          className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] h-[250px] sm:h-[260px] md:h-[280px] mx-auto lg:-ml-8 xl:ml-3 mt-10 sm:mt-12 shadow-sm transition hover:shadow-md  ${
+          className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto lg:-ml-8 xl:ml-3 mt-10 sm:mt-12 shadow-sm transition hover:shadow-md  ${
             item.type === "bg"
               ? "bg-gray-100"
               : "border border-red-500 bg-white"
@@ -942,24 +942,18 @@ useEffect(()=>{
     </div>
 
     {/* IMAGE COLUMN */}
-    <div className="w-full lg:w-1/2 flex justify-center items-center mt-8 mr-48 lg:mt-0">
+    <div className=" w-full  flex justify-center items-center mt-8 xl:mr-24 xl:mt-0">
       <img
         src="/Solution.svg"
         alt="Solution Graphic"
         className="
-          w-[90%] 
-          sm:w-[80%] 
-          md:w-[90%] 
-          lg:w-full 
-          h-auto 
-          max-h-[320px] 
-          sm:max-h-[380px] 
-          md:max-h-[420px] 
-          lg:max-h-[587px] 
-          object-contain 
-          mx-auto 
-          transition-all 
-          duration-500
+        w-auto
+        h-auto
+        xl:h-[487px]
+        xl:w-[680px]
+        mx-auto 
+        transition-all 
+        duration-500
         "
       />
     </div>
@@ -967,11 +961,11 @@ useEffect(()=>{
 
   {/* CARDS GRID */}
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 
-   lg:gap-6 xl:gap-8 mt-14 sm:mt-16 xl:mt-1 px-2 sm:px-4 xl:px-8 mx-auto xl:ml-6  place-items-center">
+   lg:gap-6 xl:gap-8 mt-14 sm:mt-16 xl:mt-1 px-2 sm:px-4 xl:px-8 mx-auto xl:ml-3   place-items-center">
     {solutions.slice(1).map((item, i) => (
       <div
         key={i}
-        className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] h-[250px] sm:h-[260px] md:h-[280px] mx-auto shadow-sm transition hover:shadow-md  ${
+        className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px]  sm:max-w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto shadow-sm transition hover:shadow-md  ${
           item.type === "bg"
             ? "bg-[#E2E7F1] border border-black"
             : "border border-red-500 bg-white"
@@ -992,7 +986,7 @@ useEffect(()=>{
     ))}
 
     {/* CTA CARD */}
-    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col justify-between p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] h-[250px] sm:h-[260px] md:h-[280px] mx-auto sm:col-span-2 lg:col-span-1">
+    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col justify-between p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto sm:col-span-2 lg:col-span-1">
       <h3 className="font-semibold font-inter text-lg sm:text-xl md:text-2xl mt-6 sm:mt-8 text-center lg:text-left break-words">
         Talk to an Expert
         <br />

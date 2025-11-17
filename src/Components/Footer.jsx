@@ -18,6 +18,7 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <img src={logo} alt="Doelsoft" className="h-8 w-36" />
           </div>
+          <h1 className="font-semibold text-gray-900">Address</h1>
           <p className="text-gray-600">
             Hyderabad, India · <br /> Florida, USA
           </p>

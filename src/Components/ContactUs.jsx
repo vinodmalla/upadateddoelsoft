@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
-import MapTest from "./MapTest";
+
+import Map from "./Map";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -27,10 +28,10 @@ function ContactUs() {
   };
 
   return (
-    <div className="w-full min-h-screen overflow-hidden font-kumbh mt-16 flex flex-col space-y-6">
+    <div className="w-full min-h-screen overflow-hidden font-kumbh mt-8 flex flex-col space-y-6">
       {/* Hero Section */}
       <section
-        className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+        className="relative w-full min-h-[550px] flex flex-col md:flex-row md:mt-8 items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
           backgroundSize: "cover",
@@ -166,14 +167,14 @@ function ContactUs() {
 
   {/* Map Container */}
   {/* === MAP SECTION FIXED === */}
-<MapTest />
+<Map />
 </div>
 
         </div>
       </section>
 
       {/* Location Section */}
-    <section className="relative w-full bg-[#F4F6FB] flex justify-center items-center py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
+    <section className="relative w-full bg-white flex justify-center items-center py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
   <div className="relative w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] xl:w-[70%] max-w-[1400px]">
     
     {/* Background Map */}

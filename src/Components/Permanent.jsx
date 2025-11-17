@@ -3,10 +3,10 @@ import { ArrowUpRight } from 'lucide-react'
 
 function Permanent() {
   return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end">
+    <div className="w-full min-h-screen font-kumbh space-y-6 mt-8 flex flex-col justify-end">
       {/* HERO SECTION */}
       <section
-        className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"
+        className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
           backgroundSize: "cover",

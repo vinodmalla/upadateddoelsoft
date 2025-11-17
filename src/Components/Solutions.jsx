@@ -29,10 +29,10 @@ function Solutions() {
   
 
   return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end overflow-hidden">
+    <div className="w-full min-h-screen font-kumbh space-y-6 mt-8 flex flex-col justify-end overflow-hidden">
       {/* ================= HERO SECTION ================= */}
       <section
-        className="relative w-screen min-h-[100vh] sm:min-h-[550px] flex flex-col md:flex-row items-center justify-between bg-cover bg-center bg-no-repeat overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+        className="relative w-screen min-h-[100vh] sm:min-h-[550px] xl:mt-8 flex flex-col md:flex-row items-center justify-between bg-cover bg-center bg-no-repeat overflow-hidden py-10 px-6 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
         }}
@@ -48,7 +48,7 @@ function Solutions() {
           </button>
         </div>
 
-        <div className="mt-10 md:mt-24 flex justify-center md:justify-end flex-1">
+        <div className="mt-10 md:mt-14 flex justify-center md:justify-end flex-1">
           <img
             src="/Solutions.svg"
             alt="Team"
