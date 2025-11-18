@@ -3,7 +3,7 @@ import {
   FaLinkedin,
   FaFacebookMessenger,
   FaTwitter,
-  FaInfinity,
+  
 } from "react-icons/fa";
 import logo from "../assets/logo.svg";
 
@@ -20,14 +20,14 @@ export default function Footer() {
           </div>
           <h1 className="font-semibold text-gray-900">Address</h1>
           <p className="text-gray-600">
-            Hyderabad, India · <br /> Florida, USA
+            Office no:#104, first floor,<br/> manjeera trinity corporate,<br/> eSeva Ln, K P H B Phase 3,<br/> Kukatpally, Hyderabad, Telangana 500072 
           </p>
 
-          <div className="flex gap-4 text-gray-600 text-xl">
+          <div className="flex gap-4 mt-4 text-gray-600 text-xl">
             <a href="/"><FaLinkedin /></a>
             <a href="/"><FaFacebookMessenger /></a>
             <a href="/"><FaTwitter /></a>
-            <a href="/"><FaInfinity /></a>
+
           </div>
         </div>
 

@@ -561,7 +561,7 @@ useEffect(()=>{
         style={{
           backgroundImage: "url('/Mask group.svg')",
         }}>
-        <div className="max-w-6xl mx-auto md:mx-[91px] md:ml-[5rem] text-left">
+        <div className="max-w-6xl mx-auto md:mx-[91px] xl:ml-[5rem] text-left">
           <h3 className="text-lg text-white mb-2">Doelsoft</h3>
           <h2 className="text-3xl sm:text-[44px] font-kumbh font-medium text-white mb-8 sm:mb-12">How we work</h2>
 
@@ -741,7 +741,7 @@ useEffect(()=>{
   </div>
 
   {/* Card Grid */}
-  <div className="grid gird-col-1 md:grid-cols-2 justify-between ml-0 xl:ml-28 gap-6 sm:gap-8 max-w-6xl mx-auto">
+  <div className="grid gird-col-1 md:grid-cols-2 justify-between ml-0 xl:ml-28 gap-6 sm:gap-8 max-w-[77rem] ">
     {cards.slice(0, 4).map((card, i) => (
       <div
         key={i}
@@ -842,10 +842,10 @@ useEffect(()=>{
   {/* Heading + CTA */}
   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 max-w-7xl mx-auto gap-6 sm:gap-8">
     <div className="flex-1 mb-6 space-y-4 lg:mb-0 text-center lg:text-left">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-kumbh md:-ml-3 font-semibold leading-tight tracking-[-0.03em] text-black">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-kumbh xl:-ml-5 font-semibold leading-tight tracking-[-0.03em] text-black">
         Doelsoft Insights & Thought Leadership
       </h2>
-      <p className="text-gray-800 mt-2 md:mt-4 md:-ml-3 max-w-2xl mx-auto lg:mx-0 text-sm sm:text-base md:text-lg leading-relaxed font-inter px-2">
+      <p className="text-gray-800 mt-2 md:mt-4 xl:-ml-4 max-w-2xl mx-auto lg:mx-0 text-sm sm:text-base md:text-lg leading-relaxed font-inter px-2">
         Practical playbooks from the field AI, Cloud & Data patterns that ship results.
       </p>
     </div>
@@ -908,11 +908,11 @@ useEffect(()=>{
     
     {/* TEXT + FIRST CARD COLUMN */}
     <div className="w-full lg:w-1/2 py-4 sm:py-8 text-center lg:text-left">
-      <h2 className="text-2xl sm:text-3xl md:text-[44px] lg:-ml-8 xl:ml-2 font-semibold font-kumbh text-gray-900 mb-2 break-words">
+      <h2 className="text-2xl sm:text-3xl md:text-[44px] lg:-ml-8 xl:ml-1 font-semibold font-kumbh text-gray-900 mb-2 break-words">
         Featured Solutions
       </h2>
 
-      <p className="text-gray-600 font-inter text-sm sm:text-base md:text-lg mt-4 lg:-ml-8 xl:ml-3 max-w-[95%] sm:max-w-xl mx-auto lg:mx-0 leading-relaxed break-words">
+      <p className="text-gray-600 font-inter text-sm sm:text-base md:text-lg mt-3 lg:-ml-8 xl:ml-3 max-w-[95%] sm:max-w-xl mx-auto lg:mx-0 leading-relaxed break-words">
         Opinionated, production-ready solutions that turn <br className="hidden sm:block" /> 
         AI, Cloud & Data into outcomes fast.
       </p>
@@ -920,7 +920,7 @@ useEffect(()=>{
       {solutions.slice(0, 1).map((item, i) => (
         <div
           key={i}
-          className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto lg:-ml-8 xl:ml-3 mt-10 sm:mt-12 shadow-sm transition hover:shadow-md  ${
+          className={`p-6 sm:p-8 md:p-10 w-full  sm:w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto lg:-ml-8 xl:ml-2 mt-10 sm:mt-12 shadow-sm transition hover:shadow-md  ${
             item.type === "bg"
               ? "bg-gray-100"
               : "border border-red-500 bg-white"
@@ -960,12 +960,12 @@ useEffect(()=>{
   </div>
 
   {/* CARDS GRID */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 
-   lg:gap-6 xl:gap-8 mt-14 sm:mt-16 xl:mt-1 px-2 sm:px-4 xl:px-8 mx-auto xl:ml-2   place-items-center">
+  <div className='mt-10 xl:mt-2 xl:ml-[4rem] '>
+ <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 xl:gap-8">
     {solutions.slice(1).map((item, i) => (
-      <di
+      <div
         key={i}
-        className={`p-6 sm:p-8 md:p-10 w-full max-w-[360px]  sm:max-w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto shadow-sm transition hover:shadow-md  ${
+        className={`p-6 sm:p-8 md:p-10 w-full sm:w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px]  shadow-sm transition hover:shadow-md  ${
           item.type === "bg"
             ? "bg-[#E2E7F1] border border-black"
             : "border border-red-500 bg-white"
@@ -982,11 +982,11 @@ useEffect(()=>{
         <p className="text-gray-600 font-normal text-sm leading-relaxed break-words">
           {item.desc}
         </p>
-      </di>
+      </div>
     ))}
 
     {/* CTA CARD */}
-    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col justify-between p-6 sm:p-8 md:p-10 w-full max-w-[360px] sm:max-w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto sm:col-span-2 lg:col-span-1">
+    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col justify-between p-6 sm:p-8 md:p-10 w-full  sm:w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px]   lg:col-span-1">
       <h3 className="font-semibold font-inter text-lg sm:text-xl md:text-2xl mt-6 sm:mt-8 text-center lg:text-left break-words">
         Talk to an Expert
         <br />
@@ -995,6 +995,7 @@ useEffect(()=>{
         </button>
       </h3>
     </div>
+  </div>
   </div>
 </section>
 

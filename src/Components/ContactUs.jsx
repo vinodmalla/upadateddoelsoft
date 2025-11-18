@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { FaLocationDot } from "react-icons/fa6";
 
 import Map from "./Map";
 
@@ -12,11 +13,11 @@ function ContactUs() {
     message: "",
   });
 
-/* const location = {
+ const location = {
     name: "DoelSoft",
-    url: "https://www.google.com/maps/place/Manjeera+Trinity+Corporate/@17.4893763,78.3900814,17z",
-    style: "left-[70%] md:left-[60%] top-[42%] md:top-[42%]",
-  }; */
+    url: "https://www.google.com/maps/dir//Manjeera+Trinity+Corporate,+eSeva+Ln,+K+P+H+B+Phase+3,+Kukatpally,+Hyderabad,+Telangana+500072/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bcb918dab342375:0x180a04af0c47f594?sa=X&ved=1t:57443&ictx=111",
+    style: "left-[70%] md:left-[60%] top-[42%] md:top-[46%]",
+  }; 
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -179,28 +180,21 @@ function ContactUs() {
     
     {/* Background Map */}
     <img
-      src="/location4.svg"
+      src="/location6.png"
       alt="World Map"
       className="w-full h-auto object-contain mx-auto select-none"
     />
 
     {/* Example Location Pin (Enable when needed) */}
-    {/* 
+    
     <button
       onClick={() => window.open(location.url, "_blank")}
       className="absolute top-[40%] left-[60%] w-5 h-5 sm:w-6 sm:h-6 bg-red-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform"
-      title="New York"
+      title="Doelsoft"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="white"
-        viewBox="0 0 24 24"
-        className="w-3 h-3 sm:w-4 sm:h-4"
-      >
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
-      </svg>
+    <FaLocationDot  size={40}/>
     </button>
-    */}
+    
   </div>
 </section>
 
