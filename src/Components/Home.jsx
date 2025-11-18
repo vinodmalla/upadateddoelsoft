@@ -215,7 +215,7 @@ useEffect(()=>{
 
     
   return (
-    <div className='w-full h-full overflow-x-hidden mt-2 '>
+    <div className='w-full h-full overflow-x-hidden mt-2 xl:-mt-10 '>
       {/* Hero Section - Responsive with equal spacing */}
        <div className="hidden md:flex flex-col  pb-[180px] gap-2 absolute right-20 top-1/2 ml-6 -translate-y-1/2">
     {CursolDetails.map((_, index) => (
@@ -242,7 +242,7 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full `}
       >
-        {index===0 && <p className={`font-inter  ml-2 `}>Target Tomorrow with AI</p> }
+        {index===0 && <p className={`font-inter text-xl  ml-2 `}>Transform Today.Target Tomorrow with AI</p> }
         <h1 className="text-xl font-kumbh  lg:text-[30px] xl:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
           {details.h11}
           </h1>
@@ -684,7 +684,7 @@ useEffect(()=>{
         key={i}
         className="flex flex-row bg-white shadow-xl px-4 py-3 justify-between flex-1 min-w-[200px] max-w-[300px]"
       >
-        <div className="flex flex-row gap-2 mt-3 items-center whitespace-nowrap">
+        <div className="flex flex-row gap-4 mt-3 items-center whitespace-nowrap">
           <img
             src="/F1.svg"
             alt={frame}

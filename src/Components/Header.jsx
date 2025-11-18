@@ -92,7 +92,8 @@ function Header() {
                       Solutions
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <Link onClick={()=>setIsSolutionsOpen(false)} to="/softwareDevelopment" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                    <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/softwareDevelopment" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/c.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -100,7 +101,8 @@ function Header() {
                           Custom <br /> Software Development
                         </div>
                       </div> </Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/mobileDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/mobileDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/m.svg' alt="icon" className="w-5 h-5" />
                         </div>
@@ -108,7 +110,8 @@ function Header() {
                           Mobile App <br /> Development
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/s.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -116,7 +119,8 @@ function Header() {
                           Salesforce <br /> Solutions
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesweb" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/servicesweb" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/w.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -124,7 +128,8 @@ function Header() {
                           Web Design & <br /> Development
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesuiux" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/servicesuiux" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/u.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -132,7 +137,8 @@ function Header() {
                           UI/UX <br /> Design Services
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/digitalaccessibilit" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/digitalaccessibilit" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/d.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -140,7 +146,8 @@ function Header() {
                           Digital <br /> Accessibility
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesmicrosoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/servicesmicrosoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/ms.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -148,7 +155,8 @@ function Header() {
                            MicroSoft <br /> Solutions
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesmulesoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/servicesmulesoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/mu.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -156,7 +164,8 @@ function Header() {
                           MuleSoft <br /> Solutions
                         </div>
                       </div></Link>
-                      <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesiot" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/servicesiot" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                       <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/i.svg' alt="icon" className="w-6 h-6 " />
                         </div>
@@ -164,7 +173,8 @@ function Header() {
                           IoT <br /> Solutions
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesembedded" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/servicesembedded" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/e.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -172,7 +182,8 @@ function Header() {
                       Embedded   <br /> Technologies
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/servicesqa" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/servicesqa" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/q.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -180,7 +191,8 @@ function Header() {
                          Flawless  <br /> QA Services
                         </div>
                       </div></Link>
-                       <Link onClick={()=>setIsSolutionsOpen(false)} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                       <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("solutions")}} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/a.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -229,7 +241,8 @@ function Header() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                     {/* 1 IT Staffing */}
-                    <Link onClick={() => setIsTalentHubOpen(false)} to="/itstaffing">
+                    <Link onClick={() => {setIsTalentHubOpen(false)
+                       setActiveLink("talenthub")  }} to="/itstaffing">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <Users className="w-6 h-6 text-zinc-800" />
@@ -241,7 +254,8 @@ function Header() {
                     </Link>
 
                     {/* 2 Contract Hiring */}
-                    <Link onClick={() => setIsTalentHubOpen(false)} to="/contract">
+                    <Link onClick={() => {setIsTalentHubOpen(false)
+                       setActiveLink("talenthub")  }}  to="/contract">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <Briefcase className="w-6 h-6 text-zinc-800" />
@@ -253,7 +267,8 @@ function Header() {
                     </Link>
 
                     {/* 3 Permanent Hiring */}
-                    <Link onClick={() => setIsTalentHubOpen(false)} to="/permanent">
+                    <Link onClick={() => {setIsTalentHubOpen(false)
+                       setActiveLink("talenthub")  }}  to="/permanent">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <UserCheck className="w-6 h-6 text-zinc-800" />
@@ -265,7 +280,8 @@ function Header() {
                     </Link>
 
                     {/* 4 Executive Search */}
-                    <Link onClick={() => setIsTalentHubOpen(false)} to="/excutive">
+                    <Link onClick={() => {setIsTalentHubOpen(false)
+                       setActiveLink("talenthub")  }}  to="/excutive">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <UserSearch className="w-6 h-6 text-zinc-800" />
@@ -277,7 +293,8 @@ function Header() {
                     </Link>
 
                     {/* 5 RPO */}
-                    <Link onClick={() => setIsTalentHubOpen(false)} to="/rpo">
+                    <Link onClick={() => {setIsTalentHubOpen(false)
+                       setActiveLink("talenthub")  }}  to="/rpo">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <FileSearch className="w-6 h-6 text-zinc-800" />
