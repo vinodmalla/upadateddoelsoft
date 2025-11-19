@@ -9,7 +9,7 @@ import {useState, useEffect } from 'react'
 import { RxAvatar } from "react-icons/rx";
 import mask from "../assets/mask.svg";
 import BFSI from "../assets/BFSI.svg";
-
+import { Link } from 'react-router'
 import ECommerce from "../assets/E-Commerce.svg";
 import { ArrowUpRight } from "lucide-react";
 import Startups from "../assets/Startups.svg";
@@ -242,7 +242,7 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full `}
       >
-        {index===0 && <p className={`font-inter text-xl  ml-2 `}>Transform Today.Target Tomorrow with AI</p> }
+        {index===0 && <p className={`font-inter text-xl  ml-2 `}>AI-Powered Strategies to Target Tomorrow</p> }
         <h1 className="text-xl font-kumbh  lg:text-[30px] xl:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
           {details.h11}
           </h1>
@@ -257,18 +257,18 @@ useEffect(()=>{
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-          <button
+        <Link to="/solutions"> <button
             type="button"
             className="bg-red-600 font-inter font-normal text-white px-6 sm:px-8 py-3  transition-colors duration-200 border border-transparent hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-red-600"
           >
             Explore Solutions ↗
-          </button>
-          <button
+          </button></Link> 
+         <Link to="/contact" > <button
             type="button"
             className="bg-white font-inter  text-black px-6 sm:px-8 py-3 font-medium border border-black transition-colors duration-200 hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
           >
             Consult with Us ↗
-          </button>
+          </button></Link>
         </div>
 
         {/* Logos */}
@@ -415,12 +415,12 @@ useEffect(()=>{
       {services.map((service, i) => (
         <div
           key={i}
-          className="flex flex-col items-center hover:scale-105 duration-300 md:mt-6 text-center"
+          className="flex flex-col items-center  md:mt-6 text-center"
         >
           <img
             src={service.logo}
             alt={service.title}
-            className="w-28 sm:w-32 md:w-36 lg:w-52 h-auto object-contain"
+            className="w-28 sm:w-32 md:w-36 lg:w-52 xl:h-[205.51px] h-auto object-contain"
           />
           <p className="text-white bg-red-600 py-1 px-2 sm:py-1.5 sm:px-3 md:py-2 md:px-4 w-28 sm:w-32 md:w-36 lg:w-52 text-xs sm:text-sm md:text-base text-center leading-snug ">
             {service.title}
@@ -580,9 +580,9 @@ useEffect(()=>{
                 <div className="flex flex-row justify-between gap-3 ">
                    
                        <h3 className="text-xl font-kumbh font-medium">{step.title}</h3>
-                  <button className="w-8 h-8 flex items-center justify-center rounded-full  border border-white hover:bg-white hover:text-red-600 transition">
+                  <p className="w-8 h-8 flex items-center justify-center rounded-full  border border-white ">
                     →
-                  </button>
+                  </p>
                 </div>
                 <p className="text-sm mb-6 mt-2 font-inter whitespace-normal xl:whitespace-nowrap leading-relaxed">{step.desc}</p>
                
@@ -1039,13 +1039,13 @@ useEffect(()=>{
                         Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
                       </p>
                   
-                      <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                     <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
                         Talk to an Expert{" "}
                         <ArrowUpRight
                           className="border border-white rounded-full p-1"
                           size={24}
                         />
-                      </button>
+                      </button> </Link>
                     </div>
                   </section>
          

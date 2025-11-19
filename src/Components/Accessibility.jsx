@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router";
 
 export default function Accessibility() {
   const items = [
@@ -41,7 +42,7 @@ export default function Accessibility() {
     },
     {
       title: "Certified Expertise:",
-      desc: "DHS Trusted Tester, AODA, WCAG, Section 508, EN 301 549.",
+      desc: "DHS Trusted Tester, AODA, WCAG(2.x), Section 508, EN 301 549.",
     },
     {
       title: "Real-User Validation:",
@@ -176,9 +177,9 @@ export default function Accessibility() {
             Doelsoft <br />
             <span className="block mt-4">Digital Accessibility</span>
           </h2>
-         <button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+        <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>
-    </button>
+    </button></Link>
         </div>
         <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
@@ -389,7 +390,13 @@ We go beyond fixing issues. We help you future-proof your digital platforms,<br/
                              <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">🚀 Accessibility + AI + Mobile + Inclusion = </h2>
                              <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">The Future of Digital</h2>
                               <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> Start Your Inclusion Journey Today: Request a free consultation or AI-driven accessibility scan validated by real users. </p>
-                               <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out"> Talk to an Expert{" "} <ArrowUpRight className="border border-white rounded-full p-1" size={24} /> </button>
+                              <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                        Talk to an Expert{" "}
+                        <ArrowUpRight
+                          className="border border-white rounded-full p-1"
+                          size={24}
+                        />
+                      </button> </Link>
                                 </div> 
                                 </section>
 

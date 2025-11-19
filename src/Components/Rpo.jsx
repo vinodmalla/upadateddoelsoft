@@ -1,5 +1,7 @@
 import React from 'react'
 import { ArrowUpRight } from 'lucide-react'
+import { Link } from 'react-router';
+
 
 function Rpo() {
   return (
@@ -23,9 +25,9 @@ function Rpo() {
             RPO
           </h2>
 
-          <button className="py-3 sm:py-4 px-6 sm:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
-            Consult With Us <span className="ml-2">↗</span>
-          </button>
+            <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+      Consult With Us <span className="ml-2">↗</span>
+    </button></Link>
         </div>
 
         {/* Right Image */}
@@ -188,10 +190,13 @@ function Rpo() {
                  Tells Us your goals. We'll design the runway then deliver it with AI, Cloud, and Data.
                </p>
      
-               <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out">
-                 Talk to an Expert{" "}
-                 <ArrowUpRight className="border border-white rounded-full p-1" size={24} />
-               </button>
+              <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                        Talk to an Expert{" "}
+                        <ArrowUpRight
+                          className="border border-white rounded-full p-1"
+                          size={24}
+                        />
+                      </button> </Link>
              </div>
            </section>
     </div>

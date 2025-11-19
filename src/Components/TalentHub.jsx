@@ -35,12 +35,12 @@ function TalentHub() {
 
         {/* Buttons */}
         <div className="mt-24 flex flex-wrap justify-center gap-8 z-10 relative px-4">
-          <button className="transition-all duration-300 ease-in-out flex items-center gap-2 bg-[#EF0E0E] text-white px-12 py-5 font-medium hover:bg-gray-600 focus:outline-none">
+         <Link to="/"> <button className="transition-all duration-300 ease-in-out flex items-center gap-2 bg-[#EF0E0E] text-white px-12 py-5 font-medium hover:bg-gray-600 focus:outline-none">
             About Doelsoft <ArrowUpRight size={18} />
-          </button>
-          <button className="transition-all duration-300 ease-in-out flex items-center gap-2 border border-gray-600 px-12 py-5 font-medium hover:bg-[#EF0E0E] hover:text-white focus:outline-none">
+          </button></Link>
+         <Link to="/contact"> <button className="transition-all duration-300 ease-in-out flex items-center gap-2 border border-gray-600 px-12 py-5 font-medium hover:bg-[#EF0E0E] hover:text-white focus:outline-none">
             Consult With Us <ArrowUpRight size={18} />
-          </button>
+          </button></Link>
         </div>
 
         {/* Floating Images */}
@@ -354,10 +354,13 @@ function TalentHub() {
       Tells Us your goals. We'll design the runway then deliver it with AI, Cloud and Data.
     </p>
 
-    <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out">
-      Talk to an Expert{" "}
-      <ArrowUpRight className="border border-white rounded-full p-1" size={24} />
-    </button>
+    <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                        Talk to an Expert{" "}
+                        <ArrowUpRight
+                          className="border border-white rounded-full p-1"
+                          size={24}
+                        />
+                      </button> </Link>
   </div>
 </section>
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import { ArrowUpRight } from "lucide-react";
+import { Link } from 'react-router';
+
 
 function IoTDevelopment() {
    const features = [
@@ -54,9 +56,9 @@ function IoTDevelopment() {
                           <span className="block mt-2"> IoT Solutions</span>
                       </h2>
   
-                      <button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
-                          Consult With Us <span className="ml-2">↗</span>
-                      </button>
+                       <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+      Consult With Us <span className="ml-2">↗</span>
+    </button></Link>
                   </div>
   
                   <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
@@ -296,7 +298,13 @@ function IoTDevelopment() {
                                                      <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> 
                                                        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">🌍   Build a Connected Future with Doelsoft</h2>
                                                         <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2">👉 Partner with Doelsoft – Your trusted IoT services company in the USA & India </p>
-                                                         <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out"> Talk to an Expert{" "} <ArrowUpRight className="border border-white rounded-full p-1" size={24} /> </button>
+                                                         <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                        Talk to an Expert{" "}
+                        <ArrowUpRight
+                          className="border border-white rounded-full p-1"
+                          size={24}
+                        />
+                      </button> </Link>
                                                           </div> 
                                                           </section>
           </div>

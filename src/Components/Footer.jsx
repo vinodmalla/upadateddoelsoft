@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <h1 className="font-semibold text-gray-900">Address</h1>
           <p className="text-gray-600">
-            Office no:#104, first floor,<br/> manjeera trinity corporate,<br/> eSeva Ln, K P H B Phase 3,<br/> Kukatpally, Hyderabad, Telangana 500072 
+            Hyderabad, India,<br/> Florida,USA
           </p>
 
           <div className="flex gap-4 mt-4 text-gray-600 text-xl">
@@ -55,9 +55,9 @@ export default function Footer() {
           <h3 className="font-semibold text-gray-900 mb-4">Talent Hub</h3>
           <ul className="space-y-2 text-gray-600">
             <li><a href="/itstaffing">IT Staffing Solutions</a></li>
-            <li><a href="/contractHiring">Contract & Temporary Hiring</a></li>
-            <li><a href="/permanentHiring">Permanent Hiring</a></li>
-            <li><a href="/executiveSearch">Executive Search</a></li>
+            <li><a href="/contract">Contract & Temporary Hiring</a></li>
+            <li><a href="/permanent">Permanent Hiring</a></li>
+            <li><a href="/excutive">Executive Search</a></li>
             <li><a href="/rpo">RPO Services</a></li>
           </ul>
         </div>

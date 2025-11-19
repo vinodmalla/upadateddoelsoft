@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowUpRight, Upload } from "lucide-react";
+import { Link } from "react-router";
 
 function Carrers() {
   const jobs = [
@@ -76,9 +77,9 @@ function Carrers() {
           <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[71.5px] font-semibold font-kumbh text-[#EF0E0E] leading-snug mb-8 md:-mt-20">
             DoelSoft Careers & <br /> <span>Opportunity</span>
           </h2>
-          <button className="py-3 sm:py-4 px-8 sm:px-10 border border-black text-black hover:bg-gray-200 transition-all duration-200">
-            Consult With Us <span className="ml-2">↗</span>
-          </button>
+           <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+      Consult With Us <span className="ml-2">↗</span>
+    </button></Link>
         </div>
 
         {/* Right Image */}
@@ -286,7 +287,15 @@ function Carrers() {
 
 
       {/* ===== CTA Section ===== */}
-      <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */} <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" /> <img src="/left.svg" alt="left" className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30" /> <img src="/right.svg" alt="right" className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30" /> {/* Dark overlay */} <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div> {/* Main Content */} <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2"> 🌍 Build a <span className="font-semibold">Connected Future</span>{" "} with Doelsoft </h2> <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India. </p> <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out"> Talk to an Expert{" "} <ArrowUpRight className="border border-white rounded-full p-1" size={24} /> </button> </div> </section>
+      <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */} <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" /> <img src="/left.svg" alt="left" className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30" /> <img src="/right.svg" alt="right" className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30" /> {/* Dark overlay */} <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div> {/* Main Content */} <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2"> 🌍 Build a <span className="font-semibold">Connected Future</span>{" "} with Doelsoft </h2> <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India. </p> 
+      <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                        Talk to an Expert{" "}
+                        <ArrowUpRight
+                          className="border border-white rounded-full p-1"
+                          size={24}
+                        />
+                      </button> </Link>
+       </div> </section>
     </div>
   );
 }
