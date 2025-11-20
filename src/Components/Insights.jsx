@@ -1,82 +1,11 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from 'react-router';
+import CloudPartners from "./CloudPartners";
+import CaseStudies from "./CaseStudies";
 
 function Insights() {
-  const insights = [
-    {
-      img: "/Client1.svg",
-      client: "Client Name",
-      title: "Top AI Consulting Trends 2025",
-      desc: "What matters now and how leaders can build durable advantage.",
-    },
-    {
-      img: "/client2.svg",
-      client: "Client Name",
-      title: "AI-Powered Software Development",
-      desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
-    },
-    {
-      img: "/Client1.svg",
-      client: "Client Name",
-      title: "Top AI Consulting Trends 2025",
-      desc: "What matters now and how leaders can build durable advantage.",
-    },
-    {
-      img: "/client2.svg",
-      client: "Client Name",
-      title: "AI-Powered Software Development",
-      desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
-    },
-    {
-      img: "/Client1.svg",
-      client: "Client Name",
-      title: "Top AI Consulting Trends 2025",
-      desc: "What matters now and how leaders can build durable advantage.",
-    },
-    {
-      img: "/client2.svg",
-      client: "Client Name",
-      title: "AI-Powered Software Development",
-      desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
-    },
-    {
-      img: "/Client1.svg",
-      client: "Client Name",
-      title: "Top AI Consulting Trends 2025",
-      desc: "What matters now and how leaders can build durable advantage.",
-    },
-    {
-      img: "/client2.svg",
-      client: "Client Name",
-      title: "AI-Powered Software Development",
-      desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
-    },
-    {
-      img: "/Client1.svg",
-      client: "Client Name",
-      title: "Top AI Consulting Trends 2025",
-      desc: "What matters now and how leaders can build durable advantage.",
-    },
-    {
-      img: "/client2.svg",
-      client: "Client Name",
-      title: "AI-Powered Software Development",
-      desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
-    },
-    {
-      img: "/Client1.svg",
-      client: "Client Name",
-      title: "Top AI Consulting Trends 2025",
-      desc: "What matters now and how leaders can build durable advantage.",
-    },
-    {
-      img: "/client2.svg",
-      client: "Client Name",
-      title: "AI-Powered Software Development",
-      desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
-    },
-  ];
+ 
 
   return (
     <div className="relative max-w-screen mx-auto font-kumbh bg-white mt-10 overflow-hidden">
@@ -113,25 +42,15 @@ function Insights() {
     />
   </div>
 </section>
+
       
 
       <section className="px-4 bg-[#F4F6FB] py-6 sm:px-6 lg:px-8 mt-8">
-         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto"> 
-          {insights.map((item, i) => ( 
-            <div key={i} className="relative shadow-lg group h-auto sm:h-[380px] md:h-[416px]" >
-             <img src={item.img} alt={item.title} className="w-full h-48 sm:h-60 md:h-60 object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 bg-[#1E1E1E] text-white p-4 sm:p-6">
-                 <p className="text-xs sm:text-sm text-gray-300">{item.client}</p>
-                  <h3 className="text-base sm:text-lg font-semibold mt-1"> {item.title} </h3>
-                   <p className="text-xs sm:text-sm text-gray-300 mt-1 leading-relaxed"> {item.desc} </p>
-                    <div className="flex justify-end mt-3"> 
-                      <button className="p-2 rounded-full bg-[#1E1E1E] hover:bg-white/20 transition"> 
-                      <ArrowUpRight className="border border-white rounded-full text-center" size={22} /> </button>
-                       </div>
-                      </div>
-                       </div> ))} 
-                       </div> 
+         <CloudPartners />
                        </section>
+      <section>
+  <CaseStudies />
+</section>
  
        <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */} 
        <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" />

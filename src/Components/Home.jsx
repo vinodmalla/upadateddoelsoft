@@ -920,7 +920,15 @@ useEffect(()=>{
       {solutions.slice(0, 1).map((item, i) => (
         <div
           key={i}
-          className={`p-6 sm:p-8 md:p-10 w-full  sm:w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px] mx-auto lg:-ml-8 xl:ml-2 mt-10 sm:mt-12 shadow-sm transition hover:shadow-md  ${
+          className={`p-6 sm:p-8 md:p-10  w-full 
+          sm:w-[400px] 
+          md:w-full            /* FIX for tablet widths */
+          lg:w-[360px]         /* Desktop unchanged */
+          xl:w-[376px]         
+
+          h-[250px] 
+          md:h-[260px]
+          xl:h-[244.09px] mx-auto lg:-ml-8 xl:ml-2 mt-10 sm:mt-12 shadow-sm transition hover:shadow-md  ${
             item.type === "bg"
               ? "bg-gray-100"
               : "border border-red-500 bg-white"
@@ -942,7 +950,7 @@ useEffect(()=>{
     </div>
 
     {/* IMAGE COLUMN */}
-    <div className=" w-full  flex justify-center items-center mt-8 xl:mr-24 xl:mt-0">
+    <div className=" w-full  flex justify-center items-center mt-8 xl:mr-4 xl:mt-0">
       <img
         src="/Solution.svg"
         alt="Solution Graphic"
@@ -960,16 +968,43 @@ useEffect(()=>{
   </div>
 
   {/* CARDS GRID */}
-  <div className='mt-10 xl:mt-2 xl:ml-[4rem] '>
- <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 xl:gap-8">
+  <div className='mt-10 xl:mt-2  lg:ml-6 xl:ml-[1.6rem] '>
+  <div 
+    className="
+      grid 
+      grid-cols-1 
+      sm:justify-items-center
+      sm:grid-cols-1
+      md:grid-cols-2 
+      lg:grid-cols-2 
+      xl:grid-cols-3   /* FIXED TYPO */
+      gap-4 
+      md:gap-6        /* Tablet spacing improved */
+      xl:gap-6
+    "
+  >
     {solutions.slice(1).map((item, i) => (
       <div
         key={i}
-        className={`p-6 sm:p-8 md:p-10 w-full sm:w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px]  shadow-sm transition hover:shadow-md  ${
-          item.type === "bg"
-            ? "bg-[#E2E7F1] border border-black"
-            : "border border-red-500 bg-white"
-        }`}
+        className={`
+          p-6 sm:p-8 md:p-10 
+          w-full 
+          sm:w-[400px] 
+          md:w-full            /* FIX for tablet widths */
+          lg:w-[360px]         /* Desktop unchanged */
+          xl:w-[376px]         /* Desktop unchanged */
+
+          h-[250px] 
+          md:h-[260px]
+          xl:h-[244.09px]
+
+          shadow-sm hover:shadow-md transition 
+          ${
+            item.type === "bg"
+              ? "bg-[#E2E7F1] border border-black"
+              : "border border-red-500 bg-white"
+          }
+        `}
       >
         <img
           src={item.icon}
@@ -986,17 +1021,38 @@ useEffect(()=>{
     ))}
 
     {/* CTA CARD */}
-    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col justify-between p-6 sm:p-8 md:p-10 w-full  sm:w-[400px] xl:w-[376px] h-[250px] md:h-[260px] xl:h-[244.09px]   lg:col-span-1">
-      <h3 className="font-semibold font-inter text-lg sm:text-xl md:text-2xl mt-6 sm:mt-8 text-center lg:text-left break-words">
-        Talk to an Expert
-        <br />
-        <button className="w-9 sm:w-10 h-9 sm:h-10 mt-3 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition mx-auto lg:mx-0">
-          <ArrowUpRight size={16} className="sm:size-[18]" />
-        </button>
-      </h3>
-    </div>
+    <Link to="/contact">
+      <div 
+        className="
+          bg-red-600 hover:bg-gray-600 text-white 
+          flex flex-col justify-between 
+          p-6 sm:p-8 md:p-10 
+          w-full 
+          sm:w-[400px] 
+          md:w-full         /* Tablet fix */
+          lg:w-[360px]        /* Desktop unchanged */
+          xl:w-[376px]      /* Desktop unchanged */
+
+          h-[250px] 
+          md:h-[260px] 
+          xl:h-[244.09px]
+
+          lg:col-span-1
+        "
+      >
+        <h3 className="font-semibold text-lg sm:text-xl md:text-2xl mt-6 sm:mt-8 text-center lg:text-left break-words">
+          Talk to an Expert
+          <br />
+          <button className="w-9 sm:w-10 h-9 sm:h-10 mt-3 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition mx-auto lg:mx-0">
+            <ArrowUpRight size={16} className="sm:size-[18]" />
+          </button>
+        </h3>
+      </div>
+    </Link>
+
   </div>
-  </div>
+</div>
+
 </section>
 
 

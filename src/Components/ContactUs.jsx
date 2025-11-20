@@ -130,8 +130,8 @@ function ContactUs() {
 
           {/* Map & Contact Info */}
           {/* Map & Contact Info */}
-<div className="w-full lg:w-1/2 relative flex flex-col items-center overflow-visible z-10">
-  <div className="flex flex-col gap-4 sm:gap-6 mt-1 w-full">
+<div className="w-full lg:w-1/2 relative  flex flex-col items-center overflow-visible z-10">
+  <div className="flex flex-col gap-4 sm:gap-6 xl:ml-56 mt-1 w-full">
     <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
       <MapPin className="text-gray-600 w-8 h-8 mt-1 shrink-0" />
       <div>

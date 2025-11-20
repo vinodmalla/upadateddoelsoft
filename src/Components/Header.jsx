@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-[9999] bg-white p-[5px] shadow-none overflow-x-hidden">
-      <div className="max-w-7xl mx-auto md:ml-3.5 flex items-center justify-between h-16 px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
+      <div className="max-w-7xl mx-auto md:ml-3.5 flex items-center justify-between h-16 px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8" >
 
         {/* Logo */}
         <div className="flex-shrink-0 flex items-center  xl:ml-14">
@@ -29,7 +29,7 @@ function Header() {
             <img
               src={logo}
               alt="Doelsoft"
-              className="w-[90px] sm:w-[120px] md:w-[150px] lg:w-[178px] h-auto"
+              className="w-[100px] md:w-[120px] lg:w-[150px] xl:w-[178px] h-auto"
             />
           </Link>
         </div>
@@ -111,11 +111,11 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveLink("solutions")}} to="/salesforce" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/s.svg' alt="icon" className="w-6 h-6" />
                         </div>
-                        <div className="font-inter  ml-4 text-base font-semibold">
+                        <div className="font-inter  ml-4 text-base font-normal">
                           Salesforce <br /> Solutions
                         </div>
                       </div></Link>
@@ -213,9 +213,10 @@ function Header() {
                           <span className="text-zinc-500">lets connect</span>
                         </p>
                       </div>
-                      <button className="h-8 px-4 bg-red-600 text-white text-sm font-medium font-['Inter'] rounded">
+                     <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveLink("contact")}} to="/contact" ><button className="h-8 px-4 bg-red-600 text-white text-sm font-medium font-['Inter'] rounded">
                         Get Started
-                      </button>
+                      </button> </Link> 
                     </div>
                   </div>
                 </div>
@@ -316,9 +317,10 @@ function Header() {
                         Find top talent today. <span className="text-zinc-500">Let’s connect.</span>
                       </p>
                     </div>
-                    <button className="h-8 px-4 bg-red-600 text-white text-sm font-medium rounded">
+                 <Link to="/contact"  onClick={() => {setIsTalentHubOpen(false)
+                       setActiveLink("contact")  }} >   <button className="h-8 px-4 bg-red-600 text-white text-sm font-medium rounded">
                       Get Started
-                    </button>
+                    </button> </Link>
                   </div>
 
                 </div>
@@ -353,8 +355,8 @@ function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white shadow-md w-full transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
+       className={`md:hidden bg-white shadow-md w-full transition-all duration-300 ${
+          isOpen ? "max-h-[85vh]" : "max-h-0 overflow-hidden"
         }`}
       >
         <nav className="flex flex-col items-center space-y-4 py-6 text-center">
