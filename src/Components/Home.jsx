@@ -699,8 +699,14 @@ useEffect(()=>{
     <div className='hidden xl:flex py-6 '>
     <img
       src="/Highlight1.svg"
-      className=" absolute w-20 z-30 mt-9 xl:left-[400px] top-[-104px]"
+      className=" absolute w-20 z-30 mt-9 xl:left-[400px] top-[-102px]"
       alt="highlight"
+    />
+
+  </div>
+   <div className='hidden xl:flex py-6 '>
+    <ArrowUpRight className="border absolute  z-30 mt-9 xl:left-[160px] top-[-104px] border-black rounded-full p-4"
+                          size={56}
     />
 
   </div>
