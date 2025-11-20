@@ -45,7 +45,7 @@ function Home() {
   {
     h11: "Advance Universal Engagement with ",
     h22: "Accessibility & Inclusion",
-    img: "/a11y.svg",
+    img: "/a11y1.svg",
     p: "From accessibility to true inclusion, we ensure every interaction empowers every user."
   }
 ];
@@ -313,7 +313,7 @@ useEffect(()=>{
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-[85%] sm:w-[75%] md:w-[65%] lg:w-full h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto md:ml-[45px] mb-8 lg:mb-24 object-contain ${cursol===0 ? "animate-moveOnce" :""}
+      className={`w-[85%] sm:w-[75%] md:w-[65%] ${cursol===2? "lg:w-[110%]" : "lg:w-full" } h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto ${cursol===2 ? "md:ml-[100px]" :"md:ml-[45px]"}  mb-8 lg:mb-24 object-contain ${cursol===0 ? "animate-moveOnce" :""}
        z-50`}
     />
 
@@ -569,7 +569,7 @@ useEffect(()=>{
             {steps.map((step, idx) => (
               <div
                 key={idx}
-                className="bg-red-600 text-white xl:h-[146px] xl:w-[290.28px] p-8  flex flex-col justify-between shadow-lg "
+                className="bg-red-600 hover:bg-[#464b51] text-white xl:h-[146px] xl:w-[290.28px] p-8  flex flex-col justify-between shadow-lg "
               >
                 <div className="flex flex-col items-start gap-3 ">
                   {step.icon}

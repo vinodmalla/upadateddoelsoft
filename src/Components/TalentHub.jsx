@@ -15,7 +15,7 @@ function TalentHub() {
   return (
     <div className="overflow-x-hidden"> {/* ✅ Prevents any horizontal overflow */}
       {/* ===== Hero Section ===== */}
-      <section className="relative w-full mt-28 py-20 flex flex-col items-center text-center overflow-hidden">
+      <section className="relative w-full mt-16 py-20 flex flex-col items-center text-center overflow-hidden">
         <div
           className="absolute md:ml-48 md:top-[-80px] bg-cover bg-center inset-0"
           style={{ backgroundImage: "url('/worldmap.svg')", width: "1296px", height: "683px" }}
@@ -55,7 +55,7 @@ function TalentHub() {
       </section>
 
       {/* ===== Services Section ===== */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 max-w-full">
+      <section className="w-full bg-white xl:mt-10 py-16 px-6 md:px-12 max-w-full">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-[44px] font-semibold font-kumbh text-gray-900">
             Recruitment & Staffing Services
