@@ -231,10 +231,10 @@ useEffect(()=>{
       />
     ))}
   </div>
-<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-[50px] lg:mx-[70px] xl:mx-[80px] relative flex flex-col md:flex-col xl:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
+<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-auto xl:mx-[70px] relative flex flex-col md:flex-col xl:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
-  <div className="w-full lg:w-1/2   lg:flex-col gap-6 md:gap-8 text-center lg:text-left md:mt-36">
+  <div className="w-full lg:w-1/2   lg:flex-col gap-6 md:gap-8 text-center lg:text-left xl:mt-36">
     {CursolDetails.map((details, index) => (
       <div
         key={index}
@@ -271,49 +271,57 @@ useEffect(()=>{
           </button></Link>
         </div>
 
-        {/* Logos */}
-        <div className="mt-6 lg:mt-8 ">
-          <div className="flex gap-0 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar  py-4">
-            {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
+        
+          <div className="mt-6 lg:mt-8">
+            {/* Outer container should hide overflow while the inner track scrolls.
+                Duplicate the logos array to ensure continuous/always-visible marquee. */}
+            <div className="overflow-hidden py-4">
+              <div
+                className="flex gap-6 whitespace-nowrap animate-marquee will-change-transform"
+                aria-hidden="true"
+                style={{ alignItems: "center" }}
+              >
+                {[spring, wipro, zingo, mevatron, menlo, tech].map(
+            (logo, i) => (
               <div
                 key={i}
-                className="w-14 sm:w-16  md:w-20 lg:w-28 h-10 sm:h-12 md:h-16 lg:h-24 flex items-center justify-center flex-shrink-0"
+                className="min-w-[56px] sm:min-w-[64px] md:min-w-[80px] lg:min-w-[112px] h-10 sm:h-12 md:h-16 lg:h-20 flex items-center justify-center flex-shrink-0"
               >
                 <img
                   src={logo}
                   alt={`logo-${i}`}
-                  className="max-w-full max-h-full object-contain"
+                  className="max-w-full max-h-full object-contain block"
                 />
+              </div>
+            )
+                )}
+              </div>
+            </div>
+
+            <p className="text-black font-inter font-medium text-base sm:text-lg lg:text-2xl py-4 lg:py-6 text-center lg:text-left">
+              Trusted by{" "}
+              <span className="font-normal">Leading Enterprises & Fast–Growing Teams</span>
+            </p>
+          </div>
               </div>
             ))}
           </div>
-          
-          <p className="text-black  font-inter font-medium text-base sm:text-lg lg:text-2xl py-4 lg:py-6 text-center lg:text-left">
-            Trusted by{" "}
-            <span className="font-normal">
-              Leading Enterprises & Fast–Growing Teams
-            </span>
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
 
-  {/* RIGHT CONTENT */}
+          {/* RIGHT CONTENT */}
   <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-6 lg:gap-0 mt-8 lg:mt-0">
 
     {/* Mask background */}
     <img
       src={mask}
       alt="mask"
-      className="absolute bg-[#cfcece] inset-0 w-[220px] md:w-[360px] h-[250px] sm:h-[300px] md:h-[380px] mt-12 sm:mt-20 md:mt-24 md:ml-[8rem] xl:ml-[11rem] object-cover hidden lg:block"
+      className="absolute bg-[#cfcece] inset-0 w-[220px] md:w-[360px] h-[250px] sm:h-[300px] md:h-[380px] mt-12 sm:mt-20 md:mt-24 ml-auto  md:ml-32 xl:ml-[11rem] object-cover hidden lg:block"
     />
 
     {/* Main image */}
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-[85%] sm:w-[75%] md:w-[65%] ${cursol===2? "lg:w-[110%]" : "lg:w-full" } h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto ${cursol===2 ? "md:ml-[100px]" :"md:ml-[45px]"}  mb-8 lg:mb-24 object-contain ${cursol===0 ? "animate-moveOnce" :""}
+      className={`w-[85%] sm:w-[75%] md:w-[65%] ${cursol===2? "lg:w-[110%]" : "lg:w-full" } h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto ${cursol===2 ? "xl:ml-[100px]" :"xl:ml-[45px]"}  mb-8 lg:mb-24 object-contain ${cursol===0 ? "animate-moveOnce" :""}
        z-50`}
     />
 
@@ -909,163 +917,115 @@ useEffect(()=>{
 
 
       {/* Featured Solutions Section */}
-<section className="bg-white py-10 sm:py-12 px-3 sm:px-6 md:px-8 lg:px-12 overflow-hidden">
-  <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 lg:gap-14 md:ml-0 lg:ml-14">
-    
-    {/* TEXT + FIRST CARD COLUMN */}
-    <div className="w-full lg:w-1/2 py-4 sm:py-8 text-center lg:text-left">
-      <h2 className="text-2xl sm:text-3xl md:text-[44px] lg:-ml-8 xl:ml-1 font-semibold font-kumbh text-gray-900 mb-2 break-words">
-        Featured Solutions
-      </h2>
+      <section className="bg-white py-10 sm:py-12 px-4 sm:px-6 md:px-8 lg:px-12 overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 lg:gap-14 max-w-7xl mx-auto">
+          {/* TEXT + FIRST CARD COLUMN */}
+          <div className="w-full lg:w-1/2 py-4 sm:py-8 text-center lg:text-left">
+            <h2 className="text-2xl xl:-ml-7 sm:text-3xl md:text-[44px] font-semibold font-kumbh text-gray-900 mb-2">
+              Featured Solutions
+            </h2>
 
-      <p className="text-gray-600 font-inter text-sm sm:text-base md:text-lg mt-3 lg:-ml-8 xl:ml-3 max-w-[95%] sm:max-w-xl mx-auto lg:mx-0 leading-relaxed break-words">
-        Opinionated, production-ready solutions that turn <br className="hidden sm:block" /> 
-        AI, Cloud & Data into outcomes fast.
-      </p>
+            <p className="text-gray-600 font-inter text-sm sm:text-base xl:-ml-6 md:text-lg mt-3 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Opinionated, production-ready solutions that turn
+              <span className="hidden sm:inline"> AI, Cloud & Data </span>
+              into outcomes fast.
+            </p>
 
-      {solutions.slice(0, 1).map((item, i) => (
-        <div
-          key={i}
-          className={`p-6 sm:p-8 md:p-10  w-full 
-          sm:w-[400px] 
-          md:w-full            /* FIX for tablet widths */
-          lg:w-[360px]         /* Desktop unchanged */
-          xl:w-[376px]         
+            {solutions.slice(0, 1).map((item, i) => (
+              <div
+                key={i}
+                className={`mt-8 sm:mt-10 
+                  h-full w-full max-w-xl md:max-w-2xl   mx-auto   xl:w-[376px] xl:h-[248px]
+                  p-6 sm:p-8 md:p-10 xl:-ml-6  shadow-sm transition hover:shadow-md
+                  ${item.type === "bg" ? "bg-gray-100" : "border border-red-500 bg-white"}`}
+              >
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="h-10 w-10 mb-4 object-contain mx-auto lg:mx-0"
+                />
+                <h3 className="font-semibold font-kumbh text-lg text-gray-900 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 font-inter text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
 
-          h-[250px] 
-          md:h-[260px]
-          xl:h-[244.09px] mx-auto lg:-ml-8 xl:ml-2 mt-10 sm:mt-12 shadow-sm transition hover:shadow-md  ${
-            item.type === "bg"
-              ? "bg-gray-100"
-              : "border border-red-500 bg-white"
-          }`}
-        >
-          <img
-            src={item.icon}
-            alt={item.title}
-            className="h-8 sm:h-10 w-8 sm:w-10 mb-4 object-contain mx-auto lg:mx-0"
-          />
-          <h3 className="font-semibold font-kumbh text-base sm:text-lg text-gray-900 mb-2 break-words">
-            {item.title}
-          </h3>
-          <p className="text-gray-600 font-inter text-sm leading-relaxed break-words">
-            {item.desc}
-          </p>
+          {/* IMAGE COLUMN */}
+          <div className="w-full flex justify-center items-center mt-6 lg:mt-0">
+            <img
+              src="/Solution.svg"
+              alt="Solution Graphic"
+              className="w-full max-w-xl md:max-w-2xl xl:max-w-[680px] h-auto mx-auto transition-all duration-500"
+            />
+          </div>
         </div>
-      ))}
-    </div>
 
-    {/* IMAGE COLUMN */}
-    <div className=" w-full  flex justify-center items-center mt-8 xl:mr-4 xl:mt-0">
-      <img
-        src="/Solution.svg"
-        alt="Solution Graphic"
-        className="
-        w-auto
-        h-auto
-        xl:h-[487px]
-        xl:w-[680px]
-        mx-auto 
-        transition-all 
-        duration-500
-        "
-      />
-    </div>
-  </div>
+        {/* CARDS GRID */}
+        <div className="mt-10 max-w-7xl xl:ml-14 xl:-mt-3 mx-auto px-2 sm:px-0">
+          <div
+            className="
+              grid
+              grid-cols-1
+              sm:grid-cols-2
+              md:grid-cols-3
+              gap-4
+              md:gap-6
+              xl:gap-6
+            "
+          >
+            {solutions.slice(1).map((item, i) => (
+              <div
+                key={i}
+                className={`
+                  p-6 sm:p-8 
+                  w-full
+                  h-full xl:h-[248px]   xl:w-[376px]  shadow-sm hover:shadow-md transition
+                  ${item.type === "bg" ? "bg-[#E2E7F1] border border-black" : "border border-red-500 bg-white"}
+                `}
+              >
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="h-10 w-10 mb-4 object-contain mx-auto sm:mx-0"
+                />
+                <h3 className="font-medium text-base sm:text-lg text-gray-900 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 font-normal text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
 
-  {/* CARDS GRID */}
-  <div className='mt-10 xl:mt-2  lg:ml-6 xl:ml-[1.6rem] '>
-  <div 
-    className="
-      grid 
-      grid-cols-1 
-      sm:justify-items-center
-      sm:grid-cols-1
-      md:grid-cols-2 
-      lg:grid-cols-2 
-      xl:grid-cols-3   /* FIXED TYPO */
-      gap-4 
-      md:gap-6        /* Tablet spacing improved */
-      xl:gap-6
-    "
-  >
-    {solutions.slice(1).map((item, i) => (
-      <div
-        key={i}
-        className={`
-          p-6 sm:p-8 md:p-10 
-          w-full 
-          sm:w-[400px] 
-          md:w-full            /* FIX for tablet widths */
-          lg:w-[360px]         /* Desktop unchanged */
-          xl:w-[376px]         /* Desktop unchanged */
-
-          h-[250px] 
-          md:h-[260px]
-          xl:h-[244.09px]
-
-          shadow-sm hover:shadow-md transition 
-          ${
-            item.type === "bg"
-              ? "bg-[#E2E7F1] border border-black"
-              : "border border-red-500 bg-white"
-          }
-        `}
-      >
-        <img
-          src={item.icon}
-          alt={item.title}
-          className="h-8 sm:h-10 w-8 sm:w-10 mb-4 object-contain mx-auto lg:mx-0"
-        />
-        <h3 className="font-medium text-base sm:text-lg text-gray-900 mb-2 break-words">
-          {item.title}
-        </h3>
-        <p className="text-gray-600 font-normal text-sm leading-relaxed break-words">
-          {item.desc}
-        </p>
-      </div>
-    ))}
-
-    {/* CTA CARD */}
-    <Link to="/contact">
-      <div 
-        className="
-          bg-red-600 hover:bg-gray-600 text-white 
-          flex flex-col justify-between 
-          p-6 sm:p-8 md:p-10 
-          w-full 
-          sm:w-[400px] 
-          md:w-full         /* Tablet fix */
-          lg:w-[360px]        /* Desktop unchanged */
-          xl:w-[376px]      /* Desktop unchanged */
-
-          h-[250px] 
-          md:h-[260px] 
-          xl:h-[244.09px]
-
-          lg:col-span-1
-        "
-      >
-        <h3 className="font-semibold text-lg sm:text-xl md:text-2xl mt-6 sm:mt-8 text-center lg:text-left break-words">
-          Talk to an Expert
-          <br />
-          <button className="w-9 sm:w-10 h-9 sm:h-10 mt-3 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition mx-auto lg:mx-0">
-            <ArrowUpRight size={16} className="sm:size-[18]" />
-          </button>
-        </h3>
-      </div>
-    </Link>
-
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-      {/* Final CTA Section */}
+            {/* CTA CARD */}
+            <Link to="/contact">
+              <div
+                className="
+                  bg-red-600 hover:bg-[#c10d0d] text-white
+                  flex flex-col justify-center items-center
+                  p-6 sm:p-8 
+                   w-full
+                  h-full xl:h-[248px]  xl:w-[376px] 
+                  transition
+                "
+              >
+                <div className="text-center">
+                  <h3 className="font-semibold text-lg sm:text-xl md:text-2xl mb-3">
+                    Talk to an Expert
+                  </h3>
+                  <button className="w-10 h-10 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition">
+                    <ArrowUpRight size={16} />
+                  </button>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
     
         <section
                     className="relative w-full  bg-cover bg-center text-center py-16 md:h-[568px]   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"

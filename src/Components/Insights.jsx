@@ -45,12 +45,13 @@ function Insights() {
 
       
 
-      <section className="px-4 bg-[#F4F6FB] py-6 sm:px-6 lg:px-8 mt-8">
-         <CloudPartners />
-                       </section>
+      
       <section>
   <CaseStudies />
 </section>
+<section >
+         <CloudPartners />
+                       </section>
  
        <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */} 
        <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" />

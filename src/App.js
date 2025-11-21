@@ -26,14 +26,17 @@ import MuleSoftSolutions from './Components/MuleSoftSolutions';
 import IoTDevelopment from './Components/IoTDevelopment';
 import Embedded from './Components/Embedded';
 import QA from './Components/QA';
+import { MenuProvider } from './Components/MenuContext';
 
 function App() {
   return (
     <>
+      <MenuProvider>
       <Header />
       <ScrollTop />
       <Outlet />
       <Footer />
+      </MenuProvider>
     </>
   );
 }

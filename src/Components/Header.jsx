@@ -1,43 +1,39 @@
 import React, { useState } from "react";
-import { FaInstagram, FaDiscord, FaGithub, FaBars, FaTimes } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaBars, FaTimes, FaTwitter } from "react-icons/fa";
 import { Users, Briefcase, UserCheck, UserSearch, FileSearch } from "lucide-react";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
+import { useMenu } from "./MenuContext";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("home");
-
-  // Dropdown States
+ 
+  const { activeMenu, setActiveMenu } = useMenu();
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [isTalentHubOpen, setIsTalentHubOpen] = useState(false);
 
   const handleLinkClick = (link) => {
-    setActiveLink(link);
+    setActiveMenu(link);
     setIsOpen(false);
-
-   
   };
 
   return (
     <header className="fixed top-0 left-0 w-full z-[9999] bg-white p-[5px] shadow-none overflow-x-hidden">
-      <div className="max-w-7xl mx-auto md:ml-3.5 flex items-center justify-between h-16 px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8" >
-
+      <div className="max-w-7xl mx-auto lg:ml-3.5 flex items-center justify-between h-16 px-2 sm:px-3 lg:px-4 xl:px-6">
         {/* Logo */}
-        <div className="flex-shrink-0 flex items-center  xl:ml-14">
+        <div className="flex-shrink-0 flex items-center xl:ml-14">
           <Link to="/" className="flex items-center">
             <img
               src={logo}
               alt="Doelsoft"
-              className="w-[100px] md:w-[120px] lg:w-[150px] xl:w-[178px] h-auto"
+              className="w-[100px] lg:w-[150px] xl:w-[178px] h-auto"
             />
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation (now shows at lg and above) */}
         <nav
-          className="hidden md:flex items-center justify-center 
-          md:space-x-4 lg:space-x-8 xl:ml-80 whitespace-nowrap"
+          className="hidden lg:flex items-center justify-center lg:space-x-4 xl:space-x-8 xl:ml-80 whitespace-nowrap"
           role="navigation"
         >
           {[
@@ -54,18 +50,18 @@ function Header() {
               className="relative"
               onMouseEnter={() => {
                 if (item.name === "solutions") setIsSolutionsOpen(true);
-               if (item.name === "talenthub") setIsTalentHubOpen(true);
+                if (item.name === "talenthub") setIsTalentHubOpen(true);
               }}
               onMouseLeave={() => {
-                if(item.name ==="solutions") setIsSolutionsOpen(false);
-                if (item.name ==="talenthub") setIsTalentHubOpen(false);
+                if (item.name === "solutions") setIsSolutionsOpen(false);
+                if (item.name === "talenthub") setIsTalentHubOpen(false);
               }}
             >
               <Link
                 to={item.path}
-                onClick={()=>setActiveLink(item.name)}
+                onClick={() => setActiveMenu(item.name)}
                 className={`font-medium transition-colors ${
-                  activeLink === item.name
+                  activeMenu === item.name
                     ? "text-[#EF0E0E]"
                     : "text-[#000000] hover:text-[#EF0E0E]"
                 } text-sm lg:text-base`}
@@ -75,34 +71,40 @@ function Header() {
               </Link>
 
               {/* SOLUTIONS DROPDOWN */}
-                  {item.name === "solutions" && isSolutionsOpen && (
-                    <>
-                    <div className="absolute left-0 top-full w-full h-6"></div>
-                <div
-                  className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999] 
-                             bg-white outline outline-1 outline-slate-200 
-                             w-[95vw] lg:w-[1195px] p-6 lg:p-8 rounded-md 
-                             shadow-2xl overflow-auto max-h-[80vh]"
-                 
-                >
-                  <div className="absolute inset-0 bg-white/90 -z-10 backdrop-blur-sm"></div>
+              {item.name === "solutions" && isSolutionsOpen && (
+                <>
+                  <div className="absolute left-0 top-full w-full h-6"></div>
+                  <div
+                    className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999] 
+                               bg-white outline outline-1 outline-slate-200 
+                               w-[95vw] lg:w-[1195px] p-6 lg:p-8 rounded-md 
+                               shadow-2xl overflow-auto max-h-[80vh]"
+                  >
+                    <div className="absolute inset-0 bg-white/90 -z-10 backdrop-blur-sm"></div>
 
-                  <div className="w-full h-auto">
-                    <div className="text-neutral-400 text-sm font-normal font-['Inter'] mb-4">
-                      Solutions
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/softwareDevelopment" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
-                        <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
-                        <img src='/c.svg' alt="icon" className="w-6 h-6" />
-                        </div>
-                        <div className="font-inter ml-4 text-base font-normal">
-                          Custom <br /> Software Development
-                        </div>
-                      </div> </Link>
-                       <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/mobileDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                    <div className="w-full h-auto">
+                      <div className="text-neutral-400 text-sm font-normal font-['Inter'] mb-4">
+                        Solutions
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <Link
+                          onClick={() => {
+                            setIsSolutionsOpen(false);
+                            setActiveMenu("solutions");
+                          }}
+                          to="/softwareDevelopment"
+                        >
+                          <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row ">
+                            <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
+                              <img src="/c.svg" alt="icon" className="w-6 h-6" />
+                            </div>
+                            <div className="font-inter ml-4 text-base font-normal">
+                              Custom <br /> Software Development
+                            </div>
+                          </div>
+                        </Link>
+                           <Link onClick={()=>{setIsSolutionsOpen(false)
+                      setActiveMenu("solutions")}} to="/mobileDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/m.svg' alt="icon" className="w-5 h-5" />
                         </div>
@@ -111,7 +113,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/salesforce" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/salesforce" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/s.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -120,7 +122,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/servicesweb" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/servicesweb" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/w.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -129,7 +131,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/servicesuiux" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/servicesuiux" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/u.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -138,7 +140,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/digitalaccessibilit" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/digitalaccessibilit" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/d.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -147,7 +149,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/servicesmicrosoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/servicesmicrosoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/ms.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -156,7 +158,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/servicesmulesoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/servicesmulesoft" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/mu.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -165,7 +167,7 @@ function Header() {
                         </div>
                       </div></Link>
                       <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/servicesiot" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/servicesiot" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                       <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/i.svg' alt="icon" className="w-6 h-6 " />
                         </div>
@@ -174,7 +176,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/servicesembedded" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/servicesembedded" >  <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/e.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -183,7 +185,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/servicesqa" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/servicesqa" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/q.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -192,7 +194,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("solutions")}} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/a.svg' alt="icon" className="w-6 h-6" />
                         </div>
@@ -201,62 +203,72 @@ function Header() {
 
                         </div>
                       </div></Link>
-                    </div>
-
-                    <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
-                      <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-indigo-600 rounded-2xl flex justify-center items-center">
-                          <img src="/key.svg" alt="key" className="w-4 h-4" />
-                        </div>
-                        <p className="text-zinc-800 text-sm font-normal font-['Inter']">
-                          Let’s Build the Future Together.{" "}
-                          <span className="text-zinc-500">lets connect</span>
-                        </p>
+                        
                       </div>
-                     <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveLink("contact")}} to="/contact" ><button className="h-8 px-4 bg-red-600 text-white text-sm font-medium font-['Inter'] rounded">
-                        Get Started
-                      </button> </Link> 
+
+                      <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 bg-indigo-600 rounded-2xl flex justify-center items-center">
+                            <img src="/key.svg" alt="key" className="w-4 h-4" />
+                          </div>
+                          <p className="text-zinc-800 text-sm font-normal font-['Inter']">
+                            Let’s Build the Future Together.{" "}
+                            <span className="text-zinc-500">lets connect</span>
+                          </p>
+                        </div>
+                        <Link
+                          onClick={() => {
+                            setIsSolutionsOpen(false);
+                            setActiveMenu("contact");
+                          }}
+                          to="/contact"
+                        >
+                          <button className="h-8 px-4 bg-red-600 text-white text-sm font-medium font-['Inter'] rounded">
+                            Get Started
+                          </button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </>
               )}
 
               {/* TALENTHUB DROPDOWN */}
               {item.name === "talenthub" && isTalentHubOpen && (
                 <>
-                <div className="absolute left-0 top-full w-full h-6"></div>
-                <div
-                  className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999]
-                             bg-white outline outline-1 outline-slate-200 
-                             w-[95vw] lg:w-[900px] p-6 lg:p-8 rounded-md 
-                             shadow-2xl overflow-auto max-h-[80vh]"
-                >
-                  <div className="absolute inset-0 bg-white/90 -z-10 backdrop-blur-sm"></div>
+                  <div className="absolute left-0 top-full w-full h-6"></div>
+                  <div
+                    className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999]
+                               bg-white outline outline-1 outline-slate-200 
+                               w-[95vw] lg:w-[900px] p-6 lg:p-8 rounded-md 
+                               shadow-2xl overflow-auto max-h-[80vh]"
+                  >
+                    <div className="absolute inset-0 bg-white/90 -z-10 backdrop-blur-sm"></div>
 
-                  <div className="text-neutral-400 text-sm font-normal mb-4">
-                    Talent Hub Solutions
-                  </div>
+                    <div className="text-neutral-400 text-sm font-normal mb-4">
+                      Talent Hub Solutions
+                    </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    {/* 1 IT Staffing */}
-                    <Link onClick={() => {setIsTalentHubOpen(false)
-                       setActiveLink("talenthub")  }} to="/itstaffing">
-                      <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
-                        <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
-                          <Users className="w-6 h-6 text-zinc-800" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <Link
+                        onClick={() => {
+                          setIsTalentHubOpen(false);
+                          setActiveMenu("talenthub");
+                        }}
+                        to="/itstaffing"
+                      >
+                        <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
+                          <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
+                            <Users className="w-6 h-6 text-zinc-800" />
+                          </div>
+                          <div className="ml-4 text-base font-normal">
+                            IT Staffing <br /> Solutions
+                          </div>
                         </div>
-                        <div className="ml-4 text-base font-normal">
-                          IT Staffing <br /> Solutions
-                        </div>
-                      </div>
-                    </Link>
-
-                    {/* 2 Contract Hiring */}
-                    <Link onClick={() => {setIsTalentHubOpen(false)
-                       setActiveLink("talenthub")  }}  to="/contract">
+                      </Link>
+                      {/* ... other talenthub links unchanged ... */}
+                        <Link onClick={() => {setIsTalentHubOpen(false)
+                       setActiveMenu("talenthub")  }}  to="/contract">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <Briefcase className="w-6 h-6 text-zinc-800" />
@@ -269,7 +281,7 @@ function Header() {
 
                     {/* 3 Permanent Hiring */}
                     <Link onClick={() => {setIsTalentHubOpen(false)
-                       setActiveLink("talenthub")  }}  to="/permanent">
+                       setActiveMenu("talenthub") }}  to="/permanent">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <UserCheck className="w-6 h-6 text-zinc-800" />
@@ -282,7 +294,7 @@ function Header() {
 
                     {/* 4 Executive Search */}
                     <Link onClick={() => {setIsTalentHubOpen(false)
-                       setActiveLink("talenthub")  }}  to="/excutive">
+                       setActiveMenu("talenthub")  }}  to="/excutive">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <UserSearch className="w-6 h-6 text-zinc-800" />
@@ -295,7 +307,7 @@ function Header() {
 
                     {/* 5 RPO */}
                     <Link onClick={() => {setIsTalentHubOpen(false)
-                       setActiveLink("talenthub")  }}  to="/rpo">
+                       setActiveMenu("talenthub")  }}  to="/rpo">
                       <div className="bg-white hover:bg-[#EF0E0E] hover:text-white text-zinc-800 p-2 flex flex-row">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded">
                           <FileSearch className="w-6 h-6 text-zinc-800" />
@@ -306,56 +318,61 @@ function Header() {
                       </div>
                     </Link>
 
-                  </div>
-
-                  <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 bg-indigo-600 rounded-2xl flex justify-center items-center">
-                        <img src="/key.svg" alt="key" className="w-4 h-4" />
-                      </div>
-                      <p className="text-zinc-800 text-sm font-normal">
-                        Find top talent today. <span className="text-zinc-500">Let’s connect.</span>
-                      </p>
                     </div>
-                 <Link to="/contact"  onClick={() => {setIsTalentHubOpen(false)
-                       setActiveLink("contact")  }} >   <button className="h-8 px-4 bg-red-600 text-white text-sm font-medium rounded">
-                      Get Started
-                    </button> </Link>
-                  </div>
 
-                </div>
+                    <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 bg-indigo-600 rounded-2xl flex justify-center items-center">
+                          <img src="/key.svg" alt="key" className="w-4 h-4" />
+                        </div>
+                        <p className="text-zinc-800 text-sm font-normal">
+                          Find top talent today. <span className="text-zinc-500">Let’s connect.</span>
+                        </p>
+                      </div>
+                      <Link
+                        to="/contact"
+                        onClick={() => {
+                          setIsTalentHubOpen(false);
+                          setActiveMenu("contact");
+                        }}
+                      >
+                        <button className="h-8 px-4 bg-red-600 text-white text-sm font-medium rounded">
+                          Get Started
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </>
               )}
-
             </div>
           ))}
         </nav>
 
-        {/* Social Icons */}
-        <div className="hidden md:flex items-center space-x-4 lg:space-x-5 xl:ml-36 ">
-          <a href="/" className="p-2">
-            <FaInstagram className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
+        {/* Social Icons (show at lg and above) */}
+        <div className="hidden lg:flex items-center space-x-4 lg:space-x-5 xl:ml-36">
+          <a href="/" target="_blank" className="p-2">
+            <FaInstagram  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
-          <a href="/" className="p-2">
-            <FaDiscord className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
+          <a href="/" target="_blank" className="p-2">
+            <FaLinkedinIn className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
-          <a href="/" className="p-2">
-            <FaGithub className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
+          <a href="/" target="_blank" className="p-2">
+            <FaTwitter className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile Hamburger (visible below lg) */}
         <button
-          className="md:hidden text-2xl text-gray-700"
+          className="lg:hidden text-2xl text-gray-700"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (visible below lg) */}
       <div
-       className={`md:hidden bg-white shadow-md w-full transition-all duration-300 ${
+        className={`lg:hidden bg-white shadow-md w-full transition-all duration-300 ${
           isOpen ? "max-h-[85vh]" : "max-h-0 overflow-hidden"
         }`}
       >
@@ -374,7 +391,7 @@ function Header() {
                 to={item.path}
                 onClick={() => handleLinkClick(item.name)}
                 className={`font-medium text-base ${
-                  activeLink === item.name
+                  activeMenu === item.name
                     ? "text-[#EF0E0E]"
                     : "text-gray-700 hover:text-[#EF0E0E]"
                 }`}
@@ -386,14 +403,14 @@ function Header() {
           ))}
 
           <div className="flex space-x-6 pt-4">
-            <a href="/" className="p-2">
+            <a href="/" target="_blank" className="p-2">
               <FaInstagram className="text-xl text-gray-700 hover:text-red-600" />
             </a>
-            <a href="/" className="p-2">
-              <FaDiscord className="text-xl text-gray-700 hover:text-red-600" />
+            <a href="/" target="_blank" className="p-2">
+              <FaLinkedinIn className="text-xl text-gray-700 hover:text-red-600" />
             </a>
-            <a href="/" className="p-2">
-              <FaGithub className="text-xl text-gray-700 hover:text-red-600" />
+            <a href="/" target="_blank" className="p-2">
+              <FaTwitter className="text-xl text-gray-700 hover:text-red-600" />
             </a>
           </div>
         </nav>

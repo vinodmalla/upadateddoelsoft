@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const tabs = ["All", "Hospitality", "Textile", "Innovative Idea"];
+const tabs = ["All", "Data & Analytics", "E-Commerce Development", "Innovative Idea"];
 
 export default function CaseStudies() {
   const [activeTab, setActiveTab] = useState("All");
@@ -8,17 +8,18 @@ export default function CaseStudies() {
   const cardData = [
     {
       id: 1,
-      category: "Hospitality",
-      image: "/case1.png", // replace with your image
-      title: "Corporate Traveler Portal - Hotels & Workspaces.",
-      desc: "This case focuses on building a one-stop solution for hotels and workspaces supported with mobile applications.",
+      category: "Data & Analytics",
+      image: "/case4.png", // replace with your image
+      title: "Data Inclusion Mastered",
+      desc: "Achieving 100% Data Accessibility in a Complex Financial DashboardFrom Data Density to Digital Inclusivity — Doelsoft Builds Accessible Intelligence"
+
     },
     {
       id: 2,
-      category: "Textile",
+      category: "E-Commerce Development",
       image: "/case2.png", // replace with your image
-      title: "Enabled E-Commerce Platform for Textile B2C",
-      desc: "This case focuses on digitalizing textile services with B2C platform supported with mobile applications.",
+      title: "Transforming Retail Through Scalable E-Commerce Engineering",
+      desc: "A leading retail brand partnered with Doelsoft to re-engineer its legacy e-commerce platform.",
     },
     {
       id: 3,
@@ -41,7 +42,7 @@ export default function CaseStudies() {
         {/* SECTION TOP MESSAGE */}
          <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Projects <span className="text-red-500">We’ve Delivered</span>
+            Case <span className="text-[#EF0E0E]">Studies</span>
           </h1>
           <p className="text-gray-500 mt-2 max-w-2xl mx-auto">
             Get an insight into the solutions we created for our clients to help them reach

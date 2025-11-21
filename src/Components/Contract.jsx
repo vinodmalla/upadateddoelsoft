@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowUpRight } from "lucide-react"; // 
+import { Link } from 'react-router';
 function Contract() {
 return (
     <div className="w-full min-h-screen font-kumbh space-y-6 mt-10 flex flex-col justify-end" >
@@ -18,9 +19,9 @@ return (
                 <h2 className="self-stretch whitespace-nowrap lg:-ml-2 text-3xl md:text-5xl lg:text-7xl font-kumbh leading-[87.20px] font-bold text-red-600 mt-2">Contract/<br />Temporary Hiring</h2>
 
 
-    <button className="py-4 px-7 border border-black ml-[53px] lg:-ml-1 text-black hover:bg-gray-200 transition-all duration-200">
+   <Link to="/contact"> <button className="py-4 px-7 border border-black ml-[53px] lg:-ml-1 text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>
-    </button>
+    </button> </Link>
   </div>
 
   {/* Right Image */}

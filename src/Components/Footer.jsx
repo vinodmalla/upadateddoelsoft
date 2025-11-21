@@ -6,8 +6,10 @@ import {
   
 } from "react-icons/fa";
 import logo from "../assets/logo.svg";
+import { useMenu } from "./MenuContext";
 
 export default function Footer() {
+  const { activeMenu } = useMenu();
   return (
     <footer className="bg-white border-t border-gray-200"  style={{
     backgroundImage: "url('/worldmap.svg')",
@@ -40,7 +42,7 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Solutions</h3>
           <ul className="space-y-2 text-gray-600">
-            <li><a href="/softwareDevelopment">Custom Software Development</a></li>
+            <li ><a href="/softwareDevelopment">Custom Software Development</a></li>
             <li><a href="/mobileDevelopment">Mobile App Development</a></li>
             <li><a href="/servicesweb">Web Design & Development</a></li>
             <li><a href="/servicesuiux">UI/UX Design Services</a></li>
@@ -71,11 +73,12 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
           <ul className="space-y-2 text-gray-600">
-            <li><a href="/">Home</a></li>
-            <li><a href="/chooseus">Why Choose Us</a></li>
-            <li><a href="/carrers">Careers</a></li>
-            <li><a href="/insights">Insights</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li ><a  className={activeMenu === "home" ? " text-red-600" : ""} href="/">Home</a></li>
+            <li><a 
+        className={activeMenu === "chooseus" ? " text-red-600" : ""} href="/chooseus">Why Choose Us</a></li>
+            <li><a  className={activeMenu === "carrers" ? " text-red-600" : ""} href="/carrers">Careers</a></li>
+            <li><a  className={activeMenu === "insights" ? " text-red-600" : ""} href="/insights">Insights</a></li>
+            <li><a  className={activeMenu === "contact" ? " text-red-600" : ""} href="/contact">Contact Us</a></li>
             
           </ul>
         </div>
