@@ -1,4 +1,5 @@
 import { Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import {
   FaLinkedin,
   FaFacebookMessenger,
@@ -22,9 +23,9 @@ export default function Footer() {
         {/* Logo & Info */}
         <div className="space-y-2">
   
-          <div className="flex items-center gap-2">
+        <Link to="/">  <div className="flex items-center gap-2">
             <img src={logo} alt="Doelsoft" className="h-8 w-36" />
-          </div>
+          </div></Link>
           <h1 className="font-semibold text-gray-900">Address</h1>
           <p className="text-gray-600">
             Hyderabad, India,<br/> Florida,USA
@@ -52,8 +53,8 @@ export default function Footer() {
             <li><a href="/servicesiot">IoT Solutions</a></li>
             <li><a href="/servicesembedded">Embedded Technologies</a></li>
             <li><a href="/servicesqa">Flawless QA Services</a></li>
-            <li><a href="/softwareDevelopment">AI Services</a></li>
-            <li><a href="/servicesSalesforce">Salesforce Development</a></li>
+            <li><a href="/serviceai">AI Services</a></li>
+            <li><a href="/salesforce">Salesforce Development</a></li>
           </ul>
         </div>
 

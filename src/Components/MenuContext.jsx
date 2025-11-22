@@ -25,6 +25,7 @@ export const MenuProvider = ({ children }) => {
           else if (location.pathname === "/salesforce") setActiveMenu("solutions");
           else if (location.pathname === "/servicesembedded") setActiveMenu("solutions");
           else if (location.pathname === "/servicesqa") setActiveMenu("solutions");
+          else if (location.pathname === "/serviceai") setActiveMenu("solutions");
           else if (location.pathname === "/talenthub") setActiveMenu("talenthub");
           else if (location.pathname === "/itstaffing") setActiveMenu("talenthub");
           else if (location.pathname === "/contract") setActiveMenu("talenthub");

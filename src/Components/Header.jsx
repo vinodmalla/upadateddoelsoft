@@ -194,7 +194,7 @@ function Header() {
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
-                      setActiveMenu("solutions")}} to="/softwareDevelopment" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
+                      setActiveMenu("solutions")}} to="/serviceai" >   <div className="bg-white hover:bg-[#EF0E0E]  hover:text-white text-zinc-800  p-2 flex flex-row ">
                         <div className="bg-white shadow-lg border border-zinc-200 p-[0.6rem] rounded ">
                         <img src='/a.svg' alt="icon" className="w-6 h-6" />
                         </div>

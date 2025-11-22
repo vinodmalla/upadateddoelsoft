@@ -27,6 +27,7 @@ import IoTDevelopment from './Components/IoTDevelopment';
 import Embedded from './Components/Embedded';
 import QA from './Components/QA';
 import { MenuProvider } from './Components/MenuContext';
+import Aiservices from './Components/Aiservices';
 
 function App() {
   return (
@@ -72,6 +73,7 @@ export const approuter = createBrowserRouter([
       { path: "/excutive", element: <Executive /> },
       { path: "/rpo", element: <Rpo /> },
       {path:"/servicesqa",element:<QA/>},
+      {path:"/serviceai",element:<Aiservices/>}
     ],
   },
 ]);

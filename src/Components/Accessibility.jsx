@@ -324,19 +324,19 @@ We go beyond fixing issues. We help you future-proof your digital platforms,<br/
           <p className="text-gray-600 md:ml-2">Doelsoft delivers accessibility across industries—co-created and validated by real users:</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 md:ml-8 py-10 px-6 sm:px-12 md:px-20 gap-6">
-          {[{src:"/ecommerce.svg", title:"E-commerce & Retail" ,desc:"Accessible shopping carts, product images, checkout flows"},
-                    {src:"/health_care.svg",title:"Healthcare & Telemedicine",desc:"Patient portals, telehealth apps"},
-                    {src:"/finance.svg",title:"Banking & Finance",desc:"Mobile apps, online banking, disclosures, ATMs"},
-                    {src:"/education.svg",title:"Education & E-Learning",desc:"LMS platforms, eBooks, assessments"},
-                    {src:"/travel.svg",title:"Hospitality & Travel",desc:"Booking engines, travel apps"},
-                    {src:"/media.svg",title:"Publishing & Media",desc:"Digital books, journals, interactive media"},
-                    {src:"/realestate.svg",title:"Telecom & IT Services ",desc:"Enterprise apps, analytics, and cloud solutions for large-scale deployments."},
-                    {src:"/logistics.svg",title:"Government & Public Services",desc:"Citizen-focused, standards-compliant platforms"},
-                    {src:"/health_care.svg",title:"Corporate & Enterprise",desc:"Intranets, CRMs, employee portals"},
-                    {src:"/finance.svg",title:"Non-Profits & NGOs",desc:"Outreach platforms, donation systems"},
-                    {src:"/education.svg",title:"Entertainment & Streaming",desc:"OTT, games, live events with captions & AD"},
-                    {src:"/travel.svg",title:"Libraries & Museums",desc:"Digital archives, catalogs, exhibits"},
-                    {src:"/media.svg",title:"Insurance & Legal Services",desc:"Policies, forms, claims with accessibility review"},
+          {[{src:"/as1.svg", title:"E-commerce & Retail" ,desc:"Accessible shopping carts, product images, checkout flows"},
+                    {src:"/as2.svg",title:"Healthcare & Telemedicine",desc:"Patient portals, telehealth apps"},
+                    {src:"/as3.svg",title:"Banking & Finance",desc:"Mobile apps, online banking, disclosures, ATMs"},
+                    {src:"/as4.svg",title:"Education & E-Learning",desc:"LMS platforms, eBooks, assessments"},
+                    {src:"/as5.svg",title:"Hospitality & Travel",desc:"Booking engines, travel apps"},
+                    {src:"/as6.svg",title:"Publishing & Media",desc:"Digital books, journals, interactive media"},
+                    {src:"/as7.svg",title:"Telecom & IT Services ",desc:"Enterprise apps, analytics, and cloud solutions for large-scale deployments."},
+                    {src:"/as8.svg",title:"Government & Public Services",desc:"Citizen-focused, standards-compliant platforms"},
+                    {src:"/as9.svg",title:"Corporate & Enterprise",desc:"Intranets, CRMs, employee portals"},
+                    {src:"/as10.svg",title:"Non-Profits & NGOs",desc:"Outreach platforms, donation systems"},
+                    {src:"/as11.svg",title:"Entertainment & Streaming",desc:"OTT, games, live events with captions & AD"},
+                    {src:"/as12.svg",title:"Libraries & Museums",desc:"Digital archives, catalogs, exhibits"},
+                    {src:"/as13.svg",title:"Insurance & Legal Services",desc:"Policies, forms, claims with accessibility review"},
                    
 
 

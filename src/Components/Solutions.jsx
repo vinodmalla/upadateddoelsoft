@@ -22,7 +22,7 @@ function Solutions() {
     { title: "IOT SOLUTIONS", img: "/servicesiot.svg", link: "/servicesiot", color: "red" },
     { title: "EMBEDDED TECHNOLOGIES", img: "/servicesembedded.svg", link: "/servicesembedded", color: "black" },
     { title: "FLAWLESS QA SERVICES", img: "/servicesqa.svg", link: "/servicesqa", color: "red" },
-    { title: "AI SERVICES", img: "/servicesai.svg", link: "/servicesai", color: "black" },
+    { title: "AI SERVICES", img: "/servicesai.svg", link: "/serviceai", color: "black" },
   ];
 
  
