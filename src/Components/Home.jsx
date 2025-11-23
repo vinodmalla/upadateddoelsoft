@@ -242,7 +242,7 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full `}
       >
-        {index===0 && <p className={`font-inter text-xl  ml-2 `}>AI-Powered Strategies to Target Tomorrow</p> }
+        {index===0 && <p className={`font-inter text-xl  ml-1 `}>AI-Powered Strategies to Target Tomorrow</p> }
         <h1 className="text-xl font-kumbh  lg:text-[30px] xl:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
           {details.h11}
           </h1>

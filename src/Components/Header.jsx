@@ -350,7 +350,7 @@ function Header() {
 
         {/* Social Icons (show at lg and above) */}
         <div className="hidden lg:flex items-center space-x-4 lg:space-x-5 xl:ml-36">
-          <a href="/" target="_blank" className="p-2">
+          <a href="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_blank" className="p-2">
             <FaInstagram  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
           <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
@@ -403,7 +403,7 @@ function Header() {
           ))}
 
           <div className="flex space-x-6 pt-4">
-            <a href="/" target="_blank" className="p-2">
+            <a href="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_blank" className="p-2">
               <FaInstagram className="text-xl text-gray-700 hover:text-red-600" />
             </a>
             <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">

@@ -2,7 +2,7 @@ import { Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   FaLinkedin,
-  FaFacebookMessenger,
+  FaInstagram,
   FaTwitter,
   
 } from "react-icons/fa";
@@ -33,7 +33,7 @@ export default function Footer() {
 
           <div className="flex gap-4 mt-4 text-gray-600 text-xl">
             <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank"><FaLinkedin /></a>
-            <a href="/"><FaFacebookMessenger /></a>
+            <a href="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_target"><FaInstagram /></a>
             <a href="/"><FaTwitter /></a>
 
           </div>
