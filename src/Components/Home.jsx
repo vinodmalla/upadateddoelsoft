@@ -20,7 +20,7 @@ import CyberSecurity from "../assets/CyberSecurity.svg";
 import data from "../assets/Data.svg";
 import Accessibility from "../assets/Accessibility.svg";
 import Background from "../assets/Background.svg";
-import { Compass, Ruler, Truck, Share2 } from "lucide-react";
+
 import secure from '../assets/Secure.svg';
 import Cloud_Done from '../assets/Cloud_Done.svg';
 
@@ -131,25 +131,25 @@ const steps = [
   {
     title: "Discover",
     desc: "Value, Opportunities & Risks",
-    icon: <Compass className="w-8 h-8 text-white" />,
+    icon: "Steps1.svg",
   },
   {
     title: "Design",
     desc: "Blueprint, Governance, KPIs",
-    icon: <Ruler className="w-8 h-8 text-white" />,
+    icon: "Steps2.svg",
   },
   {
     title: "Deliver",
     desc: "Build, Integrate, Harden, Ship",
-    icon: <Truck className="w-8 h-8 text-white" />,
+    icon: "Steps3.svg",
   },
   {
     title: "Scale",
     desc: "MLOps, FinOps improvement",
-    icon: <Share2 className="w-8 h-8 text-white" />,
+    icon: "Steps4.svg",
   },
 ];
-const frames=["OutCome & First Delivery","AI + Human Intelligence", "Secure,Accesibile by Disign","Global ,Agile & Scalable"];
+const frames=["Secure,Accesibile by Disigen","Global ,Agile & Scalable","OutCome & First Delivery","AI + Human Intelligence",];
 const cards = [
     {
       title: "Applied AI, Not Experiments",
@@ -467,13 +467,13 @@ useEffect(()=>{
 
       {/* Button */}
       <div className="flex justify-center lg:justify-start">
-        <button className="flex items-center justify-center font-inter gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-40 md:whitespace-nowrap py-3 sm:py-5 text-lg sm:text-xl shadow-lg transition mt-4">
+     <Link to="/serviceai">  <button className="flex items-center justify-center font-inter gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-40 md:whitespace-nowrap py-3 sm:py-5 text-lg sm:text-xl shadow-lg transition mt-4">
           Explore AI Strategy{" "}
           <ArrowUpRight
             className="border border-white rounded-full text-center"
             size={28}
           />
-        </button>
+        </button></Link>
       </div>
     </div>
 
@@ -579,13 +579,13 @@ useEffect(()=>{
                 key={idx}
                 className="bg-red-600 hover:bg-[#464b51] text-white xl:h-[146px] xl:w-[290.28px] p-8  flex flex-col justify-between shadow-lg "
               >
-                <div className="flex flex-col items-start gap-3 ">
-                  {step.icon}
+                <div className="flex flex-col mb-2 items-start gap-3 ">
+                <img src={step.icon} alt={step.title} className="w-[28px] h-[28px]"/>
                  
                   
                 </div>
                 
-                <div className="flex flex-row justify-between gap-3 ">
+                <div className="flex flex-row  justify-between gap-3 ">
                    
                        <h3 className="text-xl font-kumbh font-medium">{step.title}</h3>
                   <p className="w-8 h-8 flex items-center justify-center rounded-full  border border-white ">
@@ -686,13 +686,13 @@ useEffect(()=>{
   {/* Desktop / Tablet view */}
 
    
-  <div className="hidden md:flex flex-wrap gap-6 xl:-ml-[3rem] justify-center">
+  <div className="hidden lg:flex flex-wrap gap-6 xl:-ml-[3rem] justify-between">
     {frames.map((frame, i) => (
       <div
         key={i}
-        className="flex flex-row bg-white shadow-xl px-4 py-3 justify-between flex-1 min-w-[200px] max-w-[300px]"
+        className="flex flex-row  gap-4 bg-white shadow-xl w-96 px-2 h-[68px] py-3 justify-between flex-1 min-w-[240px] max-w-[440px]"
       >
-        <div className="flex flex-row gap-4 mt-3 items-center whitespace-nowrap">
+        <div className="flex flex-row gap-2 mt-3  items-center whitespace-nowrap">
           <img
             src="/F1.svg"
             alt={frame}
@@ -712,12 +712,12 @@ useEffect(()=>{
     />
 
   </div>
-   <div className='hidden xl:flex py-6 '>
+  <Link to="/chooseus" > <div className='hidden xl:flex py-6 '>
     <ArrowUpRight className="border absolute  z-30 mt-9 xl:left-[160px] top-[-104px] border-black rounded-full p-4"
                           size={56}
     />
 
-  </div>
+  </div></Link>
   </div>
   
     
