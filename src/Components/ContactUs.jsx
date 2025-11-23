@@ -137,8 +137,8 @@ function ContactUs() {
       <div>
         <h3 className="text-red-600 font-semibold">Address</h3>
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-          Office No: 604, 1st floor, Marvela Infinity Corporate, <br />
-          dNo: 1a, KPHB Phase 3, Kukatpally, Hyderabad, Telangana 500072
+        Office No:#104, first floor, manjeera trinity corporate, <br />
+        ,eSeva Ln, K P H B Phase 3, Kukatpally, Hyderabad, Telangana 500072
         </p>
       </div>
     </div>
@@ -149,7 +149,7 @@ function ContactUs() {
         <div>
           <h3 className="text-red-600 font-semibold">Phone</h3>
           <p className="text-gray-700 text-sm leading-relaxed">
-            040 - 68853867 <br /> +1 321 204 3271
+           08044643155 <br />+1 (945) 382-1615
           </p>
         </div>
       </div>

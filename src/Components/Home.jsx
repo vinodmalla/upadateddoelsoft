@@ -149,7 +149,7 @@ const steps = [
     icon: "Steps4.svg",
   },
 ];
-const frames=["Secure,Accesibile by Disigen","Global ,Agile & Scalable","OutCome & First Delivery","AI + Human Intelligence",];
+const frames=["Secure,Accesibile by Desigen","Global ,Agile & Scalable","OutCome & First Delivery","AI + Human Intelligence",];
 const cards = [
     {
       title: "Applied AI, Not Experiments",
@@ -686,19 +686,20 @@ useEffect(()=>{
   {/* Desktop / Tablet view */}
 
    
-  <div className="hidden lg:flex flex-wrap gap-6 xl:-ml-[3rem] justify-between">
+  <div  className="hidden lg:flex flex-row gap-[2.7rem] xl:-ml-14  w-screen">
     {frames.map((frame, i) => (
       <div
         key={i}
-        className="flex flex-row  gap-4 bg-white shadow-xl w-96 px-2 h-[68px] py-3 justify-between flex-1 min-w-[240px] max-w-[440px]"
+       className="flex flex-row  gap-4 bg-white shadow-2xl 
+           w-[280px] h-[68px] px-4 py-3"
       >
         <div className="flex flex-row gap-2 mt-3  items-center whitespace-nowrap">
           <img
             src="/F1.svg"
             alt={frame}
-            className="w-10 h-10"
+            className="w-8 h-8"
           />
-          <p className="text-sm sm:text-base font-semibold text-gray-800">{frame}</p>
+          <p className="flex flex-row gap-2 items-center whitespace-nowrap">{frame}</p>
         </div>
       </div>
     ))}
@@ -713,7 +714,7 @@ useEffect(()=>{
 
   </div>
   <Link to="/chooseus" > <div className='hidden xl:flex py-6 '>
-    <ArrowUpRight className="border absolute  z-30 mt-9 xl:left-[160px] top-[-104px] border-black rounded-full p-4"
+    <ArrowUpRight className="border absolute hover:bg-gray-600  z-30 mt-9 xl:left-[160px] top-[-104px] border-black rounded-full p-4"
                           size={56}
     />
 

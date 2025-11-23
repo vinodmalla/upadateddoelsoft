@@ -32,7 +32,7 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-4 mt-4 text-gray-600 text-xl">
-            <a href="/"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank"><FaLinkedin /></a>
             <a href="/"><FaFacebookMessenger /></a>
             <a href="/"><FaTwitter /></a>
 
@@ -92,10 +92,10 @@ export default function Footer() {
               <Mail size={18} /> info@doelsoft.com
             </li>
             <li className="flex items-center gap-2">
-              <Phone size={18} /> +91 040 - 66588367
+              <Phone size={18} /> +91   8044643155
             </li>
             <li className="flex items-center gap-2">
-              <Phone size={18} /> +1 321 204 3271
+              <Phone size={18} /> +1 (945) 382-1615
             </li>
           </ul>
         </div>

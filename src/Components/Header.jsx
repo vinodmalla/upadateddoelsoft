@@ -353,7 +353,7 @@ function Header() {
           <a href="/" target="_blank" className="p-2">
             <FaInstagram  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
-          <a href="/" target="_blank" className="p-2">
+          <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
             <FaLinkedinIn className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
           <a href="/" target="_blank" className="p-2">
@@ -406,7 +406,7 @@ function Header() {
             <a href="/" target="_blank" className="p-2">
               <FaInstagram className="text-xl text-gray-700 hover:text-red-600" />
             </a>
-            <a href="/" target="_blank" className="p-2">
+            <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
               <FaLinkedinIn className="text-xl text-gray-700 hover:text-red-600" />
             </a>
             <a href="/" target="_blank" className="p-2">
