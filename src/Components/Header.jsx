@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaLinkedinIn, FaInstagram, FaBars, FaTimes, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaBars, FaTimes  } from "react-icons/fa";
 import { Users, Briefcase, UserCheck, UserSearch, FileSearch } from "lucide-react";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import { useMenu } from "./MenuContext";
-
+import { FaXTwitter } from "react-icons/fa6";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
  
@@ -357,7 +357,7 @@ function Header() {
             <FaLinkedinIn className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
           <a href="/" target="_blank" className="p-2">
-            <FaTwitter className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
+            <FaXTwitter  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </a>
         </div>
 
@@ -410,7 +410,7 @@ function Header() {
               <FaLinkedinIn className="text-xl text-gray-700 hover:text-red-600" />
             </a>
             <a href="/" target="_blank" className="p-2">
-              <FaTwitter className="text-xl text-gray-700 hover:text-red-600" />
+              <FaXTwitter r className="text-xl text-gray-700 hover:text-red-600" />
             </a>
           </div>
         </nav>

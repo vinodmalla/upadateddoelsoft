@@ -2,10 +2,9 @@ import { Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   FaLinkedin,
-  FaInstagram,
-  FaTwitter,
-  
+  FaInstagram,  
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import logo from "../assets/logo.svg";
 import { useMenu } from "./MenuContext";
 
@@ -32,9 +31,9 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-4 mt-4 text-gray-600 text-xl">
-            <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank"><FaLinkedin /></a>
-            <a href="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_target"><FaInstagram /></a>
-            <a href="/"><FaTwitter /></a>
+            <Link to="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank"><FaLinkedin /></Link>
+            <Link to="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_target"><FaInstagram /></Link>
+            <Link to="/" target="_target"><FaXTwitter  /></Link>
 
           </div>
         </div>
@@ -43,18 +42,18 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Solutions</h3>
           <ul className="space-y-2 text-gray-600">
-            <li ><a href="/softwareDevelopment">Custom Software Development</a></li>
-            <li><a href="/mobileDevelopment">Mobile App Development</a></li>
-            <li><a href="/servicesweb">Web Design & Development</a></li>
-            <li><a href="/servicesuiux">UI/UX Design Services</a></li>
-            <li><a href="/digitalaccessibilit">Digital Accessibility</a></li>
-            <li><a href="/servicesmicrosoft">Microsoft Solutions</a></li>
-            <li><a href="/servicesmulesoft">MuleSoft Solutions</a></li>
-            <li><a href="/servicesiot">IoT Solutions</a></li>
-            <li><a href="/servicesembedded">Embedded Technologies</a></li>
-            <li><a href="/servicesqa">Flawless QA Services</a></li>
-            <li><a href="/serviceai">AI Services</a></li>
-            <li><a href="/salesforce">Salesforce Development</a></li>
+            <li ><Link to="/softwareDevelopment">Custom Software Development</Link></li>
+            <li><Link to="/mobileDevelopment">Mobile App Development</Link></li>
+            <li><Link to="/servicesweb">Web Design & Development</Link></li>
+            <li><Link to="/servicesuiux">UI/UX Design Services</Link></li>
+            <li><Link to="/digitalaccessibilit">Digital Accessibility</Link></li>
+            <li><Link to="/servicesmicrosoft">Microsoft Solutions</Link></li>
+            <li><Link to="/servicesmulesoft">MuleSoft Solutions</Link></li>
+            <li><Link to="/servicesiot">IoT Solutions</Link></li>
+            <li><Link to="/servicesembedded">Embedded Technologies</Link></li>
+            <li><Link to="/servicesqa">Flawless QA Services</Link></li>
+            <li><Link to="/serviceai">AI Services</Link></li>
+            <li><Link to="/salesforce">Salesforce Development</Link></li>
           </ul>
         </div>
 
@@ -62,11 +61,11 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Talent Hub</h3>
           <ul className="space-y-2 text-gray-600">
-            <li><a href="/itstaffing">IT Staffing Solutions</a></li>
-            <li><a href="/contract">Contract & Temporary Hiring</a></li>
-            <li><a href="/permanent">Permanent Hiring</a></li>
-            <li><a href="/excutive">Executive Search</a></li>
-            <li><a href="/rpo">RPO Services</a></li>
+            <li><Link to="/itstaffing">IT Staffing Solutions</Link></li>
+            <li><Link to="/contract">Contract & Temporary Hiring</Link></li>
+            <li><Link to="/permanent">Permanent Hiring</Link></li>
+            <li><Link to="/excutive">Executive Search</Link></li>
+            <li><Link to="/rpo">RPO Services</Link></li>
           </ul>
         </div>
 
@@ -74,12 +73,12 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
           <ul className="space-y-2 text-gray-600">
-            <li ><a  className={activeMenu === "home" ? " text-red-600" : ""} href="/">Home</a></li>
-            <li><a 
-        className={activeMenu === "chooseus" ? " text-red-600" : ""} href="/chooseus">Why Choose Us</a></li>
-            <li><a  className={activeMenu === "carrers" ? " text-red-600" : ""} href="/carrers">Careers</a></li>
-            <li><a  className={activeMenu === "insights" ? " text-red-600" : ""} href="/insights">Insights</a></li>
-            <li><a  className={activeMenu === "contact" ? " text-red-600" : ""} href="/contact">Contact Us</a></li>
+            <li ><Link  className={activeMenu === "home" ? " text-red-600" : ""} to="/">Home</Link></li>
+            <li><Link 
+        className={activeMenu === "chooseus" ? " text-red-600" : ""} to="/chooseus">Why Choose Us</Link></li>
+            <li><Link className={activeMenu === "carrers" ? " text-red-600" : ""} to="/carrers">Careers</Link></li>
+            <li><Link  className={activeMenu === "insights" ? " text-red-600" : ""} to="/insights">Insights</Link></li>
+            <li><Link  className={activeMenu === "contact" ? " text-red-600" : ""} to="/contact">Contact Us</Link></li>
             
           </ul>
         </div>
