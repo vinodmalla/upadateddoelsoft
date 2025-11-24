@@ -75,55 +75,65 @@ function Home() {
   {
     icon: "/artificial.svg", // replace with actual icons
     title: "Recruitment Intelligence",
-    desc: "Cut time-to-hire with AI-powered parsing, shortlisting, and scheduling.",
+    desc: "Accelerate hiring cycles with intelligent resume parsing, smart shortlisting, automated scheduling, and role-fit scoring.",
     type: "border",
   },
   {
     icon: "/intelligence1.svg",
     title: "AI Copilots for Operations",
-    desc: "Automate knowledge work across service, support, and back-office.",
+    desc: "Automate repetitive knowledge work across service, support, finance, HR, and back-office functions with domain-trained AI assistants.",
     type: "bg",
   },
   {
     icon: "/fraud.svg",
     title: "Fraud & Risk Analytics",
-    desc: "Spot anomalies early with streaming ML and governed models.",
+    desc: "Detect anomalies and emerging risks in real time using streaming machine learning, governed models, and automated alerting pipelines.",
     type: "border",
   },
   {
     icon: "/Group_A.svg",
     title: "Accessibility AI & Compliance",
-    desc: "Ship inclusive products with automated audits and remediation.",
+    desc: "Deliver inclusive products faster with automated accessibility audits, code-level remediation guidance, and continuous compliance workflows.",
     type: "bg",
   },
   {
     icon: "/Group_B.svg",
     title: "Cloud Modernization Accelerator",
-    desc: "Migrate, containerize, and optimize applications seamlessly.",
+    desc: "Modernize applications seamlessly with automated migration, containerization, refactoring patterns, and cloud-native optimization.",
     type: "border",
   },
   {
     icon: "/Group_C.svg",
     title: "Customer 360 & Personalization",
-    desc: "Unify customer data into one view for tailored experiences.",
+    desc: "Unify customer data into a single, trusted view to power tailored experiences, predictive insights, and personalized engagement at scale.",
     type: "bg",
   },
 ];
     const Testimonial=[
-       { quote:" Welcome to the epicenter of AI innovation. Future Tech AI News is your passport",
-        name:"Ajay sharma",
-        company:"Techoly",
+       { quote:"Outstanding work. Doelsoft delivered high-quality results faster than expected.",
+        name:"Pat Vital",
+        company:" Mahasos ",
         avitor:"/Avatar.svg"
     },
-     { quote:" Welcome to the epicenter of AI innovation. Future Tech AI News is your passport"
+     { quote:" Doelsoft streamlined our hiring with faster shortlisting and better candidates."
 ,
-        name:"Avinash",
-        company:"Tech world",
+        name:"Francis Smith ",
+        company:"Tavant",
         avitor:"/Avatar.svg"
     },
-     { quote:" Welcome to the epicenter of AI innovation. Future Tech AI News is your passport",
-        name:"Tim Cook",
-        company:"apple",
+     { quote:"Doelsoft built a sleek, high-performance mobile app that exceeded expectations.",
+        name:"Suresh",
+        company:"Emegro Consulting",
+        avitor:"/Avatar.svg"
+    },
+     { quote:"Fast, secure, beautifully designed eCommerce platform—excellent delivery by Doelsoft.",
+        name:"Crispin Luna",
+        company:"Zingo Credits",
+        avitor:"/Avatar.svg"
+    },
+    { quote:"Exceptional recruitment support—Doelsoft helped us close key roles easily.",
+        name:"Ankur",
+        company:"ACL Digital",
         avitor:"/Avatar.svg"
     }
 ]
@@ -234,7 +244,7 @@ useEffect(()=>{
 <section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-auto xl:mx-[70px] relative flex flex-col md:flex-col xl:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
-  <div className="w-full lg:w-1/2   lg:flex-col gap-6 md:gap-8 text-center lg:text-left xl:mt-36">
+  <div className="w-full lg:w-1/2  lg:flex-col gap-6 md:gap-8 text-center lg:text-left xl:mt-36">
     {CursolDetails.map((details, index) => (
       <div
         key={index}
@@ -333,26 +343,26 @@ useEffect(()=>{
     />
 
     {/* Testimonials */}
-    <div className="flex flex-col items-center lg:items-end gap-4 lg:absolute xl:top-1/4 lg:right-0 lg:mr-[-90px]  lg:mt-[140px] ">
+    <div className="flex flex-col items-center lg:items-end gap-4 lg:absolute xl:top-1/4 lg:-right-12 lg:mt-[140px] w-full px-2 sm:px-4">
       {Testimonial.map((item, index) => (
         <div
           key={index}
-          className={`bg-white drop-shadow-lg z-50 p-3 md:p-8 lg:p-6 w-72 transition-opacity duration-1000 ${
+          className={`bg-white drop-shadow-lg z-50 p-3 md:p-6 lg:p-4 w-full max-w-[320px] sm:max-w-[360px] md:max-w-[420px] lg:max-w-[280px] transition-opacity duration-1000 overflow-hidden ${
             index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
           }`}
         >
-          <p className="text-xs sm:text-[14px] italic whitespace-break-spaces text-gray-600 ">
+          <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed whitespace-normal break-words">
             "{item.quote}"
           </p>
-          <div className="flex items-center mt-2 gap-2">
+          <div className="flex items-center mt-4 gap-3">
             <img
               src={item.avitor}
               alt="avatar"
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0"
             />
-            <div>
-              <p className="text-xs sm:text-sm font-semibold">{item.name}</p>
-              <p className="text-[10px] sm:text-xs text-gray-500">
+            <div className="min-w-0">
+              <p className="text-xs sm:text-sm font-semibold truncate">{item.name}</p>
+              <p className="text-[10px] sm:text-xs text-gray-500 truncate">
                 Founder @ {item.company}
               </p>
             </div>
@@ -451,9 +461,8 @@ useEffect(()=>{
         Core Services
       </h1>
       <p className="text-base font-inter md:text-lg font-normal leading-relaxed px-2 sm:px-0">
-        We Combine AI, Cloud & Data to design, build and{" "}
-        <br className="hidden lg:block" /> scale secure digital products aligned
-        to measurable outcomes.
+       We leverage cutting-edge engineering and innovation to design, build  and scale secure digital products that deliver measurable business results.
+        
       </p>
 
       {/* Image */}
@@ -482,61 +491,61 @@ useEffect(()=>{
   className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mx-auto gap-6 lg:gap-8 w-full max-w-7xl px-4 md:px-6 lg:px-8"
 >
   {[
-    {
-      icon: AI,
-      title: "AI Strategy & Consulting",
-      list: [
-        "Gen-AI features & Copilots",
-        "Microservices & API, Integrations",
-        "Performance, security, observability",
-      ],
-    },
-    {
-      icon: cloud,
-      title: "Cloud & AI Infrastructure",
-      list: [
-        "Cloud migrations & Modernization",
-        "MLOPs Platforms, model serving",
-        "Cost, reliability & security baselines",
-      ],
-    },
-    {
-      icon: data,
-      title: "Data Science & Analytics",
-      list: [
-        "Data engineering & Governance",
-        "ML modeling & evaluation",
-        "BI dashboards & decision intelligence",
-      ],
-    },
-    {
-      icon: Intelligent,
-      title: "Intelligent Software Dev",
-      list: [
-        "Gen-AI features & copilots",
-        "Microservices & APIs, integrations",
-        "Performance, security, observability",
-      ],
-    },
-    {
-      icon: CyberSecurity,
-      title: "AI-Enhanced CyberSecurity",
-      list: [
-        "Anomaly & fraud detection",
-        "Identity, access & zero-trust",
-        "Compliance hardening & monitoring",
-      ],
-    },
-    {
-      icon: Accessibility,
-      title: "Accessibility Inclusive Design",
-      list: [
-        "Accessibility audits & remediation",
-        "Inclusive UX writing & patterns",
-        "Continuous accessibility in CI/CD",
-      ],
-    },
-  ].map((service, i) => (
+  {
+    icon: AI,
+    title: "AI Strategy & Consulting",
+    list: [
+      "AI roadmaps & enterprise adoption",
+      "Use-cases, ROI planning & governance",
+      "Responsible AI, risk & safety",
+    ],
+  },
+  {
+    icon: cloud,
+    title: "Cloud & Infrastructure Engineering",
+    list: [
+      "Cloud architecture & scalable infra",
+      "Hybrid/multi-cloud & optimization",
+      "Migration & modernization",
+    ],
+  },
+  {
+    icon: data,
+    title: "Data Engineering & Analytics",
+    list: [
+      "Data platforms & governance",
+      "Feature engineering & ML models",
+      "BI, analytics & decision intelligence",
+    ],
+  },
+  {
+    icon: Intelligent,
+    title: "Intelligent Software Development",
+    list: [
+      "AI-driven dev workflows & copilots",
+      "Automated testing & secure coding",
+      "Intelligent components in products",
+    ],
+  },
+  {
+    icon: CyberSecurity,
+    title: "AI-Driven Cybersecurity",
+    list: [
+      "Threat detection & risk scoring",
+      "Identity security & zero-trust",
+      "Compliance, audit & posture mgmt",
+    ],
+  },
+  {
+    icon: Accessibility,
+    title: "Accessibility & Inclusive Design",
+    list: [
+      "Accessible, inclusive product design",
+      "A11y audits, remediation & QA",
+      "CI/CD-integrated accessibility checks",
+    ],
+  },
+].map((service, i) => (
     <div
       key={i}
       className="border border-gray-600 p-6 px-2 lg:px-6 py-6 lg:py-4 bg-white hover:scale-[1.02] transition-transform duration-300"
@@ -658,8 +667,8 @@ useEffect(()=>{
         Why Doelsoft
       </h1>
       <p className="py-4 text-base sm:text-lg xl:text-xl font-inter leading-relaxed max-w-[95%] mx-auto sm:mx-0">
-        We turn AI, Cloud & Data into measurable outcomes shipping production systems with governance,
-        security, and accessibility built in.
+        We bring together deep technical expertise, secure system design, and data-driven decision frameworks to deliver production-grade solutions with governance, observability, and accessibility at the core.
+ 
       </p>
 
       <h2 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl font-inter">
@@ -683,24 +692,24 @@ useEffect(()=>{
 
       {/* Frames Section */}
      <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6 lg:px-48">
-  {/* Desktop / Tablet view */}
+  
 
-   
-  <div  className="hidden lg:flex flex-row gap-[2.7rem] xl:-ml-14  w-screen">
+     
+    <div  className="hidden lg:flex flex-row gap-[2.7rem] lg:-ml-44 xl:-ml-14  w-screen">
     {frames.map((frame, i) => (
       <div
-        key={i}
+      key={i}
        className="flex flex-row  gap-4 bg-white shadow-2xl 
-           w-[280px] h-[68px] px-4 py-3"
+         w-[280px] h-[68px] px-4 py-3"
       >
-        <div className="flex flex-row gap-2 mt-3  items-center whitespace-nowrap">
-          <img
-            src="/F1.svg"
-            alt={frame}
-            className="w-8 h-8"
-          />
-          <p className="flex flex-row gap-2 items-center whitespace-nowrap">{frame}</p>
-        </div>
+      <div className="flex flex-row gap-2 mt-3  items-center whitespace-nowrap">
+        <img
+        src="/F1.svg"
+        alt={frame}
+        className="w-8 h-8"
+        />
+        <p className="flex flex-row gap-2 items-center whitespace-nowrap">{frame}</p>
+      </div>
       </div>
     ))}
       
@@ -708,22 +717,42 @@ useEffect(()=>{
     <div className='hidden xl:flex py-6 '>
     <img
       src="/Highlight1.svg"
-      className=" absolute w-20 z-30 mt-9 xl:left-[400px] top-[-102px]"
+      className=" absolute w-20 z-30 mt-9 xl:left-[380px] top-[-102px]"
       alt="highlight"
     />
 
-  </div>
-  <Link to="/chooseus" > <div className='hidden xl:flex py-6 '>
+    </div>
+    <Link to="/chooseus" > <div className='hidden xl:flex py-6 '>
     <ArrowUpRight className="border absolute hover:bg-gray-600  z-30 mt-9 xl:left-[160px] top-[-104px] border-black rounded-full p-4"
-                          size={56}
+                size={56}
     />
 
-  </div></Link>
-  </div>
-  
+    </div></Link>
+    </div>
+
+    {/* Tablet view - Medium screens */}
+    <div  className="hidden md:flex lg:hidden flex-row gap-[1.5rem] w-screen overflow-x-auto px-4">
+    {frames.map((frame, i) => (
+      <div
+      key={i}
+       className="flex flex-row  gap-4 bg-white shadow-2xl 
+         w-[280px] h-[68px] px-4 py-3 flex-shrink-0"
+      >
+      <div className="flex flex-row gap-2 mt-3  items-center whitespace-nowrap">
+        <img
+        src="/F1.svg"
+        alt={frame}
+        className="w-8 h-8"
+        />
+        <p className="flex flex-row gap-2 items-center whitespace-nowrap">{frame}</p>
+      </div>
+      </div>
+    ))}
+    </div>
+    
     
 
-  {/* Mobile view */}
+    {/* Mobile view */}
   <div className=" md:hidden grid grid-cols-1 sm:grid-cols-2 md:py-8 gap-4">
     {frames.map((frame, i) => (
       <div
@@ -927,9 +956,7 @@ useEffect(()=>{
             </h2>
 
             <p className="text-gray-600 font-inter text-sm sm:text-base xl:-ml-6 md:text-lg mt-3 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Opinionated, production-ready solutions that turn
-              <span className="hidden sm:inline"> AI, Cloud & Data </span>
-              into outcomes fast.
+              Pre-built, production-grade frameworks that convert advanced engineering and intelligent platforms into measurable business results.
             </p>
 
             {solutions.slice(0, 1).map((item, i) => (
@@ -1006,19 +1033,19 @@ useEffect(()=>{
             <Link to="/contact">
               <div
                 className="
-                  bg-red-600 hover:bg-[#c10d0d] text-white
+                  bg-red-600  text-white
                   flex flex-col justify-center items-center
                   p-6 sm:p-8 
                    w-full
                   h-full xl:h-[248px]  xl:w-[376px] 
-                  transition
+                  hover:bg-gray-600
                 "
               >
                 <div className="text-center">
                   <h3 className="font-semibold text-lg sm:text-xl md:text-2xl mb-3">
                     Talk to an Expert
                   </h3>
-                  <button className="w-10 h-10 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition">
+                  <button className="w-10 h-10 flex items-center justify-center rounded-full border  hover:text-red-600 transition">
                     <ArrowUpRight size={16} />
                   </button>
                 </div>

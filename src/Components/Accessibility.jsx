@@ -42,7 +42,7 @@ export default function Accessibility() {
     },
     {
       title: "Certified Expertise:",
-      desc: "DHS Trusted Tester, AODA, WCAG(2.x), Section 508, EN 301 549.",
+      desc: "A dedicated team of IAAP-certified accessibility specialists ensuring quality and compliance.",
     },
     {
       title: "Real-User Validation:",
