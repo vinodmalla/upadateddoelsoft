@@ -5,22 +5,34 @@ function ClientReviews() {
   // ==== Review Data ====
   const reviews = [
     {
-      name: "Davit Millar",
-      role: "CEO, PParkview Int, Ltd",
+      name: "Pat Vital ",
+      role: "Founder Mahasos",
       rating: 4,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit nisl, tincidunt commodo sit. Et, purus lectus odio cursus placerat leo, non etiam. Neque at leo risus orci.",
+      text: "Outstanding work. Doelsoft turned our vision into a high-quality solution quicker than we imagined",
     },
     {
-      name: "Jessica Stone",
-      role: "CTO, TechSphere",
+      name: "Francis Smith",
+      role: "Associate Director -Tavant",
       rating: 5,
-      text: "Doelsoft exceeded our expectations! Their recruitment process is seamless and the team is extremely professional and supportive.",
+      text: "Doelsoft streamlined our hiring—faster shortlisting, better candidates, and zero bottlenecks.",
     },
     {
-      name: "Robert Lane",
-      role: "HR Head, FinTrak",
+      name: "Suresh",
+      role: "Founder Emegro Consulting",
       rating: 5,
-      text: "Amazing experience working with Doelsoft! They delivered high-quality candidates and handled everything with precision.",
+      text: "Doelsoft delivered a sleek, high-performance mobile app that exceeded our expectations.",
+    },
+    {
+      name: "Crispin Luna ",
+      role: "Founder Zingo Credits",
+      rating: 4.5,
+      text: "Outstanding delivery—Doelsoft gave us a fast, secure, and beautifully designed eCommerce platform.",
+    },
+    {
+      name: "Ankur",
+      role: "Senior Manager ACL Digital",
+      rating: 4.5,
+      text: "Exceptional recruitment support. Doelsoft helped us close critical roles with ease.",
     },
   ];
 

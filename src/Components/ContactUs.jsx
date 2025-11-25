@@ -137,8 +137,8 @@ function ContactUs() {
       <div>
         <h3 className="text-red-600 font-semibold">Address</h3>
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-        Office No:#104, first floor, manjeera trinity corporate, <br />
-        ,eSeva Ln, K P H B Phase 3, Kukatpally, Hyderabad, Telangana 500072
+        Office No:#104, First Floor, Manjeera Trinity Corporate, <br />
+        ,ESeva Ln, K P H B Phase 3, Kukatpally, Hyderabad, Telangana 500072
         </p>
       </div>
     </div>

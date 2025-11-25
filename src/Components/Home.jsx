@@ -6,7 +6,6 @@ import menlo from '../assets/menlo.svg'
 import tech from '../assets/techmahindra.svg'
 import Counter from './Counter';
 import {useState, useEffect } from 'react'
-import { RxAvatar } from "react-icons/rx";
 import mask from "../assets/mask.svg";
 import BFSI from "../assets/BFSI.svg";
 import { Link } from 'react-router'
@@ -20,10 +19,8 @@ import CyberSecurity from "../assets/CyberSecurity.svg";
 import data from "../assets/Data.svg";
 import Accessibility from "../assets/Accessibility.svg";
 import Background from "../assets/Background.svg";
-
 import secure from '../assets/Secure.svg';
 import Cloud_Done from '../assets/Cloud_Done.svg';
-
 import Applied from '../assets/Applied_AI.svg';
 
 function Home() {
@@ -73,7 +70,7 @@ function Home() {
 }]
     const solutions = [
   {
-    icon: "/artificial.svg", // replace with actual icons
+    icon: "/artificial.svg", 
     title: "Recruitment Intelligence",
     desc: "Accelerate hiring cycles with intelligent resume parsing, smart shortlisting, automated scheduling, and role-fit scoring.",
     type: "border",
@@ -113,26 +110,31 @@ function Home() {
        { quote:"Outstanding work. Doelsoft delivered high-quality results faster than expected.",
         name:"Pat Vital",
         company:" Mahasos ",
+        role:"Founder",
         avitor:"/Avatar.svg"
     },
      { quote:" Doelsoft streamlined our hiring with faster shortlisting and better candidates."
 ,
         name:"Francis Smith ",
+        role:"Associate Director",
         company:"Tavant",
         avitor:"/Avatar.svg"
     },
      { quote:"Doelsoft built a sleek, high-performance mobile app that exceeded expectations.",
         name:"Suresh",
+        role:"Founder",
         company:"Emegro Consulting",
         avitor:"/Avatar.svg"
     },
      { quote:"Fast, secure, beautifully designed eCommerce platform—excellent delivery by Doelsoft.",
         name:"Crispin Luna",
+        role:"Senior Manager",
         company:"Zingo Credits",
         avitor:"/Avatar.svg"
     },
     { quote:"Exceptional recruitment support—Doelsoft helped us close key roles easily.",
         name:"Ankur",
+        role:"Founder",
         company:"ACL Digital",
         avitor:"/Avatar.svg"
     }
@@ -363,7 +365,7 @@ useEffect(()=>{
             <div className="min-w-0">
               <p className="text-xs sm:text-sm font-semibold truncate">{item.name}</p>
               <p className="text-[10px] sm:text-xs text-gray-500 truncate">
-                Founder @ {item.company}
+                {item.role} @ {item.company}
               </p>
             </div>
           </div>
@@ -648,11 +650,15 @@ useEffect(()=>{
               "{item.quote}"
             </p>
             <div className="flex items-center mt-4 sm:mt-6 gap-2">
-              <RxAvatar size={22} />
+              <img
+              src={item.avitor}
+              alt="avatar"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0"
+            />
               <div>
                 <p className="text-xs sm:text-sm font-inter font-semibold">{item.name}</p>
                 <p className="text-[10px] sm:text-xs font-inter text-gray-500">
-                  Founder @ {item.company}
+                  {item.role} @ {item.company}
                 </p>
               </div>
             </div>
@@ -695,7 +701,7 @@ useEffect(()=>{
   
 
      
-    <div  className="hidden lg:flex flex-row gap-[2.7rem] lg:-ml-44 xl:-ml-14  w-screen">
+    <div  className="hidden  xl:flex flex-row lg:grid lg:grid-cols-2 gap-[2.7rem]  xl:-ml-14  w-screen">
     {frames.map((frame, i) => (
       <div
       key={i}
@@ -731,7 +737,7 @@ useEffect(()=>{
     </div>
 
     {/* Tablet view - Medium screens */}
-    <div  className="hidden md:flex lg:hidden flex-row gap-[1.5rem] w-screen overflow-x-auto px-4">
+    <div  className="hidden md:grid lg:hidden xl:hidden  grid-cols-2 gap-[1.5rem] w-screen overflow-x-auto px-4">
     {frames.map((frame, i) => (
       <div
       key={i}
