@@ -21,7 +21,7 @@ function Rpo() {
           <h1 className="text-lg md:text-2xl font-kumbh underline font-semibold text-gray-800">
             Talent Hub
           </h1>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-kumbh font-bold text-red-600 mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh font-bold text-red-600 mt-2">
             RPO
           </h2>
 

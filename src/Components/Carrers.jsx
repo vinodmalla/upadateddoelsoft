@@ -62,32 +62,37 @@ function Carrers() {
  
 
   return (
-    <div className="w-full min-h-screen overflow-hidden font-kumbh mt-8 flex flex-col space-y-6">
+    <div className="relative max-w-screen mx-auto font-kumbh bg-white mt-10 overflow-hidden">
       {/* ===== Hero Section ===== */}
-      <section
-        className="relative w-full min-h-[550px] flex flex-col xl:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+      
+          <section
+        className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {/* Left Content */}
-        <div className="relative z-10 flex-1 space-y-10 flex flex-col items-center xl:mt-4  md:items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[71.5px] font-semibold font-kumbh text-[#EF0E0E] leading-snug mb-8 md:-mt-20">
-            DoelSoft Careers & <br /> <span>Opportunity</span>
+        <div className="relative z-10 flex-1  flex flex-col items-start justify-center text-center md:text-left">
+          
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold xl:leading-[87.5px] font-['kumbh_Sans'] text-[#EF0E0E] mb-8 md:-mt-4">
+           Doelsoft Careers & <br className="hidden sm:block" /> <span className="">Opportunity</span>
           </h2>
-           <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
-      Consult With Us <span className="ml-2">↗</span>
-    </button></Link>
+      
+      
+             <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+            Consult With Us <span className="ml-2">↗</span>
+          </button></Link>
         </div>
-
+      
         {/* Right Image */}
-        <div className="mt-10 md:mt-14 flex justify-center md:justify-end relative z-0">
+        <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
-            src="/carrers1.svg"
-            alt="carrers"
-            className="w-64 sm:w-80 md:w-[420px] lg:w-[500px] h-auto"
+            src="/Carrers1.svg"
+            alt="Team"
+            className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
           />
         </div>
       </section>

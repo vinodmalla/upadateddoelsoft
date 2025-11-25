@@ -128,13 +128,13 @@ function Home() {
     },
      { quote:"Fast, secure, beautifully designed eCommerce platform—excellent delivery by Doelsoft.",
         name:"Crispin Luna",
-        role:"Senior Manager",
+        role:"Founder",
         company:"Zingo Credits",
         avitor:"/Avatar.svg"
     },
     { quote:"Exceptional recruitment support—Doelsoft helped us close key roles easily.",
         name:"Ankur",
-        role:"Founder",
+        role:"Senior Manager",
         company:"ACL Digital",
         avitor:"/Avatar.svg"
     }
@@ -638,7 +638,7 @@ useEffect(()=>{
       />
 
       {/* Testimonials */}
-      <div className="flex flex-col items-end gap-2 mt-auto absolute top-[340px] md:top-[420px] lg:top-[500px] right-2 md:right-4 lg:right-0">
+      <div className="flex flex-col items-end gap-2 mt-auto absolute top-[340px] md:top-[420px] lg:top-[430px]  xl:top-[500px] right-2 md:right-4 lg:right-0">
         {Testimonial.map((item, index) => (
           <div
             key={index}
@@ -723,7 +723,7 @@ useEffect(()=>{
     <div className='hidden xl:flex py-6 '>
     <img
       src="/Highlight1.svg"
-      className=" absolute w-20 z-30 mt-9 xl:left-[380px] top-[-110px]"
+      className=" absolute w-20 z-30 mt-9 xl:left-[380px] top-[-130px]"
       alt="highlight"
     />
 
@@ -989,17 +989,17 @@ useEffect(()=>{
           </div>
 
           {/* IMAGE COLUMN */}
-          <div className="w-full flex justify-center items-center mt-6 lg:mt-0">
+          <div className="w-full flex justify-center items-center md:mt-16 xl:mt-6 lg:mt-0">
             <img
               src="/Solution.svg"
               alt="Solution Graphic"
-              className="w-full max-w-xl md:max-w-2xl xl:max-w-[680px] h-auto mx-auto transition-all duration-500"
+              className="w-full max-w-xl md:max-w-[680px] xl:max-w-[680px] h-auto mx-auto transition-all duration-500"
             />
           </div>
         </div>
 
         {/* CARDS GRID */}
-        <div className="mt-10 max-w-7xl xl:ml-14 xl:-mt-3 mx-auto px-2 sm:px-0">
+        <div className="mt-10 max-w-7xl xl:ml-14  md:mt-0 xl:-mt-3 mx-auto px-2 sm:px-0">
           <div
             className="
               grid

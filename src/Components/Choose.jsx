@@ -84,7 +84,7 @@ return (
   {/* Left Content */}
   <div className="relative z-10 flex-1  flex flex-col items-start justify-center text-center md:text-left">
     
-      <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[71.5px] font-semibold leading-[87.5px] font-['kumbh_Sans'] text-[#EF0E0E] mb-8 md:-mt-4">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold xl:leading-[87.5px] font-['kumbh_Sans'] text-[#EF0E0E] mb-8 md:-mt-4">
      Why Choose<br className="hidden sm:block" />
       <span className="block mt-2"> Doelsoft</span>
     </h2>

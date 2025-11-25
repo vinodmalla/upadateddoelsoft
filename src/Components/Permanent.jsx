@@ -21,7 +21,7 @@ function Permanent() {
           <h1 className="text-lg md:text-2xl font-kumbh underline font-semibold text-gray-800">
             Talent Hub
           </h1>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-kumbh leading-tight md:leading-[87.20px] font-bold text-red-600 mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] ont-kumbh leading-tight xl:leading-[87.20px] font-bold text-red-600 mt-2">
             Permanent Hiring
           </h2>
 

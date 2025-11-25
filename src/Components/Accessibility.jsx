@@ -173,7 +173,7 @@ export default function Accessibility() {
         }}
       >
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl mt-6 md:mt-0 sm:text-4xl md:text-6xl lg:text-[71.5px] font-semibold text-[#EF0E0E] leading-snug mb-6">
+          <h2 className=" mt-6 md:mt-0 text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold text-[#EF0E0E] leading-snug mb-6">
             Doelsoft <br />
             <span className="block mt-4">Digital Accessibility</span>
           </h2>

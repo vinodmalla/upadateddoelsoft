@@ -2,7 +2,7 @@ import { Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   FaLinkedin,
-  FaInstagram,  
+  FaInstagram, FaFacebookF 
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import logo from "../assets/logo.svg";
@@ -34,6 +34,7 @@ export default function Footer() {
             <Link to="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank"><FaLinkedin /></Link>
             <Link to="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_target"><FaInstagram /></Link>
             <Link to="/" target="_target"><FaXTwitter  /></Link>
+            <Link to="/" target="_target"><FaFacebookF  /></Link>
 
           </div>
         </div>

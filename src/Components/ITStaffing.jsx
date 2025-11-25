@@ -32,8 +32,8 @@ function ITStaffing() {
 >
   {/* Left Content */}
   <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-     <h1 className="text-lg md:text-2xl justify-start font-kumbh underline font-semibold lg:-ml-2  text-gray-800">Talent Hub</h1>
-        <h2 className="self-stretch whitespace-nowrap lg:-ml-2 text-3xl md:text-5xl lg:text-7xl font-kumbh leading-[87.20px] font-bold text-red-600 mt-2">IT Staffing Solutions</h2>
+     <h1 className="text-lg md:text-2xl xl:justify-start font-kumbh underline font-semibold lg:-ml-2  text-gray-800">Talent Hub</h1>
+        <h2 className="self-stretch whitespace-nowrap lg:-ml-2 text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh xl:leading-[87.20px] font-bold text-red-600 mt-2">IT Staffing Solutions</h2>
 
       <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>

@@ -41,7 +41,7 @@ function ContactUs() {
       >
         {/* Left Content */}
         <div className="relative z-10 flex-1 space-y-10 flex flex-col items-center md:items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[71.5px] font-semibold leading-[87.5px] font-['kumbh_Sans'] text-[#EF0E0E] mb-8 md:-mt-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold xl:leading-[87.5px] font-['kumbh_Sans'] text-[#EF0E0E] mb-8 md:-mt-4">
             Let's Build the <br /> <span>Future Together</span>
           </h2>
         </div>
@@ -51,7 +51,7 @@ function ContactUs() {
           <img
             src="/Contact.svg"
             alt="contact"
-            className="w-64 sm:w-80 md:w-[420px] lg:w-[500px] h-auto"
+            className="w-72 sm:w-80 md:w-[420px] lg:w-[500px]  h-auto object-contain"
           />
         </div>
       </section>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaLinkedinIn, FaInstagram, FaBars, FaTimes  } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram,FaFacebookF, FaBars, FaTimes  } from "react-icons/fa";
 import { Users, Briefcase, UserCheck, UserSearch, FileSearch } from "lucide-react";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
@@ -349,16 +349,19 @@ function Header() {
         </nav>
 
         {/* Social Icons (show at lg and above) */}
-        <div className="hidden lg:flex items-center space-x-4 lg:space-x-5 xl:ml-36">
-          <a href="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_blank" className="p-2">
+        <div className="hidden lg:flex items-center space-x-4 lg:space-x-5 xl:ml-24">
+          <Link to="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_blank" className="p-2">
             <FaInstagram  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
-          </a>
-          <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
+          </Link>
+          <Link to="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
             <FaLinkedinIn className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
-          </a>
-          <a href="/" target="_blank" className="p-2">
+          </Link>
+          <Link to="/https://twwiter.in" target="_blank" className="p-2">
             <FaXTwitter  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
-          </a>
+          </Link>
+          <Link to="/https://twwiter.in" target="_blank" className="p-2">
+            <FaFacebookF  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
+          </Link>
         </div>
 
         {/* Mobile Hamburger (visible below lg) */}
@@ -403,15 +406,18 @@ function Header() {
           ))}
 
           <div className="flex space-x-6 pt-4">
-            <a href="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_blank" className="p-2">
+            <Link to="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_blank" className="p-2">
               <FaInstagram className="text-xl text-gray-700 hover:text-red-600" />
-            </a>
-            <a href="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
+            </Link>
+            <Link to="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
               <FaLinkedinIn className="text-xl text-gray-700 hover:text-red-600" />
-            </a>
-            <a href="/" target="_blank" className="p-2">
-              <FaXTwitter r className="text-xl text-gray-700 hover:text-red-600" />
-            </a>
+            </Link>
+            <Link to="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
+              <FaXTwitter className="text-xl text-gray-700 hover:text-red-600" />
+            </Link>
+            <Link to="https://www.linkedin.com/company/doelsoft-it-services-pvt-ltd/" target="_blank" className="p-2">
+              <FaFacebookF  className="text-xl text-gray-700 hover:text-red-600" />
+            </Link>
           </div>
         </nav>
       </div>
