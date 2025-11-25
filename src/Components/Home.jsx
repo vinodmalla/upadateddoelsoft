@@ -159,7 +159,7 @@ const steps = [
     icon: "Steps4.svg",
   },
 ];
-const frames=["Secure,Accesibile by Desigen","Global ,Agile & Scalable","OutCome & First Delivery","AI + Human Intelligence",];
+const frames=["Secure,Accesibile by Design","Global ,Agile & Scalable","OutCome & First Delivery","AI + Human Intelligence",];
 const cards = [
     {
       title: "Applied AI, Not Experiments",
@@ -717,7 +717,7 @@ useEffect(()=>{
     <div className='hidden xl:flex py-6 '>
     <img
       src="/Highlight1.svg"
-      className=" absolute w-20 z-30 mt-9 xl:left-[380px] top-[-102px]"
+      className=" absolute w-20 z-30 mt-9 xl:left-[380px] top-[-110px]"
       alt="highlight"
     />
 
@@ -896,7 +896,7 @@ useEffect(()=>{
 
     {/* CTA Button */}
     <div className="flex justify-center lg:justify-end">
-      <button className="relative flex items-center justify-between bg-[#EF0E0E] text-white font-semibold px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 shadow-lg hover:bg-red-700 transition w-full sm:w-auto max-w-[300px] mx-auto">
+      <button className="relative flex items-center justify-between bg-[#EF0E0E] text-white font-semibold px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 shadow-lg hover:bg-gray-600 transition w-full sm:w-auto max-w-[300px] mx-auto">
         <span className="text-base sm:text-lg md:text-xl tracking-[-0.03em] font-inter">
           View all Insights
         </span>

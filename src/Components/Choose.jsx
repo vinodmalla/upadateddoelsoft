@@ -82,10 +82,11 @@ return (
   }}
 >
   {/* Left Content */}
-  <div className="relative z-10 flex-1 flex flex-col items-start justify-center text-center md:text-left">
-    <h2 className="text-3xl ml-[55px] sm:text-5xl md:text-6xl lg:text-[71.5PX] xl:-mt-20 md:-ml-2 font-semibold font-kumbh text-[#EF0E0E] leading-snug mb-8">
-      Why Choose <br className="hidden sm:block" />
-      <span className="block mt-2">Doelsoft</span>
+  <div className="relative z-10 flex-1  flex flex-col items-start justify-center text-center md:text-left">
+    
+      <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[71.5px] font-semibold leading-[87.5px] font-['kumbh_Sans'] text-[#EF0E0E] mb-8 md:-mt-4">
+     Why Choose<br className="hidden sm:block" />
+      <span className="block mt-2"> Doelsoft</span>
     </h2>
 
      <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">

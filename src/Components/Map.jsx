@@ -125,7 +125,7 @@ info@doelsoft.com`,
       {/* Address Popup */}
       {hovered && (
   <div
-    className={`absolute 
+    className={`hidden lg:flex absolute 
   ${hovered === "usa" || hovered === "europe" ? "bottom-[1rem]" : "bottom-[12rem]"}
   left-1/2 -translate-x-1/2 
   w-[92%] sm:w-[200px] md:w-[24px] lg:w-[280px] 
