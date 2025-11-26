@@ -184,7 +184,7 @@ function WebDevelopment() {
               className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
               <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-6 sm:p-8 text-center sm:text-left">
+              <div className="sm:pl-4 sm:mt-0 border border-black h-40 p-6 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
                 <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>

@@ -215,7 +215,7 @@ function Aiservices() {
 
       </section>
        <section className="bg-[#F4F6FB] py-20 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
-        <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+        <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
             <h1 className="text-2xl sm:text-3xl md:ml-[-35px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
               💡 Why Choose Doelsoft AI Services?

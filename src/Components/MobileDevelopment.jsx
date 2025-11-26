@@ -220,7 +220,7 @@ return (
 
 
      <section className="bg-[#F4F6FB] py-12 px-4 sm:px-6 lg:px-20 font-sans" style={{marginBottom:"-44px"}} >
-  <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-10">
+  <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-start gap-10">
     
     {/* Left Content */}
     <div className="flex-1 ">

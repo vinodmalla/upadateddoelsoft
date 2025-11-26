@@ -349,7 +349,7 @@ function Header() {
         </nav>
 
         {/* Social Icons (show at lg and above) */}
-        <div className="hidden lg:flex items-center space-x-4 lg:space-x-5 xl:ml-24">
+        <div className="hidden lg:flex items-center space-x-4 lg:space-x-2 xl:ml-24">
           <Link to="https://www.instagram.com/doelsoft?igsh=cGVrYmlyeWdoamJy" target="_blank" className="p-2">
             <FaInstagram  className="text-lg lg:text-xl text-gray-700 hover:text-red-600" />
           </Link>
