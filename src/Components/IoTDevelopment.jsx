@@ -38,7 +38,7 @@ function IoTDevelopment() {
       ];
   
       return (
-          <div className="w-full font-kumbh bg-white mt-10 overflow-hidden">
+          <div className="w-full font-kumbh bg-white xl:mt-10 overflow-hidden">
               
               {/* Hero Section */}
               <section

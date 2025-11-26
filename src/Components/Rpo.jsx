@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 function Rpo() {
   return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-10 flex flex-col justify-end overflow-hidden">
+    <div className="w-full min-h-screen font-kumbh space-y-6 xl:mt-10 flex flex-col justify-end overflow-hidden">
       {/* HERO SECTION */}
       <section
         className="relative w-full min-h-[550px] md:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"

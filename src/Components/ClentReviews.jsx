@@ -91,11 +91,11 @@ function ClientReviews() {
           <img
             src="/Solution2.svg"
             alt="Client"
-            className="relative z-10 w-[240px] sm:w-[280px] md:w-[320px] lg:w-[555px] h-auto md:ml-0 lg:ml-[-170px]"
+            className="relative z-10 w-[240px] sm:w-[280px] md:w-[400px] lg:w-[555px] h-full md:ml-0 lg:ml-[-170px]"
           />
 
           {/* Quote Icon */}
-          <div className="absolute right-6 -top-6 sm:-top-6 md:-top-8 lg:-top-14 sm:right-6 md:right-8 lg:right-32 bg-black w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 rounded-tl-[62.5px] rounded-tr-[62.5px] rounded-br-[62.5px] flex items-center justify-center z-20">
+          <div className="absolute right-6 -top-6 sm:-top-6 md:-top-8 lg:-top-14 md:right-8 lg:right-28 xl:right-32 bg-black w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 rounded-tl-[62.5px] rounded-tr-[62.5px] rounded-br-[62.5px] flex items-center justify-center z-20">
             <FaQuoteRight className="text-red-500 text-xl sm:text-2xl md:text-3xl" />
           </div>
         </div>

@@ -69,7 +69,7 @@ const coreValues = [
   },
 ];
 return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-8 flex flex-col overflow-hidden justify-end">
+    <div className="w-full min-h-screen font-kumbh space-y-6 xl:mt-10 flex flex-col overflow-hidden justify-end">
         
         
            <section
@@ -317,9 +317,9 @@ return (
             Get in touch <span className="font-bold">with Doelsoft today</span>{" "}
             and discover how we can accelerate your business success globally.
           </h3>
-          <button className="bg-white text-black px-4 py-3  shadow-md font-medium flex items-center gap-2 hover:bg-gray-400 transition">
+      <Link to="/contact"  > <button className="bg-white text-black px-4 py-3  shadow-md font-medium flex items-center gap-2 hover:bg-gray-400 transition">
             Consult With Us  ↗
-          </button>
+          </button></Link> 
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ function UIUXDesign() {
             description: 'Designs are rooted in research, user behavior, and business objectives.',
         },
         {
-            icon: "/p3.svg",
+            icon: "/cross1.svg",
             title: 'Cross-Platform Expertise',
             description: 'Seamless experiences for web, mobile, and enterprise applications.',
         },
@@ -21,12 +21,12 @@ function UIUXDesign() {
             description: 'Continuous feedback, rapid prototyping, and design refinement.From API strategy to system connectivity and support.',
         },
         {
-            icon: '/p4.svg',
+            icon: '/p3.svg',
             title: 'Innovation-Focused',
             description: 'Incorporating the latest trends in UI, UX, AR/VR, and interactive design.',
         },
         {
-            icon: '/p5.svg',
+            icon: '/p4.svg',
             title: 'Global Delivery Model',
             description: 'Serving clients across the USA, India, and worldwide.',
         },
@@ -38,7 +38,7 @@ function UIUXDesign() {
     ];
 
     return (
-        <div className="w-full font-kumbh bg-[#F4F6FB] mt-10 overflow-x-hidden">
+        <div className="w-full font-kumbh bg-white  xl:mt-10 overflow-x-hidden">
             
             {/* Hero Section */}
             <section
@@ -73,11 +73,11 @@ function UIUXDesign() {
         
 
             {/* Services Section */}
-           <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-8 md:grid-cols-2 items-center">
+           <section className=" bg-[#F4F6FB] mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-8 md:grid-cols-2 items-center">
   {/* Left Image (placed first for stable layout on tablets) */}
   <div className="flex justify-center md:justify-start">
     <img
-      src="/UIUXmen.svg"
+      src="/UIUXmen1.svg"
       alt="UIUX Developer"
       className="w-full max-w-xs sm:max-w-sm md:max-w-md object-contain"
     />
@@ -146,7 +146,7 @@ function UIUXDesign() {
   </div>
 </section>
 
-              <section className="bg-[#F4F6FB] py-10">
+              <section className="bg-F3F3F3 py-10">
         <div className="px-6 sm:px-12 md:ml-6 md:px-20 text-center md:text-left space-y-4">
           <h1 className="text-3xl sm:text-4xl font-bold">🏢 Industries We Serve</h1>
           <p className="text-gray-600 md:ml-2">Doelsoft provides UI/UX design services for diverse industries, tailoring experiences to specific user needs:</p>
@@ -217,7 +217,7 @@ function UIUXDesign() {
             {/* Why Choose Section */}
           
             <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
-        <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+        <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-10">
           <div className="flex-1 space-y-6 md:ml-4">
             <h1 className="text-2xl sm:text-3xl md:ml-[-36px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
               💡 Why Choose Doelsoft for UI/UX Design?
@@ -254,7 +254,7 @@ function UIUXDesign() {
             <img
               src="/UIUXp1.svg"
               alt="Mulesoft Professional"
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg object-cover"
+              className="w-full max-w-sm sm:max-w-md md:w-[400px] h-auto xl:w-[617px] object-cover"
             />
           </div>
         </div>

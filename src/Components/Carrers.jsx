@@ -62,7 +62,7 @@ function Carrers() {
  
 
   return (
-    <div className="relative max-w-screen mx-auto font-kumbh bg-white mt-10 overflow-hidden">
+    <div className="relative max-w-screen mx-auto font-kumbh bg-white xl:mt-10 overflow-hidden">
       {/* ===== Hero Section ===== */}
       
           <section
@@ -78,7 +78,7 @@ function Carrers() {
         <div className="relative z-10 flex-1  flex flex-col items-start justify-center text-center md:text-left">
           
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold xl:leading-[87.5px] font-['kumbh_Sans'] text-[#EF0E0E] mb-8 md:-mt-4">
-           Doelsoft Careers & <br className="hidden sm:block" /> <span className="">Opportunity</span>
+           Careers & <br className="hidden sm:block" /> <span className="">Opportunity</span>
           </h2>
       
       
@@ -90,7 +90,7 @@ function Carrers() {
         {/* Right Image */}
         <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
-            src="/Carrers1.svg"
+            src="/carrers1.svg"
             alt="Team"
             className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
           />

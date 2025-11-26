@@ -46,9 +46,9 @@ function TalentHub() {
         {/* Floating Images */}
         <div className="relative w-full max-w-5xl mt-12 px-4">
           {/* Floating avatars (unchanged) */}
-          <img src="/img1.svg" alt="profile1" className="absolute -top-[35rem] sm:-top-[30rem] left-2 md:-top-72 md:left-8 lg:-top-[28rem] xl:-top-[24rem] lg:left-20 xl:-left-24 w-20 h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full object-cover" />
+          <img src="/img1.svg" alt="profile1" className="absolute -top-[29rem] sm:-top-[28rem] left-2 md:-top-[26rem] md:left-8 lg:-top-[28rem] xl:-top-[24rem] lg:left-20 xl:-left-24 w-20 h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full object-cover" />
           <img src="/img3.svg" alt="profile2" className="absolute top-0 left-2 sm:-top-9 md:-top-12 md:-left-0 xl:-top-12 lg:left-4 xl:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover" />
-          <img src="/img2.svg" alt="profile3" className="absolute -top-[35rem] sm:-top-[30rem] right-2 md:-top-[22rem] lg:-top-[30rem] md:right-8 xl:-top-[26rem] xl:-right-36 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:36 lg:w-40 lg:h-40 rounded-full object-cover" />
+          <img src="/img2.svg" alt="profile3" className="absolute -top-[30rem] sm:-top-[30rem] right-2 md:-top-[28rem] lg:-top-[30rem] md:right-8 xl:-top-[26rem] xl:-right-36 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:36 lg:w-40 lg:h-40 rounded-full object-cover" />
           <img src="/img4.svg" alt="profile4" className="absolute -bottom-20 sm:-top-9 right-4 md:-top-20 lg:-top-24 xl:-top-20 xl:-right-36 w-20 h-20 sm:w-20 sm:h-24 md:w-36 md:h-40 rounded-full object-cover" />
           <img src="/img5.svg" alt="profile5" className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover" />
         </div>
@@ -310,8 +310,8 @@ function TalentHub() {
     </div>
   </div>
 
-  <div className="mt-6 p-6 sm:p-14 bg-red-600 text-white text-center">
-    <p className="text-sm sm:text-xl md:text-3xl font-kumbh font-medium leading-9">
+  <div className="mt-6 p-6 md:p-10 xl:p-14 bg-red-600 text-white text-center">
+    <p className="text-lgmd:text-xl xl:text-2xl font-kumbh font-medium leading-9">
       At Doelsoft, our values are not just words — they are the foundation of
       every decision, every interaction, and every success story we help create.
       Partner with us, and let's build not just your team, but your future.

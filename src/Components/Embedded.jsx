@@ -44,7 +44,7 @@ function Embedded() {
   ];
 
   return (
-    <div className="w-full font-kumbh bg-white mt-10 overflow-hidden">
+    <div className="w-full font-kumbh bg-white xl:mt-10 overflow-hidden">
       {/* 🧠 Hero Section */}
       <section
         className="relative w-full min-h-[550px] md:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"

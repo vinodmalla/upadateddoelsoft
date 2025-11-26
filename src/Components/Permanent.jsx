@@ -5,40 +5,41 @@ import { Link } from 'react-router';
 
 function Permanent() {
   return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-8 flex flex-col justify-end">
+    <div className="w-full min-h-screen font-kumbh space-y-6 xl:mt-10 flex flex-col justify-end">
       {/* HERO SECTION */}
-      <section
-        className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"
-        style={{
-          backgroundImage: "url('/worldmap.svg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* LEFT CONTENT */}
-        <div className="relative z-10 flex-1 flex flex-col items-center md:items-start justify-center space-y-6 text-center md:text-left">
-          <h1 className="text-lg md:text-2xl font-kumbh underline font-semibold text-gray-800">
-            Talent Hub
-          </h1>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] ont-kumbh leading-tight xl:leading-[87.20px] font-bold text-red-600 mt-2">
-            Permanent Hiring
-          </h2>
-
-           <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
-      Consult With Us <span className="ml-2">↗</span>
-    </button></Link>
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
-          <img
-            src="/Permanent.svg"
-            alt="Team"
-            className="w-60 sm:w-72 md:w-[420px] lg:w-[500px] h-auto object-contain"
-          />
-        </div>
-      </section>
+     
+        <section
+              className="relative w-full min-h-[550px] md:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"
+              style={{
+                backgroundImage: "url('/worldmap.svg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              {/* Left Content */}
+              <div className="relative z-10 flex-1 flex flex-col items-center md:items-start space-y-6 justify-center text-center md:text-left">
+                <h1 className="text-lg md:text-2xl font-kumbh underline font-semibold text-gray-800">
+                  Talent Hub
+                </h1>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh font-bold text-red-600 mt-2">
+                  Permanent Hiring
+                </h2>
+      
+                  <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+            Consult With Us <span className="ml-2">↗</span>
+          </button></Link>
+              </div>
+      
+              {/* Right Image */}
+              <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
+                <img
+                  src="/Permanent.svg"
+                  alt="Team"
+                  className="w-60 sm:w-72 md:w-[420px] lg:w-[500px] h-auto object-contain"
+                />
+              </div>
+            </section>
 
       {/* SECOND SECTION */}
       <section

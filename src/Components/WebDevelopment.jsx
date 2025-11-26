@@ -32,7 +32,7 @@ function WebDevelopment() {
   ];
 
   return (
-    <div className="w-full font-kumbh bg-white mt-10 overflow-x-hidden">
+    <div className="w-full font-kumbh bg-white xl:mt-10 overflow-x-hidden">
       {/* Hero Section */}
       <section
         className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
@@ -184,7 +184,7 @@ function WebDevelopment() {
               className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
               <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+              <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-6 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
                 <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>
@@ -223,7 +223,7 @@ function WebDevelopment() {
 
       {/* Why Choose Section */}
       <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
-        <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+        <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
             <h1 className="text-2xl sm:text-3xl md:ml-[-29px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
               💡 Why Choose Doelsoft for Web Development?
@@ -232,7 +232,7 @@ function WebDevelopment() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:flex-row items-start gap-4  p-4 "
+                  className="flex flex-col lg:flex-row items-start gap-4  p-4 "
                 >
                   <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-white bg-white mx-auto sm:mx-0">
                     <img
@@ -255,7 +255,7 @@ function WebDevelopment() {
             <img
               src="/womenweb2.svg"
               alt="Web Developer"
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg xl:w-[617px] xl:h-[769px]   xl:-mb-48"
+              className="w-full max-w-sm sm:max-w-md md:w-[400px] h-auto xl:w-[617px] xl:h-[769px]   xl:-mb-48"
             />
           </div>
         </div>

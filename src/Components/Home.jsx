@@ -243,7 +243,7 @@ useEffect(()=>{
       />
     ))}
   </div>
-<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-auto xl:mx-[70px] relative flex flex-col md:flex-col xl:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
+<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-auto xl:mx-[70px] relative flex flex-col md:flex-col lg:flex-row xl:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
   <div className="w-full lg:w-1/2  lg:flex-col gap-6 md:gap-8 text-center lg:text-left xl:mt-36">
@@ -255,7 +255,7 @@ useEffect(()=>{
         } w-full `}
       >
         {index===0 && <p className={`font-inter text-xl  ml-1 `}>AI-Powered Strategies to Target Tomorrow</p> }
-        <h1 className="text-xl font-kumbh  lg:text-[30px] xl:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
+        <h1 className="text-2xl font-kumbh  md:text-[30px] xl:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
           {details.h11}
           </h1>
       
@@ -333,7 +333,7 @@ useEffect(()=>{
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-[85%] sm:w-[75%] md:w-[65%] ${cursol===2? "lg:w-[110%]" : "lg:w-full" } h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto ${cursol===2 ? "xl:ml-[100px]" :"xl:ml-[45px]"}  mb-8 lg:mb-24 object-contain ${cursol===0 ? "animate-moveOnce" :""}
+      className={`w-[85%] sm:w-[75%] md:w-[65%] ${cursol===2? "lg:w-[110%]" : "lg:w-full" } h-auto max-h-[400px] sm:max-h-[450px] lg:ml-[70px]   md:max-h-[550px] mx-auto ${cursol===2 ? "xl:ml-[100px]" :"xl:ml-[45px]"}  mb-8 lg:mb-24 object-contain ${cursol===0 ? "animate-moveOnce" :""}
        z-50`}
     />
 
@@ -355,6 +355,7 @@ useEffect(()=>{
         >
           <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed whitespace-normal break-words">
             "{item.quote}"
+
           </p>
           <div className="flex items-center mt-4 gap-3">
             <img
@@ -453,11 +454,11 @@ useEffect(()=>{
 
       {/* Core Services Section - Responsive flex */}
     <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:-ml-5 sm:py-16 lg:py-20 overflow-hidden">
-  <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
+  <div className="flex flex-col xl:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
     
     {/* LEFT SECTION */}
-    <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
-      <h1 className="font-semibold text-xl md:text-[44px] font-kumbh leading-10">
+    <div className="flex-1 space-y-6 lg:space-y-8 text-center xl:text-left">
+      <h1 className="font-semibold text-2xl md:text-3xl  xl:text-[44px] font-kumbh leading-10">
         Doelsoft
         <br />
         Core Services
@@ -477,7 +478,7 @@ useEffect(()=>{
     
 
       {/* Button */}
-      <div className="flex justify-center lg:justify-start">
+      <div className="flex justify-center xl:justify-start">
      <Link to="/serviceai">  <button className="flex items-center justify-center font-inter gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-40 md:whitespace-nowrap py-3 sm:py-5 text-lg sm:text-xl shadow-lg transition mt-4">
           Explore AI Strategy{" "}
           <ArrowUpRight
@@ -550,12 +551,12 @@ useEffect(()=>{
 ].map((service, i) => (
     <div
       key={i}
-      className="border border-gray-600 p-6 px-2 lg:px-6 py-6 lg:py-4 bg-white hover:scale-[1.02] transition-transform duration-300"
+      className="border border-gray-600  p-6 px-2  lg:px-6 py-6 lg:py-4 bg-white hover:scale-[1.02] transition-transform duration-300"
     >
       <img
         src={service.icon}
         alt={service.title}
-        className="w-10 md:w-14 lg:w-16 h-auto mb-4 mx-auto sm:mx-0"
+        className="w-10 md:w-14 lg:w-16 h-auto mb-4  mx-auto sm:mx-0"
       />
       <h3 className="text-black font-semibold font-kumbh text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
         {service.title}
@@ -969,7 +970,7 @@ useEffect(()=>{
               <div
                 key={i}
                 className={`mt-8 sm:mt-10 
-                  h-full w-full max-w-xl md:max-w-2xl   mx-auto   xl:w-[376px] xl:h-[248px]
+                  h-full w-full max-w-xl md:max-w-xl   mx-auto   xl:w-[376px] xl:h-[248px]
                   p-6 sm:p-8 md:p-10 xl:-ml-6  shadow-sm transition hover:shadow-md
                   ${item.type === "bg" ? "bg-gray-100" : "border border-red-500 bg-white"}`}
               >
@@ -989,7 +990,7 @@ useEffect(()=>{
           </div>
 
           {/* IMAGE COLUMN */}
-          <div className="w-full flex justify-center items-center md:mt-16 xl:mt-6 lg:mt-0">
+          <div className="w-full flex justify-center items-center  xl:mt-6 lg:mt-0">
             <img
               src="/Solution.svg"
               alt="Solution Graphic"

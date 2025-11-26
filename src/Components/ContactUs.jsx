@@ -29,7 +29,7 @@ function ContactUs() {
   };
 
   return (
-    <div className="w-full min-h-screen overflow-hidden font-kumbh mt-8 flex flex-col space-y-6">
+    <div className="w-full min-h-screen overflow-hidden font-kumbh xl:mt-10 flex flex-col space-y-6">
       {/* Hero Section */}
       <section
         className="relative w-full min-h-[550px] flex flex-col md:flex-row md:mt-8 items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"

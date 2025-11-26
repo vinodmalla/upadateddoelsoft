@@ -44,7 +44,7 @@ function MicrosoftSolutions() {
   ];
 
   return (
-    <div className="w-full font-kumbh bg-white mt-10 overflow-x-hidden">
+    <div className="w-full font-kumbh bg-white xl:mt-10 overflow-x-hidden">
       {/* Hero Section */}
       <section
         className="relative w-full min-h-[550px] md:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
@@ -58,8 +58,7 @@ function MicrosoftSolutions() {
         {/* Left Content */}
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
           <h2 className=" mt-6 md:mt-0 text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold text-[#EF0E0E] leading-snug mb-6">
-            Doelsoft <br className="hidden sm:block" />
-            <span className="block mt-2">Microsoft Solutions</span>
+            Microsoft Solutions
           </h2>
 
            <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">

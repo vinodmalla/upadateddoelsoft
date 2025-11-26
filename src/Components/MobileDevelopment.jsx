@@ -32,7 +32,7 @@ function MobileDevelopment() {
   },
 ];
 return (
-    <div className="w-full font-kumbh bg-white md:overflow-hidden mt-10 overflow-x-hidden">
+    <div className="w-full font-kumbh bg-white md:overflow-hidden xl:mt-10 overflow-x-hidden">
     
                   <section
   className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
@@ -65,9 +65,9 @@ return (
     />
   </div>
 </section>
-        <section className="mx-auto px-16 md:px-24 mt-4 py-20 bg-[#F4F6FB] flex flex-col md:flex-row gap-10 items-center">
+        <section className="mx-auto px-16 md:px-24 mt-4 py-20 bg-[#F4F6FB] flex flex-col md:flex-col lg:flex-row xl:flex-row gap-10 items-center">
             <div className="space-y-6">
-  <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-kumbh leading-[57.20px] text-black text-start md:ml-3 whitespace-normal lg:whitespace-nowrap">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold  font-kumbh leading-[57.20px] text-black text-start md:ml-3 whitespace-normal md:whitespace-nowrap xl:whitespace-nowrap">
     Doelsoft Mobile App Development <br /> Apps That Inspire Growth
   </h2>
 
@@ -93,7 +93,7 @@ return (
         </section>
        <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
   {/* Left Image */}
-  <div className="flex justify-center md:justify-start">
+  <div className="flex justify-center lg:-ml-64  xl:-ml-36 ">
     <img
       src="Mobilemen.svg"
       alt="Business Team"
@@ -175,7 +175,7 @@ return (
               className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
               <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+              <div className="sm:pl-4  sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
                 <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>

@@ -3,37 +3,40 @@ import { ArrowUpRight } from "lucide-react"; //
 import { Link } from 'react-router';
 function Contract() {
 return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-10 flex flex-col justify-end" >
-            <section
-  className="relative w-full min-h-[550px] xl:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
-  style={{
-    backgroundImage: "url('/worldmap.svg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
-  {/* Left Content */}
-  <div className="relative z-10 flex-1 flex flex-col  items-start justify-center space-y-6 text-center md:text-left">
-      <h1 className="text-lg md:text-2xl xl:justify-start font-kumbh underline font-semibold lg:-ml-2  text-gray-800">Talent Hub</h1>
-                <h2 className=" whitespace-nowrap lg:-ml-2 text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh xl:leading-[87.20px] font-bold text-red-600 mt-2">Contract/<br />Temporary Hiring</h2>
+    <div className="w-full min-h-screen font-kumbh space-y-6 xl:mt-10 flex flex-col justify-end" >
+  
+<section
+        className="relative w-full min-h-[550px] md:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"
+        style={{
+          backgroundImage: "url('/worldmap.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Left Content */}
+        <div className="relative z-10 flex-1 flex flex-col items-center md:items-start space-y-6 justify-center text-center md:text-left">
+          <h1 className="text-lg md:text-2xl font-kumbh underline font-semibold text-gray-800">
+            Talent Hub
+          </h1>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh font-bold text-red-600 mt-2">
+           Contract<br />Temporary Hiring
+          </h2>
 
-
-   <Link to="/contact"> <button className="py-4 px-7 border border-black  md:ml-0 lg:-ml-1 text-black hover:bg-gray-200 transition-all duration-200">
+            <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>
-    </button> </Link>
-  </div>
+    </button></Link>
+        </div>
 
-  {/* Right Image */}
-
-  <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
-    <img
-     src="/Contract.svg"
-      alt="Team"
-      className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
-    />
-  </div>
-</section>
+        {/* Right Image */}
+        <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
+          <img
+            src="/Contract.svg"
+            alt="Team"
+            className="w-60 sm:w-72 md:w-[420px] lg:w-[500px] h-auto object-contain"
+          />
+        </div>
+      </section>
         <section className="w-full mx-auto bg-[#FFEBEB] px-4 sm:px-6 lg:px-8 py-12">
   <div className="space-y-6 ml-0 sm:ml-6 md:ml-[4.5rem] text-center md:text-left">
     <h1 className="text-2xl md:text-3xl  lg:text-4xl font-semibold font-kumbh leading-[57.20px] ">
@@ -100,10 +103,10 @@ return (
         <img
           src="/Contract1.svg"
           alt="Contract"
-          className="w-full sm:w-auto md:w-auto lg:w-3/4 h-auto object-contain md:object-cover md:h-80 ml-0 "
+          className="w-full sm:w-full md:w-full lg:w-3/4 h-auto object-contain xl:object-cover md:h-80 ml-0 "
         />
       </div>
-             <div className="absolute right-6 xl:right-64 xl:mt-[-43px]  ">
+             <div className=" hidden absolute xl:flex  right-6 xl:right-64 xl:mt-[-43px]  ">
     <img
       src="/logo4.svg"
       alt="logo"
@@ -232,8 +235,8 @@ return (
     </div>
   </div>
 
-  <div className="mt-6 p-6 sm:p-14 bg-red-600 text-white text-center">
-    <p className="text-sm sm:text-xl md:text-2xl font-kumbh font-medium leading-9">
+  <div className="mt-6 p-6 md:p-10 xl:p-14 bg-red-600 text-white text-center">
+    <p className="text-lg md:text-xl xl:text-2xl font-kumbh font-medium leading-9">
       At Doelsoft, our values are not just words — they are the foundation of
       every decision, every interaction, and every success story we help create.
       Partner with us, and let's build not just your team, but your future.

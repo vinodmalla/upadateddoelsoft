@@ -8,7 +8,7 @@ function Insights() {
  
 
   return (
-    <div className="relative max-w-screen mx-auto font-kumbh bg-white mt-10 overflow-hidden">
+    <div className="relative max-w-screen mx-auto font-kumbh bg-white xl:mt-10 overflow-hidden">
       {/* SECTION 1: Header */}
        <section
   className="relative w-full min-h-[550px] flex flex-col md:mt-8 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"

@@ -18,37 +18,41 @@ function ITStaffing() {
         desc:"A balance of speed,quality and long-term fit."
     }]
   return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-10 flex flex-col justify-end">
+    <div className="w-full min-h-screen font-kumbh space-y-6 xl:mt-10 flex flex-col justify-end">
         
-      <section
-  className="relative w-full min-h-[550px]  md:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
-  style={{
-    backgroundImage: "url('/worldmap.svg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    
-  }}
->
-  {/* Left Content */}
-  <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-     <h1 className="text-lg md:text-2xl xl:justify-start font-kumbh underline font-semibold lg:-ml-2  text-gray-800">Talent Hub</h1>
-        <h2 className="self-stretch whitespace-nowrap lg:-ml-2 text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh xl:leading-[87.20px] font-bold text-red-600 mt-2">IT Staffing Solutions</h2>
+     
+  <section
+        className="relative w-full min-h-[550px] md:mt-8 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"
+        style={{
+          backgroundImage: "url('/worldmap.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Left Content */}
+        <div className="relative z-10 flex-1 flex flex-col items-center md:items-start space-y-6 justify-center text-center md:text-left">
+          <h1 className="text-lg md:text-2xl font-kumbh underline font-semibold text-gray-800">
+            Talent Hub
+          </h1>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh font-bold text-red-600 mt-2">
+            IT Staffing Solutions
+          </h2>
 
-      <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+            <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>
     </button></Link>
-  </div>
+        </div>
 
-  {/* Right Image */}
-  <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
-    <img
-    src="/ITStaffing.svg" 
-      alt="Team"
-      className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
-    />
-  </div>
-</section>
+        {/* Right Image */}
+        <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
+          <img
+            src="/ITStaffing.svg"
+            alt="Team"
+            className="w-60 sm:w-72 md:w-[420px] lg:w-[500px] h-auto object-contain"
+          />
+        </div>
+      </section>
     <section className="w-full h-auto mx-auto bg-black px-4 sm:px-6 lg:px-8 py-16" style={{marginBottom:"-40px"}}>
   <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto items-center lg:items-start">
     
@@ -86,11 +90,11 @@ function ITStaffing() {
     </div>
 
     {/* Right Image */}
- <div className="w-auto  h-auto md:w-[800px] md:h-[30rem] flex items-center justify-center bg-transparent" >
+ <div className="w-auto  h-auto xl:w-[800px] xl:h-[30rem] flex items-center justify-center bg-transparent" >
     <img
       src="/ITStaffing1.svg"
       alt="ITStaffing"
-      className=" w-full h-full md:h-[745px] md:w-[564px] mt-[34rem] " 
+      className=" w-full h-full xl:h-[745px] xl:w-[564px] md:mt-56  xl:mt-[34rem] " 
      
     />
   </div>
@@ -99,11 +103,11 @@ function ITStaffing() {
 
    <section className="py-20 bg-[#F3F3F3] w-full max-w-full text-start font-sans overflow-x-hidden" style={{marginBottom:"-40px"}}>
   {/* ===== WHY DOELSOFT ===== */}
-  <h1 className="text-xl sm:text-2xl md:text-[44px] font-semibold ml-4 sm:ml-10 lg:ml-28 text-black mb-4">
+  <h1 className="text-xl sm:text-2xl md:text-[44px] font-semibold ml-4 sm:ml-10 xl:ml-[6.5rem] text-black mb-4">
     Why Doelsoft?
   </h1>
 
-  <p className="text-base md:text-xl font-normal text-black ml-4 sm:ml-10 lg:ml-[7.5rem] mb-10 font-inter max-w-full sm:max-w-2xl md:max-w-3xl">
+  <p className="text-base md:text-xl font-normal text-black ml-4 sm:ml-10 xl:ml-[6.5rem] mb-10 font-inter max-w-full sm:max-w-2xl md:max-w-3xl">
     When it comes to recruitment, we don't just deliver candidates — we deliver confidence.
   </p>
 
@@ -114,9 +118,8 @@ function ITStaffing() {
       grid-cols-1
       xs:grid-cols-2
       sm:grid-cols-2
-      
       md:grid-cols-2
-      lg:grid-cols-4
+      xl:grid-cols-4
       gap-6 sm:gap-8 md:gap-10
       ml-4 sm:ml-10 lg:ml-20
       max-w-full lg:max-w-7xl
