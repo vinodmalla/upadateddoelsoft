@@ -91,9 +91,9 @@ return (
                 />
             </div>
         </section>
-       <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
+       <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-12 flex flex-col gap-10 xl:flex-row items-center">
   {/* Left Image */}
-  <div className="flex justify-center lg:-ml-64  xl:-ml-36 ">
+  <div className="flex justify-center   xl:-ml-36 ">
     <img
       src="Mobilemen.svg"
       alt="Business Team"
@@ -102,8 +102,8 @@ return (
   </div>
 
   {/* Right Content */}
-  <div className="space-y-8 lg:-ml-32 md:mr-4 lg:mr-16 px-4 md:px-0">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl text-center font-kumbh font-semibold text-black leading-[57.20px]">
+  <div className="space-y-8 xl:ml-36  px-4 md:px-0">
+    <h2 className="text-2xl md:text-3xl xl:text-4xl text-center font-kumbh font-semibold text-black leading-[57.20px]">
       🌟 Our Mobile App Development <br /> Expertise
     </h2>
 
@@ -140,11 +140,11 @@ return (
           desc: "Continuous updates, optimization, and technical support for seamless performance.",
         },
       ].map((item, idx) => (
-        <div key={idx} className="flex flex-col items-center sm:flex-row gap-4 sm:gap-6 lg:items-start">
+        <div key={idx} className="flex flex-col items-center xl:flex-row gap-4 sm:gap-6 xl:items-start">
           <div className="flex-shrink-0 bg-white border border-gray-300 p-3 flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20">
             <img src={item.src} alt={item.title} className="w-8 h-8 sm:w-12 sm:h-12 object-contain" />
           </div>
-          <div className='text-center md:text-start'>
+          <div className='text-center xl:text-start'>
             <h3 className="text-lg sm:text-xl  font-semibold text-black font-kumbh leading-8">{item.title}</h3>
             <p className="text-zinc-800 text-base sm:text-lg font-inter font-normal leading-7 whitespace-pre-line">{item.desc}</p>
           </div>
@@ -174,8 +174,8 @@ return (
               key={idx}
               className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
-              <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="sm:pl-4  sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+              <img src={item.src} alt={item.title} className="w-full h-48 object-cover" />
+              <div className="sm:pl-4  sm:mt-0 border border-black h-48 p-4 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
                 <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>
@@ -218,25 +218,40 @@ return (
   </div>
 </section>
 
-
-     <section className="bg-[#F4F6FB] py-12 px-4 sm:px-6 lg:px-20 font-sans" style={{marginBottom:"-44px"}} >
-  <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-start gap-10">
+<section className="bg-[#F4F6FB] py-12 px-4 sm:px-6 md:px-6 xl:px-20 font-sans" style={{marginBottom:"-44px"}} >
+  <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center xl:items-start gap-8 xl:gap-10">
     
     {/* Left Content */}
-    <div className="flex-1 ">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center lg:-ml-7 justify-start lg:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
+    <div className="flex-1 w-full">
+      <h1 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl 
+        text-center xl:text-left ml-auto lg:-ml-10 xl:-ml-7 xl:whitespace-nowrap
+        font-kumbh font-semibold mb-6 xl:mb-8 leading-normal xl:leading-[57.20px]">
         💡 Why Partner with Doelsoft for Mobile App Development?
       </h1>
 
-      <div className="space-y-6 lg:-ml-3">
+      <div className="space-y-4 sm:space-y-6 ml-4 sm:ml-16 md:ml-24 lg:ml-40  xl:-ml-3">
         {features.map((feature, index) => (
-          <div key={index} className="flex flex-col sm:flex-row items-start gap-4  sm:gap-6 p-4 sm:p-0 bg-white sm:bg-transparent ">
-            <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-white bg-white">
-              <img src={feature.icon} alt={feature.title} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+          <div 
+            key={index} 
+            className="flex flex-col sm:flex-row items-center xl:items-start 
+            gap-4 sm:gap-6 p-4 sm:p-0 bg-white sm:bg-transparent
+            rounded-lg sm:rounded-none shadow-sm sm:shadow-none"
+          >
+            <div className="flex-shrink-0 w-14 h-14 sm:w-20 sm:h-20 
+              flex items-center justify-center border border-white bg-white">
+              <img 
+                src={feature.icon} 
+                alt={feature.title} 
+                className="w-8 h-8 sm:w-12 sm:h-12 object-contain" 
+              />
             </div>
-            <div>
-              <h4 className="text-lg justify-start sm:text-xl font-semibold font-kumbh text-black leading-8">{feature.title}</h4>
-              <p className="text-zinc-800 text-sm sm:text-base font-kumbh font-normal">{feature.description}</p>
+            <div className="text-center sm:text-left">
+              <h4 className="text-base sm:text-lg xl:text-xl font-semibold font-kumbh text-black leading-7 sm:leading-8">
+                {feature.title}
+              </h4>
+              <p className="text-zinc-800 text-sm sm:text-base font-kumbh font-normal">
+                {feature.description}
+              </p>
             </div>
           </div>
         ))}
@@ -244,19 +259,25 @@ return (
     </div>
 
     {/* Right Image */}
-      <div className="flex-1 flex items-end  xl::mt-20 xl:mb-32" >
-    <div className="w-[800px] h-[30rem] flex  justify-center bg-transparent" >
-    <img
-     src="/youngmen.svg"
-        alt="Man holding toy plane"
-      className="xl:object-contain h-full xl:mr-[650px] xl:mt-[133px] " 
-     
-    />
-  </div>
-  </div>
-    
+    <div className="flex-1 w-full flex justify-center xl:justify-end 
+      mt-6 sm:mt-10 xl:mt-20 xl:mb-32">
+      
+      <div className="w-full max-w-[320px] sm:max-w-[450px] md:max-w-[600px] 
+        xl:w-[800px] xl:h-[30rem] flex justify-center bg-transparent">
+        
+        <img
+          src="/youngmen.svg"
+          alt="Man holding toy plane"
+          className="object-contain w-full h-auto 
+            xl:h-full mr-0 xl:mr-[650px] xl:mt-[133px]"
+        />
+      </div>
+    </div>
+
   </div>
 </section>
+
+
 
        
 

@@ -278,7 +278,7 @@ return (
                 {coreValues.slice(0, 3).map((item, index) => (
                     <div
                         key={index}
-                        className={`p-10 flex flex-col gap-3 ${item.bg}`}
+                       className={`p-10 lg:p-14 xl:p-10 flex flex-col gap-3 h-full ${item.bg}`}
                     >
                         {item.icon}
                         <h3 className="text-xl font-kumbh text-zinc-950 font-semibold">{item.title}</h3>
@@ -291,15 +291,15 @@ return (
                 {coreValues.slice(3, 5).map((item, index) => (
                     <div
                         key={index}
-                        className={`p-10 flex flex-col gap-3 ${item.bg}`}
+                        className={`p-10 lg:p-14 xl:p-10 flex flex-col gap-3 h-full ${item.bg}`}
                     >
                         {item.icon}
-                        <h3 className="text-xl font-kumbh text-zinc-950 font-semibold">{item.title}</h3>
-                        <p className="text-zinc-950  text-lg leading-6 font-inter">{item.desc}</p>
+                        <h3 className="text-base md:text-lg xl:text-xl font-kumbh text-zinc-950 font-semibold">{item.title}</h3>
+                        <p className="text-zinc-950 text-base   xl:text-lg leading-6 font-inter">{item.desc}</p>
                     </div>
                 ))}
                 {/* Image in the third column */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center h-full items-center">
                     <img src="Choose4.svg" alt="Puzzle Graphic" className="w-64 md:w-80" />
                 </div>
             </div>

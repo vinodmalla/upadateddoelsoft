@@ -102,7 +102,7 @@ function Aiservices() {
 
       {/* Intro Section */}
       <section className="w-full bg-[#F4F6FB] flex items-center py-20 px-6 md:px-16 lg:px-28 mt-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div className="flex flex-col xl:flex-row gap-8 items-center xl:items-start">
           <div className="lg:col-span-2">
             <h2 className="text-xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:-ml-1 font-semibold font-kumbh leading-[57.20px] text-black">
               Intelligent Solutions.<br/>Real Business Impact. Future Ready <br/>Enterprises.
@@ -138,12 +138,12 @@ function Aiservices() {
 
       {/* AI + Human + Real-User Section */}
       <section className="w-full bg-white py-16 px-6 md:px-16 lg:px-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
-          <div className="flex flex-col items-center xl:-ml-20 lg:items-start ">
+        <div className="flex flex-col xl:flex-row gap-10 ">
+          <div className="flex flex-col  xl:-ml-20 items-center xl:items-start ">
             <img
               src="/AI_Service3.svg"
               alt="Accessibility Target Illustration"
-              className="w-72 sm:w-80 md:w-[300px]  lg:w-[360px]  h-auto "
+              className="w-72 sm:w-80 md:w-[300px] lg:[320px] xl:w-[360px]  h-auto "
             />
           </div>
           <div className='xl:-ml-28'>
@@ -200,10 +200,10 @@ function Aiservices() {
         alt={item.title}
         className="w-full h-auto xl:w-[265px] xl:h-[164px] object-cover"
       />
-      <div className="p-6 sm:p-8 flex flex-col border-t border-r border-b border-black
+      <div className="p-6 sm:p-8 flex flex-col border border-black md:border-t border-r border-b md:border-black
 
-                      xl:ml-[-407px]   /* keep desktop style */
-                      ml-0              /* fix mobile & tablet */
+                      xl:ml-[-407px]  
+                      ml-0              
                       ">
         <h3 className="font-semibold text-lg text-zinc-950 leading-6">{item.title}</h3>
         <p className="text-zinc-900 text-base leading-6 mt-2">{item.desc}</p>

@@ -19,7 +19,7 @@ function Solutions() {
     { title: "DIGITAL ACCESSIBILITY", img: "/servicesaccessibility.svg", link: "/digitalaccessibilit", color: "red" },
     { title: "MICROSOFT SOLUTIONS", img: "/servicesmicrosoft.svg", link: "/servicesmicrosoft", color: "black" },
     { title: "MULESOFT SOLUTIONS", img: "/servicesmulesoft.svg", link: "/servicesmulesoft", color: "red" },
-    { title: "IOT SOLUTIONS", img: "/servicesiot.svg", link: "/servicesiot", color: "red" },
+    { title: "IoT SOLUTIONS", img: "/servicesiot.svg", link: "/servicesiot", color: "red" },
     { title: "EMBEDDED TECHNOLOGIES", img: "/servicesembedded.svg", link: "/servicesembedded", color: "black" },
     { title: "FLAWLESS QA SERVICES", img: "/servicesqa.svg", link: "/servicesqa", color: "red" },
     { title: "AI SERVICES", img: "/servicesai.svg", link: "/serviceai", color: "black" },
@@ -68,7 +68,7 @@ function Solutions() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[86rem] mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-[86rem] mx-auto px-4 md:px-6">
           {services.map((service, index) => (
             <div key={index} className="relative overflow-hidden shadow-md group">
               <Link to={service.link}>
@@ -79,7 +79,7 @@ function Solutions() {
                 />
               </Link>
               <div
-                className={`py-4 sm:py-6 text-white text-sm font-semibold ${
+                className={`py-4 sm:py-6   text-white text-sm font-semibold ${
                   service.color === "red" ? "bg-red-600" : "bg-[#464b51]"
                 }`}
               >

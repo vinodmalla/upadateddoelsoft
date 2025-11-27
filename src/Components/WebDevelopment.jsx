@@ -183,8 +183,8 @@ function WebDevelopment() {
               key={idx}
               className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
-              <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="sm:pl-4 sm:mt-0 border border-black h-40 p-6 sm:p-8 text-center sm:text-left">
+              <img src={item.src} alt={item.title} className="w-full h-48 object-cover" />
+              <div className="sm:pl-4 sm:mt-0 border border-black h-48 p-6 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
                 <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>
@@ -222,44 +222,61 @@ function WebDevelopment() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
-        <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-10">
-          <div className="flex-1 space-y-6">
-            <h1 className="text-2xl sm:text-3xl md:ml-[-29px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
-              💡 Why Choose Doelsoft for Web Development?
-            </h1>
-            <div className="space-y-6 md:-ml-5">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col lg:flex-row items-start gap-4  p-4 "
-                >
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-white bg-white mx-auto sm:mx-0">
-                    <img
-                      src={feature.icon}
-                      alt={feature.title}
-                      className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
-                    />
-                  </div>
-                  <div className="text-center sm:text-left">
-                    <h4 className="text-lg justify-start sm:text-xl font-semibold font-kumbh text-black leading-8">{feature.title}</h4>
-                    <p className="text-zinc-900 text-sm sm:text-base font-inter leading-7">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
+      <section className="bg-[#F4F6FB] py-10 sm:py-12 px-4 sm:px-6 md:px-8 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
+  <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-8 sm:gap-10">
+
+    <div className="flex-1 space-y-4 sm:space-y-6 w-full">
+
+      <h1 className="text-xl sm:text-2xl md:text-4xl 
+        text-center xl:text-left md:ml-[-29px]
+        xl:whitespace-nowrap font-kumbh font-semibold 
+        mb-4 sm:mb-6 md:mb-8 leading-normal md:leading-[57.20px]">
+        💡 Why Choose Doelsoft for Web Development?
+      </h1>
+
+      <div className="space-y-4 sm:space-y-6 xl:-ml-5">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="flex flex-col xl:flex-row items-center xl:items-start 
+            text-center sm:text-left gap-4 p-4 
+             bg-white sm:bg-transparent shadow-sm sm:shadow-none"
+          >
+            <div className="flex-shrink-0 w-14 h-14 sm:w-20 sm:h-20 
+              flex items-center justify-center border border-white 
+              bg-white mx-auto sm:mx-0">
+              <img
+                src={feature.icon}
+                alt={feature.title}
+                className="w-8 h-8 sm:w-12 sm:h-12 object-contain"
+              />
+            </div>
+            <div>
+              <h4 className="text-base sm:text-lg lg:text-xl text-center xl:text-start  font-semibold font-kumbh text-black leading-7 sm:leading-8">
+                {feature.title}
+              </h4>
+              <p className="text-zinc-900 text-sm sm:text-base font-inter leading-6 sm:leading-7">
+                {feature.description}
+              </p>
             </div>
           </div>
+        ))}
+      </div>
+    </div>
 
-          {/* Right Image */}
-          <div className="flex-1 flex justify-center bg-[#F4F6FB]">
-            <img
-              src="/womenweb2.svg"
-              alt="Web Developer"
-              className="w-full max-w-sm sm:max-w-md md:w-[400px] h-auto xl:w-[617px] xl:h-[769px]   xl:-mb-48"
-            />
-          </div>
-        </div>
-      </section>
+    {/* Right Image */}
+    <div className="flex-1 flex justify-center bg-[#F4F6FB] w-full mt-8 sm:mt-0">
+      <img
+        src="/womenweb2.svg"
+        alt="Web Developer"
+        className="w-[85%] sm:max-w-md md:w-[400px] h-auto 
+        xl:w-[617px] xl:h-[769px] xl:-mb-48"
+      />
+    </div>
+
+  </div>
+</section>
+
       {/* CTA Section */}
       <section className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')",marginTop:"1px" } } > {/* Decorative Vectors */}
               <img src="/Vectors.svg" alt="vector" className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30" /> 

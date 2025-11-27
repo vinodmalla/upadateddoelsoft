@@ -48,7 +48,7 @@ function MuleSoftSolutions() {
                 <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
                     <h2 className="text-3xl mt-6 md:mt-0 sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold text-[#EF0E0E] leading-snug mb-6">
                        
-                        MuleSoft Solution
+                        Mulesoft Solution
                     </h2>
 
                       <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
@@ -59,7 +59,7 @@ function MuleSoftSolutions() {
                 <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
                     <img
                         src="/MuleSoftHero.svg"
-                        alt="MuleSoft"
+                        alt="Mulesoft"
                         className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
                     />
                 </div>
@@ -67,21 +67,21 @@ function MuleSoftSolutions() {
              <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
           <h2 className="text-2xl sm:text-3xl justify-start lg:whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
-           Transform Your Business with Doelsoft <br /> MuleSoft Solutions
+           Transform Your Business with Doelsoft <br /> Mulesoft Solutions
           </h2>
           <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">
              In today’s digital ecosystem, businesses run on multiple applications, systems, and data sources.
               Integrating and connecting these efficiently is the key to digital transformation success.
           </p>
           <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">
-             At Doelsoft, we integrate MuleSoft to unify disparate systems, automate workflows, 
+             At Doelsoft, we integrate Mulesoft to unify disparate systems, automate workflows, 
              and deliver seamless digital experiences with speed, security, and efficiency.
           </p>
         </div>
         <div className="flex justify-center">
           <img
             src="/MuleSoftGears.svg"
-            alt="MuleSoft Integration"
+            alt="Mulesoft Integration"
             className="max-w-xs sm:max-w-sm md:max-w-md w-full h-auto"
           />
         </div>
@@ -90,7 +90,7 @@ function MuleSoftSolutions() {
         
 
             {/* Services Section */}
-           <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
+           <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-10 lg:grid-cols-2 items-center">
         {/* Left Image */}
         <div className="flex justify-center md:justify-start">
           <img
@@ -102,15 +102,15 @@ function MuleSoftSolutions() {
 
         {/* Right Content */}
         <div className="space-y-8">
-          <h2 className="text-2xl sm:text-3xl md:whitespace-nowrap md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
-            🌟 Our MuleSoft Services
+          <h2 className="text-2xl sm:text-3xl xl:whitespace-nowrap md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
+            🌟 Our Mulesoft Services
           </h2>
 
           <div className="space-y-6">
             {[
               {
                 src: "/m1.svg",
-                title: "MuleSoft Consulting",
+                title: "Mulesoft Consulting",
                 desc: "Strategy, architecture, and roadmap for enterprise integration.",
               },
               {
@@ -120,8 +120,8 @@ function MuleSoftSolutions() {
               },
               {
                 src: "/m3.svg",
-                title: "MuleSoft Implementation",
-                desc: "End-to-end deployment of MuleSoft Anypoint solutions.",
+                title: "Mulesoft Implementation",
+                desc: "End-to-end deployment of Mulesoft Anypoint solutions.",
               },
               {
                 src: "/m4.svg",
@@ -130,8 +130,8 @@ function MuleSoftSolutions() {
               },
               {
                 src: "/m5.svg",
-                title: "MuleSoft Migration",
-                desc: "Move from legacy integration solutions to modern MuleSoft architecture.",
+                title: "MulsSoft Migration",
+                desc: "Move from legacy integration solutions to modern Mulesoft architecture.",
               },
               {
                 src: "/m6.svg",
@@ -139,7 +139,7 @@ function MuleSoftSolutions() {
                 desc: "Continuous monitoring, optimization, and issue resolution.",
               },
               {
-                src: "/m7.svg",
+                src: "/m2.svg",
                 title: "Custom Connectors & Extensions",
                 desc: "Build connectors tailored to your unique business systems.",
               },
@@ -175,7 +175,7 @@ function MuleSoftSolutions() {
             🏭 Industries We Serve
           </h1>
           <p className="text-gray-600 md:ml-2">
-            Doelsoft delivers MuleSoft-based solutions to diverse industries:
+            Doelsoft delivers Mulesoft-based solutions to diverse industries:
           </p>
         </div>
 
@@ -196,9 +196,9 @@ function MuleSoftSolutions() {
               <img
                 src={item.src}
                 alt={item.title}
-                className="w-full h-40 object-cover"
+                className="w-full h-48 object-cover"
               />
-              <div className="sm:pl-4  sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+              <div className="sm:pl-4  sm:mt-0 border border-black h-48 p-4 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">
                   {item.title}
                 </h3>
@@ -251,24 +251,24 @@ function MuleSoftSolutions() {
             <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
-            <h1 className="text-2xl sm:text-3xl md:ml-[-35px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
-              💡 Why Choose Doelsoft for MuleSoft Services?
+            <h1 className="text-2xl sm:text-3xl xl:ml-[-35px] xl:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
+              💡 Why Choose Doelsoft for Mulesoft Services?
             </h1>
 
-            <div className="space-y-6 md:-ml-5">
+            <div className="space-y-6 xl:-ml-5">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:flex-row items-start gap-4 p-4 "
+                  className="flex flex-col md:flex-row items-start gap-4 p-4 "
                 >
                   <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-white bg-white mx-auto sm:mx-0">
                     <img
                       src={feature.icon}
                       alt={feature.title}
-                      className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                      className="w-10 h-10 xl:w-12 xl:h-12 object-contain"
                     />
                   </div>
-                  <div className="text-center sm:text-left">
+                  <div className="items-center sm:ml-0 text-center sm:text-left">
                     <h4 className="text-lg justify-start sm:text-xl font-semibold font-kumbh text-black leading-8">
                       {feature.title}
                     </h4>
@@ -300,8 +300,8 @@ function MuleSoftSolutions() {
                                                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div> {/* Main Content */} 
                                                <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> 
                                                  <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">🌍  Accelerate Digital Transformation with </h2>
-                                                 <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">Doelsoft MicroSoft Services</h2>
-                                                  <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉Partner with Doelsoft – Your trusted MuleSoft consulting and integration partner in the USA & India </p>
+                                                 <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">Doelsoft Microsoft Services</h2>
+                                                  <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉Partner with Doelsoft – Your trusted Mulesoft consulting and integration partner in the USA & India </p>
                                                   <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
                         Talk to an Expert{" "}
                         <ArrowUpRight

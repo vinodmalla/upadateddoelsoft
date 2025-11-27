@@ -174,8 +174,7 @@ export default function Accessibility() {
       >
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
           <h2 className=" mt-6 md:mt-0 text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-semibold text-[#EF0E0E] leading-snug mb-6">
-            Doelsoft <br />
-            <span className="block mt-4">Digital Accessibility</span>
+            Digital Accessibility
           </h2>
         <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>
@@ -191,37 +190,36 @@ export default function Accessibility() {
       </section>
 
       {/* Intro Section */}
-      <section className="w-full bg-[#F4F6FB] flex items-center py-20 px-6 md:px-16 lg:px-28 mt-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div className="lg:col-span-2">
-            <h2 className="text-xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:-ml-1 font-semibold font-kumbh leading-[57.20px] text-black">
-              Inclusive Digital Accessibility Solutions <br/> Powered by Human Expertise & AI
-
+      <section className="w-full bg-[#F4F6FB] py-20 px-6 md:px-16 lg:px-28 mt-10">
+        <div className="flex flex-col xl:flex-row items-center xl:items-start gap-8 w-full">
+          <div className="xl:w-1/2">
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-semibold font-kumbh leading-[57.20px] text-black">
+              Inclusive Digital Accessibility Solutions <br /> Powered by Human Expertise & AI
             </h2>
-            <br/>
-            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
+            <br />
+            <p className="text-black text-lg sm:text-xl font-inter font-normal leading-8">
               Fostering Equitable, Real-World Digital Experiences for All
             </p>
-            <br/>
-            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
-              At Doelsoft, we believe accessibility is more than compliance it’s about <br/> inclusion, equity, and empowerment. Our mission is to bridge the digital divide <br/>by combining <b>cutting-edge AI technology with deep human expertise</b> <br/> including people with lived experiences of disability, professional accessibility <br/>  testers, and real users from diverse backgrounds.
+            <br />
+            <p className="text-black text-lg sm:text-xl font-inter font-normal leading-8">
+              At Doelsoft, we believe accessibility is more than compliance it’s about <br /> inclusion, equity, and empowerment. Our mission is to bridge the digital divide <br />
+              by combining <b>cutting-edge AI technology with deep human expertise</b> <br /> including people with lived experiences of disability, professional accessibility <br /> testers, and real users from diverse backgrounds.
             </p>
-            <br/>
-            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
-              Our holistic, collaborative approach ensures your websites, mobile apps,<br/> documents, multimedia, and enterprise systems are not only fully accessible <br/> and compliant with global standards<b> (WCAG 2.1/2.2, ADA, Section 508, AODA, EN 301 549, EAA, PDF/UA),</b>  but also optimized for real-world usability tested,<br/> validated, and shaped by the people who rely on these tools every day.
+            <br />
+            <p className="text-black text-lg sm:text-xl font-inter font-normal leading-8">
+              Our holistic, collaborative approach ensures your websites, mobile apps,<br /> documents, multimedia, and enterprise systems are not only fully accessible <br /> and compliant with global standards<b> (WCAG 2.1/2.2, ADA, Section 508, AODA, EN 301 549, EAA, PDF/UA),</b> but also optimized for real-world usability tested,<br /> validated, and shaped by the people who rely on these tools every day.
             </p>
-            <br/>
-            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
-             
-We go beyond fixing issues. We help you future-proof your digital platforms,<br/> build inclusive workflows, and unlock new opportunities by embracing the <br/> needs of the <b> 1+ billion people with disabilities worldwide. Our work is co-<br/>created with disability communities,</b>  ensuring that our solutions are grounded <br/> in real experiences, not just theory.
-
+            <br />
+            <p className="text-black text-lg sm:text-xl font-inter font-normal leading-8">
+              We go beyond fixing issues. We help you future-proof your digital platforms,<br /> build inclusive workflows, and unlock new opportunities by embracing the <br /> needs of the <b>1+ billion people with disabilities worldwide. Our work is co-<br />created with disability communities,</b> ensuring that our solutions are grounded <br /> in real experiences, not just theory.
             </p>
           </div>
-          <div>
+
+          <div className="lg:w-1/2 flex justify-center items-start">
             <img
               src="/introright.svg"
               alt="Accessibility illustration"
-              className="w-full h-auto object-contain rounded"
+              className="w-full max-w-md h-auto object-contain rounded"
             />
           </div>
         </div>
@@ -357,9 +355,9 @@ We go beyond fixing issues. We help you future-proof your digital platforms,<br/
 
       {/* Why Choose Doelsoft Section */}
       <section className="w-full bg-[#F4F6FA] py-10 xl:mb-[-2px]">
-        <div className="flex flex-col md:flex-row justify-center items-center max-w-7xl mx-auto px-4 gap-10">
-          <div className="flex-1 md:ml-8 lg:-ml-7">
-            <h1 className="font-kumbh text-2xl md:text-4xl font-semibold justify-start text-black leading-[57.20px">🎯 Why Choose Doelsoft?</h1>
+        <div className="flex flex-col xl:flex-row justify-center items-center max-w-7xl mx-auto px-4 gap-10">
+          <div className="flex-1 md:ml-10 lg:-ml-7">
+            <h1 className="font-kumbh text-2xl md:text-3xl lg:text-4xl font-semibold justify-start text-black leading-[57.20px">🎯 Why Choose Doelsoft?</h1>
             <ul className="space-y-4 mt-6 ml-4">
               {whyChoose.map((item, idx) => (
                 <li key={idx} className="flex items-start space-x-3">

@@ -41,7 +41,7 @@ function Executive() {
                         Talent Hub
                       </h1>
                       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-kumbh font-bold text-red-600 mt-2">
-                        Excutive Search
+                        Executive Search
                       </h2>
             
                         <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">

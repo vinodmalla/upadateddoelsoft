@@ -77,7 +77,7 @@ function Header() {
                   <div
                     className="fixed left-1/2 top-[70px] -translate-x-1/2 z-[999] 
                                bg-white outline outline-1 outline-slate-200 
-                               w-[95vw] lg:w-[1195px] p-6 lg:p-8 rounded-md 
+                               w-[95vw]  xl:w-[1195px] p-6 lg:p-8 rounded-md 
                                shadow-2xl overflow-auto max-h-[80vh]"
                   >
                     <div className="absolute inset-0 bg-white/90 -z-10 backdrop-blur-sm"></div>
@@ -154,7 +154,7 @@ function Header() {
                         <img src='/ms.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter text-zinc-800 ml-4 text-base font-normal">
-                           MicroSoft <br /> Solutions
+                           Microsoft <br /> Solutions
                         </div>
                       </div></Link>
                        <Link onClick={()=>{setIsSolutionsOpen(false)
@@ -163,7 +163,7 @@ function Header() {
                         <img src='/mu.svg' alt="icon" className="w-6 h-6" />
                         </div>
                         <div className="font-inter  ml-4 text-base font-normal">
-                          MuleSoft <br /> Solutions
+                          Mulesoft <br /> Solutions
                         </div>
                       </div></Link>
                       <Link onClick={()=>{setIsSolutionsOpen(false)

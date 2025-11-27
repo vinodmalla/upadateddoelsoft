@@ -103,8 +103,8 @@ function QA() {
       </section>
 
       {/* ⚙️ Services Section */}
-      <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
-        <div className="flex justify-center md:justify-start">
+      <section className="container mx-auto px-6 md:px-10 xl:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
+        <div className="flex justify-center xl:justify-start">
           <img
             loading="lazy"
             src="/QAmen.svg"
@@ -114,7 +114,7 @@ function QA() {
         </div>
 
         <div className="space-y-8">
-          <h2 className="text-2xl sm:text-3xl md:whitespace-nowrap md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
+          <h2 className="text-2xl sm:text-3xl whitespace-normal xl:whitespace-nowrap md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
             🌟 Our Quality Assurance Services
           </h2>
 
@@ -232,8 +232,8 @@ function QA() {
               key={idx}
               className="grid grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
-              <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="sm:pl-4  sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+              <img src={item.src} alt={item.title} className="w-full h-48 object-cover" />
+              <div className="sm:pl-4  sm:mt-0 border border-black h-48 p-4 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
                 <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>

@@ -37,85 +37,103 @@ return (
           />
         </div>
       </section>
-        <section className="w-full mx-auto bg-[#FFEBEB] px-4 sm:px-6 lg:px-8 py-12">
-  <div className="space-y-6 ml-0 sm:ml-6 md:ml-[4.5rem] text-center md:text-left">
-    <h1 className="text-2xl md:text-3xl  lg:text-4xl font-semibold font-kumbh leading-[57.20px] ">
+        <section className="w-full mx-auto bg-[#FFEBEB] px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+  <div className="space-y-5 sm:space-y-6 ml-0 md:ml-6 xl:ml-[4.5rem] text-center md:text-left">
+
+    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+      font-semibold font-kumbh leading-normal md:leading-[57.20px]">
       Contract & Temporary Hiring — Agility When You Need It
     </h1>
-    <p className="text-sm sm:text-base leading-6 font-inter">
+
+    <p className="text-sm sm:text-base leading-6 font-inter max-w-2xl mx-auto md:mx-0">
       Business demands can change overnight. Our Contract and Temporary Staffing services ensure you always have
       the right people at the right time.
     </p>
 
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-6">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 sm:gap-8 md:gap-6">
+
       {/* Left Text Section */}
       <div className="w-full md:w-1/2 space-y-4">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-inter leading-10 font-bold">The DoelSoft Advantages:</h2>
 
-        <div className="space-y-2">
-          <div className="flex items-center justify-center md:justify-start gap-2">
-            <img src="/logo4.svg" className="w-8 h-8" alt="icon" />
-            <span className="text-sm sm:text-xl font-normal font-inter leading-8">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl 
+          font-inter leading-tight md:leading-10 font-bold">
+          The DoelSoft Advantages:
+        </h2>
+
+        <div className="space-y-3 sm:space-y-2">
+
+          <div className="flex items-center justify-center md:justify-start gap-2 max-w-md mx-auto md:mx-0">
+            <img src="/logo4.svg" className="w-7 h-7 sm:w-8 sm:h-8" alt="icon" />
+            <span className="text-sm sm:text-xl font-normal font-inter leading-snug sm:leading-8">
               Ready-to-deploy professionals for immediate requirements
             </span>
           </div>
 
-          <div className="flex items-center justify-center md:justify-start gap-2">
-            <img src="/logo4.svg" className="w-8 h-8" alt="icon" />
+          <div className="flex items-center justify-center md:justify-start gap-2 max-w-md mx-auto md:mx-0">
+            <img src="/logo4.svg" className="w-7 h-7 sm:w-8 sm:h-8" alt="icon" />
             <span className="text-sm sm:text-base">
               Cost-effective solutions to optimize workforce budget
             </span>
           </div>
 
-          <div className="flex items-center justify-center md:justify-start gap-2">
-            <img src="/logo4.svg" className="w-8 h-8" alt="icon" />
+          <div className="flex items-center justify-center md:justify-start gap-2 max-w-md mx-auto md:mx-0">
+            <img src="/logo4.svg" className="w-7 h-7 sm:w-8 sm:h-8" alt="icon" />
             <span className="text-sm sm:text-base">
               Cost-effective solutions to optimize workforce budget
             </span>
           </div>
 
-          <div className="flex items-center justify-center md:justify-start gap-2">
-            <img src="/logo4.svg" className="w-8 h-8" alt="icon" />
+          <div className="flex items-center justify-center md:justify-start gap-2 max-w-md mx-auto md:mx-0">
+            <img src="/logo4.svg" className="w-7 h-7 sm:w-8 sm:h-8" alt="icon" />
             <span className="text-sm sm:text-base">
               Flexibility to scale teams up or down with ease
             </span>
           </div>
 
-          <div className="flex items-center justify-center md:justify-start gap-2">
-            <img src="/logo4.svg" className="w-8 h-8" alt="icon" />
+          <div className="flex items-center justify-center md:justify-start gap-2 max-w-md mx-auto md:mx-0">
+            <img src="/logo4.svg" className="w-7 h-7 sm:w-8 sm:h-8" alt="icon" />
             <span className="text-sm sm:text-base">
               Pre-vetted candidates who can hit the ground running
             </span>
           </div>
+
         </div>
 
         <div className="flex justify-center md:justify-start">
-          <button className="mt-6 px-6 sm:px-8 py-3 sm:py-4 border border-black text-white bg-black hover:bg-gray-600 flex items-center gap-2 text-sm sm:text-base">
+       <Link to="/contact">  <button className="mt-5 sm:mt-6 px-5 sm:px-8 py-3 sm:py-4 
+            border border-black text-white bg-black hover:bg-gray-600 
+            flex items-center gap-2 text-sm sm:text-base">
             <span>Stay flexible. Stay competitive with DoelSoft.</span>
-            <ArrowUpRight  />
-          </button>
+            <ArrowUpRight />
+          </button></Link>
         </div>
+
       </div>
 
       {/* Right Image */}
-  
-      <div className="w-full md:w-1/2 flex justify-center md:mt-4 md:mr-52  md:justify-end">
+      <div className="w-full xl:w-1/2 flex justify-center xl:mt-4 xl:mr-52 xl:justify-end">
         <img
           src="/Contract1.svg"
           alt="Contract"
-          className="w-full sm:w-full md:w-full lg:w-3/4 h-auto object-contain xl:object-cover md:h-80 ml-0 "
+          className="w-[85%] sm:w-full md:w-full lg:w-3/4 
+            h-auto object-contain 
+            xl:object-cover md:h-80 ml-0"
         />
       </div>
-             <div className=" hidden absolute xl:flex  right-6 xl:right-64 xl:mt-[-43px]  ">
-    <img
-      src="/logo4.svg"
-      alt="logo"
-      className="w-12 sm:w-16 md:w-20 h-auto "
-    />
-  </div>
+
+      {/* Floating Logo */}
+      <div className="hidden absolute xl:flex right-6 xl:right-64 xl:mt-[-43px]">
+        <img
+          src="/logo4.svg"
+          alt="logo"
+          className="w-12 sm:w-16 md:w-20 h-auto"
+        />
+      </div>
+
     </div>
   </div>
 </section>
+
 
   <div className="p-9 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-16">
   <h1 className="text-2xl sm:text-3xl md:text-[44px] font-semibold leading-[66px] font-kumbh text-gray-800 mb-4 text-center md:text-left">

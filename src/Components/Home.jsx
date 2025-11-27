@@ -22,6 +22,7 @@ import Background from "../assets/Background.svg";
 import secure from '../assets/Secure.svg';
 import Cloud_Done from '../assets/Cloud_Done.svg';
 import Applied from '../assets/Applied_AI.svg';
+import { RxAvatar } from "react-icons/rx";
 
 function Home() {
     const [testimonialIndex,setTestimonialIndex]=useState(0)
@@ -358,9 +359,7 @@ useEffect(()=>{
 
           </p>
           <div className="flex items-center mt-4 gap-3">
-            <img
-              src={item.avitor}
-              alt="avatar"
+            <RxAvatar
               className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0"
             />
             <div className="min-w-0">
@@ -651,9 +650,7 @@ useEffect(()=>{
               "{item.quote}"
             </p>
             <div className="flex items-center mt-4 sm:mt-6 gap-2">
-              <img
-              src={item.avitor}
-              alt="avatar"
+             <RxAvatar
               className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0"
             />
               <div>
@@ -698,16 +695,16 @@ useEffect(()=>{
 
 
       {/* Frames Section */}
-     <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6 lg:px-48">
+     <section className="relative bg-white py-8 xl:py-12 px-4 sm:px-6 lg:px-24 xl:px-48">
   
 
      
-    <div  className="hidden  xl:flex flex-row lg:grid lg:grid-cols-2 gap-[2.7rem]  xl:-ml-14  w-screen">
+    <div  className="hidden  xl:flex flex-row lg:grid lg:grid-cols-2 gap-10  xl:-ml-14  w-screen">
     {frames.map((frame, i) => (
       <div
       key={i}
        className="flex flex-row  gap-4 bg-white shadow-2xl 
-         w-[280px] h-[68px] px-4 py-3"
+        lg:w-[280px] xl:w-[280px] h-[68px] px-4 py-3"
       >
       <div className="flex flex-row gap-2 mt-3  items-center whitespace-nowrap">
         <img

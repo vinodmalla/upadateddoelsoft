@@ -30,7 +30,7 @@ function MicrosoftSolutions() {
         "From consultation to post-deployment support, we handle it all.",
     },
     {
-      icon: "/p5.svg",
+      icon: "/cross1.svg",
       title: "Global Reach",
       description:
         "Serving enterprises across the USA, India, and worldwide.",
@@ -212,9 +212,9 @@ function MicrosoftSolutions() {
               <img
                 src={item.src}
                 alt={item.title}
-                className="w-full h-40 object-cover"
+                className="w-full h-48 object-cover"
               />
-              <div className="sm:pl-4  sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+              <div className="sm:pl-4  sm:mt-0 border border-black h-48 p-4 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">
                   {item.title}
                 </h3>
@@ -265,11 +265,11 @@ function MicrosoftSolutions() {
       <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-10">
           <div className="flex-1 md:ml-4 space-y-6">
-            <h1 className="text-2xl sm:text-3xl md:ml-[-45px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
+            <h1 className="text-2xl md:text-3xl xl:ml-[-45px] xl:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
               💡 Why Choose Doelsoft for Microsoft Technologies?
             </h1>
 
-            <div className="space-y-6 md:-ml-5">
+            <div className="space-y-6 xl:-ml-5">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -314,8 +314,8 @@ function MicrosoftSolutions() {
                                    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div> {/* Main Content */} 
                                    <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8"> 
                                      <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">🌍  Accelerate Digital Transformation with </h2>
-                                     <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">Doelsoft MicroSoft Services</h2>
-                                      <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉Partner with Doelsoft – Your trusted MicroSoft consulting and integration partner in the USA & India </p>
+                                     <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">Doelsoft Microsoft Services</h2>
+                                      <p className="text-lg lg:text-[28px] xl:text-[30px] font-inter text-gray-200 leading-relaxed px-2"> 👉Partner with Doelsoft – Your trusted Microsoft consulting and integration partner in the USA & India </p>
                                       <Link to="/contact"> <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
                         Talk to an Expert{" "}
                         <ArrowUpRight

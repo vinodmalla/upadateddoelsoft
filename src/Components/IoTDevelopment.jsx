@@ -26,7 +26,7 @@ function IoTDevelopment() {
               description: 'Incorporating AI, ML, and cloud technologies into IoT ecosystems.',
           },
           {
-              icon: '/p5.svg',
+              icon: '/cross1.svg',
               title: 'Global Delivery Model',
               description: 'Serving enterprises in the USA, India, and international markets.',
           },
@@ -52,8 +52,7 @@ function IoTDevelopment() {
               >
                   <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
                       <h2 className=" mt-6 md:mt-0 text-3xl sm:text-4xl md:text-5xl lg:text-[71.5px] font-bold text-[#EF0E0E] leading-snug mb-6">
-                          Doelsoft  <br className="hidden sm:block" />
-                          <span className="block mt-2"> IoT Solutions</span>
+                          IoT Solutions
                       </h2>
   
                        <Link to="/contact"><button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
@@ -70,7 +69,7 @@ function IoTDevelopment() {
                   </div>
               </section>
   
-          <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
           <h2 className="text-2xl sm:text-3xl justify-start lg:whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
            🚀 Transform Your Business with <br/>Doelsoft IoT Solutions
@@ -96,7 +95,7 @@ function IoTDevelopment() {
       </section>
   
               {/* Services Section */}
-             <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
+             <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-10 lg:grid-cols-2 items-center">
           {/* Left Image */}
            <div className="flex justify-center md:justify-start">
             <img
@@ -197,8 +196,8 @@ function IoTDevelopment() {
               key={idx}
               className="grid grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
-              <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="sm:pl-4  sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+              <img src={item.src} alt={item.title} className="w-full h-48 object-cover" />
+              <div className="sm:pl-4  sm:mt-0 border border-black h-48 p-4 sm:p-8 text-center sm:text-left">
                 <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
                 <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>
@@ -248,11 +247,11 @@ function IoTDevelopment() {
               <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
           <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-10">
             <div className="flex-1 space-y-6">
-              <h1 className="text-2xl sm:text-3xl md:ml-[-35px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
+              <h1 className="text-2xl md:text-3xl xl:ml-[-35px] xl:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
               💡 Why Choose Doelsoft for IoT Services?
               </h1>
   
-              <div className="space-y-6 md:-ml-5">
+              <div className="space-y-6 xl:-ml-5">
                 {features.map((feature, index) => (
                   <div
                     key={index}

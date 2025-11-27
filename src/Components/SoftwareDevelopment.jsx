@@ -75,9 +75,9 @@ const SoftwareDevelopment = () => {
 
 
       {/* Why Partner Section */}
-     <section className="mx-auto px-4 sm:px-6 md:px-0 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+     <section className="mx-auto px-4 sm:px-6 md:px-0 py-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 items-center">
   {/* Left Image */}
-  <div className="flex justify-center md:-ml-48">
+  <div className="flex justify-center md:-ml-36 xl:-ml-48">
     <img
       src="businessTeam.svg"
       alt="Business Team"
@@ -87,7 +87,7 @@ const SoftwareDevelopment = () => {
 
   {/* Right Text Content */}
    <div className="space-y-8  md:-ml-32 mr-16">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl text-center md:text-start font-kumbh font-semibold text-black leading-[57.20px]">
+    <h2 className="text-2xl md:text-3xl xl:text-4xl text-center md:text-start font-kumbh font-semibold text-black leading-[57.20px]">
       Why Partner with Doelsoft?
 
     </h2>
@@ -174,7 +174,7 @@ const SoftwareDevelopment = () => {
   </div>
 
   {/* Red Rectangle CTA */}
-  <div className="bg-red-600 text-white text-center max-w-9xl mx-auto md:-ml-8  mt-10 p-8 sm:p-10 md:p-12 text-2xl sm:text-3xl md:text-lg font-medium whitespace-nowrap leading-9 font-kumbh">
+  <div className="bg-red-600 text-white text-center max-w-9xl mx-auto md:-ml-8  mt-10 p-8 sm:p-10 md:p-12 text-2xl sm:text-3xl md:text-lg font-medium xl:whitespace-nowrap leading-9 font-kumbh">
     Choose Doelsoft for custom software crafted with your business at its
     heart, delivering solutions that empower growth and operational
     excellence.
