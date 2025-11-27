@@ -137,16 +137,16 @@ function Aiservices() {
       </section>
 
       {/* AI + Human + Real-User Section */}
-      <section className="w-full bg-white py-16 px-6 md:px-16 lg:px-28">
-        <div className="flex flex-col xl:flex-row gap-10 ">
-          <div className="flex flex-col  xl:-ml-20 items-center xl:items-start ">
+      <section className="w-full bg-white py-16 px-6 xl:px-28 ">
+        <div className="flex flex-col xl:flex-row  ">
+          <div className="flex flex-col  xl:-ml-4 items-center xl:items-start w-full ">
             <img
               src="/AI_Service3.svg"
               alt="Accessibility Target Illustration"
-              className="w-72 sm:w-80 md:w-[300px] lg:[320px] xl:w-[360px]  h-auto "
+              className="w-72 sm:w-80 md:w-[300px] lg:w-[320px] xl:w-[380px]   h-auto object-contain"
             />
           </div>
-          <div className='xl:-ml-28'>
+          <div className='xl:-ml-8'>
             <h2 className="text-2xl sm:text-3xl  lg:text-4xl justify-start font-semibold text-black font-kumbh leading-[57.20px] mb-4">
               Our AI Expertise: <br/> Turning Possibilities Into Powerful Solutions
             </h2>

@@ -93,7 +93,7 @@ return (
         </section>
        <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-12 flex flex-col gap-10 xl:flex-row items-center">
   {/* Left Image */}
-  <div className="flex justify-center   xl:-ml-36 ">
+  <div className="flex justify-center  xl:ml-[-16px] ">
     <img
       src="Mobilemen.svg"
       alt="Business Team"

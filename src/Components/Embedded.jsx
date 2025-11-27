@@ -30,7 +30,7 @@ function Embedded() {
         "Serving enterprises in the USA, India, and worldwide.",
     },
     {
-      icon: "/p5.svg",
+      icon: "/cross1.svg",
       title: "Innovation & Compliance",
       description:
         "Advanced IoT and embedded technologies with industry-standard compliance.",
